@@ -56,10 +56,16 @@ type DropdownId = (typeof dropdowns)[number]["id"];
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<DropdownId | null>(null);
+  const [mobileOpenGroup, setMobileOpenGroup] = useState<string | null>(null);
 
   const closeMenu = () => {
     setIsMenuOpen(false);
     setActiveDropdown(null);
+    setMobileOpenGroup(null);
+  };
+
+  const toggleMobileGroup = (label: string) => {
+    setMobileOpenGroup((prev) => (prev === label ? null : label));
   };
 
   return (
@@ -180,26 +186,40 @@ export function Header() {
               Home
               <ArrowRight className="h-4 w-4 text-brand-goldHighlight" aria-hidden="true" />
             </Link>
-            {mobileMenuGroups.map((group) => (
-              <div key={group.label} className="mt-2 border-t border-white/10 pt-3">
-                <p className="px-3 pb-1 text-xs font-semibold uppercase tracking-[0.08em] text-white/42">
-                  {group.label}
-                </p>
-                <div className="grid gap-1">
-                  {group.links.map((link) => (
-                    <Link
-                      key={link.href}
-                      href={link.href}
-                      onClick={closeMenu}
-                      className="focus-ring flex min-h-11 items-center justify-between rounded-md px-5 text-sm font-bold text-white/78 hover:bg-white/8 hover:text-white"
-                    >
-                      {link.label}
-                      <ArrowRight className="h-4 w-4 text-brand-goldHighlight" aria-hidden="true" />
-                    </Link>
-                  ))}
+            {mobileMenuGroups.map((group) => {
+              const isGroupOpen = mobileOpenGroup === group.label;
+              return (
+                <div key={group.label} className="border-t border-white/10">
+                  <button
+                    type="button"
+                    onClick={() => toggleMobileGroup(group.label)}
+                    className="focus-ring flex min-h-12 w-full items-center justify-between rounded-md px-3 text-xs font-semibold uppercase tracking-[0.08em] text-white/50 hover:text-white/80"
+                    aria-expanded={isGroupOpen}
+                  >
+                    {group.label}
+                    <ChevronDown
+                      className={`h-4 w-4 text-brand-goldHighlight transition-transform duration-200 ${isGroupOpen ? "rotate-180" : ""}`}
+                      aria-hidden="true"
+                    />
+                  </button>
+                  {isGroupOpen && (
+                    <div className="grid gap-1 pb-2">
+                      {group.links.map((link) => (
+                        <Link
+                          key={link.href}
+                          href={link.href}
+                          onClick={closeMenu}
+                          className="focus-ring flex min-h-11 items-center justify-between rounded-md px-5 text-sm font-bold text-white/78 hover:bg-white/8 hover:text-white"
+                        >
+                          {link.label}
+                          <ArrowRight className="h-4 w-4 text-brand-goldHighlight" aria-hidden="true" />
+                        </Link>
+                      ))}
+                    </div>
+                  )}
                 </div>
-              </div>
-            ))}
+              );
+            })}
             {links.slice(1).map((link) => (
               <Link
                 key={link.href}
