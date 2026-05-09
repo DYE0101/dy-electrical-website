@@ -115,7 +115,7 @@ export default async function HomePage() {
         <div className="mx-auto w-full max-w-[1180px] px-4">
           <div className="mb-10 grid gap-6 lg:grid-cols-[1fr_.62fr] lg:items-end">
             <h2 className="max-w-3xl font-heading text-[clamp(2rem,4vw,3.25rem)] font-extrabold leading-tight">
-              The everyday jobs, the upgrades and the details that need a careful electrician.
+              From everyday electrical work to quality upgrades, we take care of the details that matter.
             </h2>
             <p className="text-white/60">
               From switchboards and lighting to air conditioning and EV charging — clear advice, tidy work and no guesswork.
