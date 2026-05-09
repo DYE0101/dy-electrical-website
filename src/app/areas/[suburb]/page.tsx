@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: SuburbPageProps): Promise<Met
   if (!area) return {};
 
   return {
-    title: `Electrician ${area.suburb} | Licensed Electrical Services | DY Electrical Services`,
+    title: `Electrician ${area.suburb} | Licensed Electrical Services`,
     description: `Licensed electrician servicing ${area.suburb}, ${area.region}. Switchboard upgrades, EV charger installation, air conditioning, fault finding and 24/7 emergency callout. Based ${area.driveTime} away.`,
     alternates: { canonical: `/areas/${area.slug}` },
     openGraph: {

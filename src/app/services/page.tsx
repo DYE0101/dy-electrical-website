@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 import { priorityServices, secondaryServices } from "@/lib/services";
 
 export const metadata: Metadata = {
-  title: "Electrical Services Logan, Brisbane & Gold Coast | DY Electrical Services",
+  title: "Electrical Services Logan, Brisbane & Gold Coast",
   description:
     "DY Electrical Services provides reliable residential, commercial, builder and property management electrical work across Logan, Brisbane and the Gold Coast. Clear communication, clean workmanship and dependable service.",
   alternates: { canonical: "/services" },

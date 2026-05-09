@@ -4,7 +4,7 @@ import { InquiryForm } from "@/components/InquiryForm";
 import { business } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Electrical for Commercial Clients | DY Electrical Services",
+  title: "Electrical for Commercial Clients",
   description:
     "Commercial electrical support for shops, offices, clinics, warehouses and small business sites across Logan, Brisbane Southside and the Northern Gold Coast.",
   alternates: { canonical: "/commercial-clients" },

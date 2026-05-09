@@ -3,7 +3,7 @@ import Link from "next/link";
 import { getAllBlogPosts } from "@/lib/blog-posts";
 
 export const metadata: Metadata = {
-  title: "Electrical Guides & Articles | DY Electrical Services",
+  title: "Electrical Guides & Articles",
   description:
     "Practical electrical guides for homeowners, property managers and builders across Logan, Brisbane Southside and the Northern Gold Coast. Switchboards, EV charging, compliance and more.",
   alternates: { canonical: "/blog" },

@@ -4,7 +4,7 @@ import { CTAButton } from "@/components/CTAButton";
 import { business } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Contact DY Electrical Services | Request a Quote",
+  title: "Contact | Request a Quote",
   description:
     "Request a quote or call DY Electrical Services directly. Licensed electrical work across Logan, Brisbane Southside and the Northern Gold Coast.",
   alternates: { canonical: "/contact" },

@@ -47,7 +47,7 @@ const faqSchema = {
 };
 
 export const metadata: Metadata = {
-  title: "Electrical for Real Estate Agents & Property Managers | DY Electrical Services",
+  title: "Electrical for Real Estate Agents & Property Managers",
   description:
     "Responsive electrical maintenance for real estate agencies and property managers across Logan, Brisbane Southside and the Northern Gold Coast. We work directly with your agency, coordinate with tenants, and provide clear documentation every time.",
   alternates: { canonical: "/real-estate-agents" },

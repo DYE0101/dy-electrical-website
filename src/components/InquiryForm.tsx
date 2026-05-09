@@ -112,13 +112,13 @@ export function InquiryForm({
         <div className="grid gap-3 sm:grid-cols-2">
           <label className="grid gap-1 text-sm">
             Phone
-            <input className="focus-ring min-h-12 rounded-md border border-white/16 bg-[#1a1a1a] px-3 text-white placeholder:text-white/45" placeholder="0477 000 000" {...register("phone")} />
+            <input type="tel" className="focus-ring min-h-12 rounded-md border border-white/16 bg-[#1a1a1a] px-3 text-white placeholder:text-white/45" placeholder="0477 000 000" {...register("phone")} />
             {errors.phone && <span className="text-xs text-red-200">{errors.phone.message}</span>}
           </label>
 
           <label className="grid gap-1 text-sm">
             Email
-            <input className="focus-ring min-h-12 rounded-md border border-white/16 bg-[#1a1a1a] px-3 text-white placeholder:text-white/45" placeholder="you@example.com" {...register("email")} />
+            <input type="email" className="focus-ring min-h-12 rounded-md border border-white/16 bg-[#1a1a1a] px-3 text-white placeholder:text-white/45" placeholder="you@example.com" {...register("email")} />
             {errors.email && <span className="text-xs text-red-200">{errors.email.message}</span>}
           </label>
         </div>

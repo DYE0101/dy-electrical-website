@@ -4,7 +4,7 @@ import { InquiryForm } from "@/components/InquiryForm";
 import { business } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Electrical for Homeowners | DY Electrical Services",
+  title: "Electrical for Homeowners",
   description:
     "Licensed residential electrical work for homeowners across Logan, Brisbane Southside and the Northern Gold Coast. Switchboards, EV chargers, lighting, fans, air conditioning and fault finding.",
   alternates: { canonical: "/homeowners" },

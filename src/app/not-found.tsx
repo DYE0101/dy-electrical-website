@@ -1,6 +1,12 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight, Phone } from "lucide-react";
 import { business } from "@/lib/constants";
+
+export const metadata: Metadata = {
+  title: "Page Not Found",
+  description: "The page you were looking for doesn't exist or has moved.",
+};
 
 const topLinks = [
   { label: "Switchboard Upgrades", href: "/services/switchboard-upgrades" },
