@@ -96,20 +96,20 @@ export function InquiryForm({
 
         <label className="grid gap-1 text-sm">
           Name
-          <input className="focus-ring min-h-12 rounded-md border border-white/16 bg-white/8 px-3 text-white placeholder:text-white/45" placeholder="Your name" {...register("name")} />
+          <input className="focus-ring min-h-12 rounded-md border border-white/16 bg-[#1a1a1a] px-3 text-white placeholder:text-white/45" placeholder="Your name" {...register("name")} />
           {errors.name && <span className="text-xs text-red-200">{errors.name.message}</span>}
         </label>
 
         <div className="grid gap-3 sm:grid-cols-2">
           <label className="grid gap-1 text-sm">
             Phone
-            <input className="focus-ring min-h-12 rounded-md border border-white/16 bg-white/8 px-3 text-white placeholder:text-white/45" placeholder="0477 000 000" {...register("phone")} />
+            <input className="focus-ring min-h-12 rounded-md border border-white/16 bg-[#1a1a1a] px-3 text-white placeholder:text-white/45" placeholder="0477 000 000" {...register("phone")} />
             {errors.phone && <span className="text-xs text-red-200">{errors.phone.message}</span>}
           </label>
 
           <label className="grid gap-1 text-sm">
             Email
-            <input className="focus-ring min-h-12 rounded-md border border-white/16 bg-white/8 px-3 text-white placeholder:text-white/45" placeholder="you@example.com" {...register("email")} />
+            <input className="focus-ring min-h-12 rounded-md border border-white/16 bg-[#1a1a1a] px-3 text-white placeholder:text-white/45" placeholder="you@example.com" {...register("email")} />
             {errors.email && <span className="text-xs text-red-200">{errors.email.message}</span>}
           </label>
         </div>
@@ -117,7 +117,7 @@ export function InquiryForm({
         <div className="grid gap-3 sm:grid-cols-2">
           <label className="grid gap-1 text-sm">
             Enquiry type
-            <select className="focus-ring min-h-12 rounded-md border border-white/16 bg-white/8 px-3 text-white" {...register("leadType")}>
+            <select className="focus-ring min-h-12 appearance-none rounded-md border border-white/16 bg-[#1a1a1a] px-3 text-white" {...register("leadType")}>
               {leadTypes.map((type) => (
                 <option key={type.value} value={type.value} className="text-brand-black">
                   {type.label}
@@ -128,7 +128,7 @@ export function InquiryForm({
 
           <label className="grid gap-1 text-sm">
             Service
-            <select className="focus-ring min-h-12 rounded-md border border-white/16 bg-white/8 px-3 text-white" {...register("serviceType")}>
+            <select className="focus-ring min-h-12 appearance-none rounded-md border border-white/16 bg-[#1a1a1a] px-3 text-white" {...register("serviceType")}>
               {serviceTypes.map((service) => (
                 <option key={service} value={service} className="text-brand-black">
                   {service}
@@ -141,7 +141,7 @@ export function InquiryForm({
         <div className="grid gap-3 sm:grid-cols-2">
           <label className="grid gap-1 text-sm">
             Suburb
-            <select className="focus-ring min-h-12 rounded-md border border-white/16 bg-white/8 px-3 text-white" {...register("suburb")}>
+            <select className="focus-ring min-h-12 appearance-none rounded-md border border-white/16 bg-[#1a1a1a] px-3 text-white" {...register("suburb")}>
               {suburbs.map((suburb) => (
                 <option key={suburb} value={suburb} className="text-brand-black">
                   {suburb}
@@ -152,7 +152,7 @@ export function InquiryForm({
 
           <label className="grid gap-1 text-sm">
             Preferred timing
-            <select className="focus-ring min-h-12 rounded-md border border-white/16 bg-white/8 px-3 text-white" {...register("preferredTiming")}>
+            <select className="focus-ring min-h-12 appearance-none rounded-md border border-white/16 bg-[#1a1a1a] px-3 text-white" {...register("preferredTiming")}>
               {timingOptions.map((timing) => (
                 <option key={timing} value={timing} className="text-brand-black">
                   {timing}
@@ -164,7 +164,7 @@ export function InquiryForm({
 
         <label className="grid gap-1 text-sm">
           Message
-          <textarea className="focus-ring min-h-28 rounded-md border border-white/16 bg-white/8 px-3 py-3 text-white placeholder:text-white/45" placeholder="Briefly describe the job." {...register("message")} />
+          <textarea className="focus-ring min-h-28 rounded-md border border-white/16 bg-[#1a1a1a] px-3 py-3 text-white placeholder:text-white/45" placeholder="Briefly describe the job." {...register("message")} />
         </label>
       </div>
 
