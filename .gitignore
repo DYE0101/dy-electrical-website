@@ -1,0 +1,36 @@
+# Next.js
+.next/
+out/
+build/
+
+# Dependencies
+node_modules/
+
+# Env files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Vercel
+.vercel
+
+# Screenshots and inspection files
+*.png
+*.jpg
+*.jpeg
+.chrome-*/
+.chrome_*/
+article-readable-*.png
+dark-rhythm-*.png
+inspect-*.png
+mobile-*.png
+
+# Claude Code
+.claude/
