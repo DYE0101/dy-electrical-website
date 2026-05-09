@@ -34,10 +34,10 @@ function TrustFallback({ quiet = false }: { quiet?: boolean }) {
   return (
     <div className="grid gap-3 sm:grid-cols-2">
       {[
-        "Licensed and insured electrical contractor",
-        "Based near Logan and servicing surrounding suburbs",
-        "Clear scope before work is booked",
-        "Tidy finishes and straight advice",
+        "Licensed electrical contractor — Licence No. 87141",
+        "ARC licensed for split system air conditioning",
+        "Based in Bahrs Scrub, servicing Logan, Brisbane Southside and the Northern Gold Coast",
+        "Clear scope, tidy finishes and practical advice before work starts",
       ].map((item) => (
         <div key={item} className="min-w-0 break-words border-l-2 border-brand-black/20 bg-brand-surface p-4 text-sm font-semibold text-brand-charcoal/72">
           {item}
