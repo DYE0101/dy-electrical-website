@@ -42,7 +42,7 @@ const faqSchema = {
 };
 
 export const metadata: Metadata = {
-  title: "Electrical for Builders & Renovators",
+  title: "Electrical Contractor for Builders & Renovators | Logan & Brisbane",
   description:
     "Reliable electrical work for builders and renovators across Logan, Brisbane and the Gold Coast. Rough-ins, fit-offs, switchboard work and project support — delivered on time, finished properly.",
   alternates: { canonical: "/builders" },
