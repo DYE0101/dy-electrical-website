@@ -10,6 +10,11 @@ const nextConfig = {
         destination: "/services",
         permanent: true,
       },
+      {
+        source: "/property-managers",
+        destination: "/real-estate-agents",
+        permanent: true,
+      },
     ];
   },
 };

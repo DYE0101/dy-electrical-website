@@ -73,7 +73,7 @@ export function Footer() {
           </h2>
           <ul className="mt-4 space-y-2 text-sm text-white/68">
             <li><Link href="/homeowners" className="hover:text-white transition-colors">Homeowners</Link></li>
-            <li><Link href="/property-managers" className="hover:text-white transition-colors">Property Managers</Link></li>
+            <li><Link href="/real-estate-agents" className="hover:text-white transition-colors">Real Estate & Property Managers</Link></li>
             <li><Link href="/builders" className="hover:text-white transition-colors">Builders</Link></li>
             <li><Link href="/commercial-clients" className="hover:text-white transition-colors">Commercial Clients</Link></li>
           </ul>

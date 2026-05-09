@@ -34,7 +34,7 @@ const areaLinks = [
 
 const workWithUsLinks = [
   { href: "/homeowners", label: "Homeowners" },
-  { href: "/property-managers", label: "Property Managers" },
+  { href: "/real-estate-agents", label: "Real Estate & Property Managers" },
   { href: "/builders", label: "Builders" },
   { href: "/commercial-clients", label: "Commercial Clients" },
 ];

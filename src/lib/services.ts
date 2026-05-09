@@ -93,10 +93,10 @@ export const audiencePaths = [
     featured: false,
   },
   {
-    title: "For Property Managers",
+    title: "For Real Estate & Property Managers",
     description:
-      "Electrical sorted, without the back-and-forth. We communicate directly with tenants, attend when booked, and send clear job notes and invoices through without being chased.",
-    href: "/property-managers",
+      "Electrical sorted, without the back-and-forth. We work directly with your agency, coordinate with tenants, attend when booked, and send clear job notes and invoices without being chased.",
+    href: "/real-estate-agents",
     cta: "Request support",
     icon: PlugZap,
     featured: false,
