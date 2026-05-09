@@ -168,7 +168,8 @@ export default async function HomePage() {
             <p className="mt-5 text-lg leading-8 text-white/64">
               We don&apos;t believe &ldquo;good enough&rdquo; is good enough. Every job is
               completed with care, tested where required, cleaned up properly
-              and communicated clearly before we leave.
+              and communicated clearly before we leave — so there are no loose
+              ends after handover.
             </p>
             <div className="mt-8 grid gap-3 sm:grid-cols-2">
               {["Clean workmanship", "Clear communication", "Tested and compliant", "No loose ends"].map((item) => (
