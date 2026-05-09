@@ -22,7 +22,7 @@ const topServices = [
   {
     title: "EV charger installation",
     description:
-      "New builds in Park Ridge, Logan Reserve and Yarrabilba are among the highest EV charger request areas we cover. Dedicated circuits, clean cable runs, compliance cert on completion.",
+      "New builds in Park Ridge, Logan Reserve and Yarrabilba are among the highest EV charger request areas we cover. Dedicated circuits, cables run to spec, compliance cert on completion.",
     href: "/services/ev-chargers",
   },
   {

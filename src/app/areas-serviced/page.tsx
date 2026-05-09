@@ -91,7 +91,7 @@ const regions: Region[] = [
     slug: "northern-gold-coast",
     name: "Northern Gold Coast",
     intro:
-      "Strong coverage from Ormeau and Pimpama through to Coomera, Helensvale and Hope Island. Higher-spec homes and acreage properties — clean cable runs, hidden conduit and architectural lighting work are standard requests.",
+      "Strong coverage from Ormeau and Pimpama through to Coomera, Helensvale and Hope Island. Higher-spec homes and acreage properties — cables run to spec, hidden conduit and architectural lighting work are standard requests.",
     responseTime: "Same-day or next-day for most jobs",
     commonJobs: [
       "Three-phase EV charger installs on acreage and luxury homes",

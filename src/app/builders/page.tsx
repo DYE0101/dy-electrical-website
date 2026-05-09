@@ -27,7 +27,7 @@ const faqItems = [
   {
     question: "Do you work on boutique commercial fit-outs?",
     answer:
-      "Yes — small commercial fit-outs (offices, clinics, retail spaces) with minimal disruption requirements are within our scope. We quote clearly, work cleanly and finish without leaving a mess for other trades.",
+      "Yes — small commercial fit-outs (offices, clinics, retail spaces) with minimal disruption requirements are within our scope. We quote clearly, work properly and finish without leaving a mess for other trades.",
   },
 ];
 
@@ -54,7 +54,7 @@ const features = [
     body: "We commit to dates and we hit them. If something's tight, we tell you early — not the day before fit-off.",
   },
   {
-    heading: "Clean, finished work",
+    heading: "Work that passes inspection",
     body: "Cables run neatly, switchboards labelled clearly, fittings finished as if the homeowner is watching. Your finishes deserve electrical that matches.",
   },
   {
@@ -70,7 +70,7 @@ const features = [
 const stages = [
   {
     title: "Rough-in",
-    body: "Cabling, conduit, board location and provisions set up cleanly so the trades to follow have what they need.",
+    body: "Cabling, conduit, board location and provisions set up to spec so the trades to follow have what they need.",
   },
   {
     title: "Fit-off",

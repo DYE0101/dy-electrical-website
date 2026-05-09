@@ -16,7 +16,7 @@ const topServices = [
   {
     title: "Switchboard upgrades",
     description:
-      "Queenslanders and older Brisbane south homes frequently have undersized or ceramic-fuse boards that fail compliance checks during renovations. We upgrade cleanly, test every circuit and issue the compliance certificate.",
+      "Queenslanders and older Brisbane south homes frequently have undersized or ceramic-fuse boards that fail compliance checks during renovations. We upgrade to spec, test every circuit and issue the compliance certificate.",
     href: "/services/switchboard-upgrades",
   },
   {
@@ -28,7 +28,7 @@ const topServices = [
   {
     title: "Lighting & power upgrades",
     description:
-      "Renovation work through Woolloongabba, South Brisbane and the inner south often involves running new circuits through old Queenslander timber frames — work that needs care and experience to do cleanly.",
+      "Renovation work through Woolloongabba, South Brisbane and the inner south often involves running new circuits through old Queenslander timber frames — work that needs care and experience to execute properly.",
     href: "/services/lighting-power",
   },
   {

@@ -22,8 +22,8 @@ const values = [
     body: "You'll know what's happening, when, and why — before anything is touched. No surprises on the day, no mystery on the invoice.",
   },
   {
-    heading: "Clean workmanship",
-    body: "Every job is finished as if it's going into our own home. Cables are run neatly, finishes are respected, and the site is left clean.",
+    heading: "Work that holds up",
+    body: "Every job is finished as if it's going into our own home. Cables are run neatly, finishes are respected, and the site is left as we found it.",
   },
   {
     heading: "Reliable attendance",

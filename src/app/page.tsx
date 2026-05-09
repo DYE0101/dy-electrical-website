@@ -34,7 +34,7 @@ export default async function HomePage() {
               Licensed Electrician for Logan, Brisbane Southside &amp;<br className="hidden sm:block" /> the Northern Gold Coast.
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-white/72">
-              Don&apos;t D.I.Y — call DY Electrical Services for clean, reliable electrical work done properly the first time.
+              Don&apos;t D.I.Y — call DY Electrical Services for reliable electrical work done properly the first time.
             </p>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -172,7 +172,7 @@ export default async function HomePage() {
               ends after handover.
             </p>
             <div className="mt-8 grid gap-3 sm:grid-cols-2">
-              {["Clean workmanship", "Clear communication", "Tested and compliant", "No loose ends"].map((item) => (
+              {["Finished to standard", "Clear communication", "Tested and compliant", "No loose ends"].map((item) => (
                 <div key={item} className="border-l-2 border-brand-gold/70 bg-white/[0.045] p-4 text-sm font-semibold text-white/72">
                   {item}
                 </div>

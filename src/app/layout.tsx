@@ -25,14 +25,14 @@ export const metadata: Metadata = {
     template: "%s | DY Electrical Services",
   },
   description:
-    "DY Electrical Services provides licensed electrical work across Logan, Brisbane Southside and the Northern Gold Coast. 24/7 emergency callout, clean workmanship and clear communication for homeowners, property managers, builders and local businesses.",
+    "DY Electrical Services provides licensed electrical work across Logan, Brisbane Southside and the Northern Gold Coast. 24/7 emergency callout, work done properly and communication without the runaround for homeowners, property managers, builders and local businesses.",
   alternates: {
     canonical: "/",
   },
   openGraph: {
     title: "Licensed Electrician Logan, Brisbane & Gold Coast | DY Electrical Services",
     description:
-      "Licensed electrician across Logan, Brisbane Southside and the Northern Gold Coast. 24/7 emergency callout. Clean workmanship and clear communication.",
+      "Licensed electrician across Logan, Brisbane Southside and the Northern Gold Coast. 24/7 emergency callout. Work done properly, communication without the runaround.",
     url: business.domain,
     siteName: business.name,
     locale: "en_AU",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Licensed Electrician Logan, Brisbane & Gold Coast | DY Electrical Services",
     description:
-      "24/7 emergency callout. Clean workmanship and clear communication across Logan, Brisbane Southside and the Northern Gold Coast.",
+      "24/7 emergency callout. Work done properly, communication without the runaround, across Logan, Brisbane Southside and the Northern Gold Coast.",
     images: ["/images/og-default.jpg"],
   },
 };
@@ -64,10 +64,11 @@ const localBusinessSchema = {
   description:
     "Licensed electrician serving Logan, Brisbane Southside and the Northern Gold Coast. 24/7 emergency callout, residential, commercial, property management and builder electrical work.",
   url: business.domain,
-  telephone: business.phoneDisplay,
+  telephone: business.phoneInternational,
   email: business.email,
   image: `${business.domain}/images/architectural-lighting-home.jpg`,
-  logo: `${business.domain}/images/dy-logo.jpg`,
+  logo: `${business.domain}/logos/logo-primary-horizontal.jpg`,
+  hasMap: "https://maps.app.goo.gl/xhxaBNKAbTGF5P9P7",
   priceRange: "$$",
   address: {
     "@type": "PostalAddress",

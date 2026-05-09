@@ -16,7 +16,7 @@ const topServices = [
   {
     title: "EV charger installation",
     description:
-      "The Northern Gold Coast — especially Helensvale, Hope Island and acreage properties through Coomera and Upper Coomera — is our strongest growth area for EV charger installs. Three-phase, single-phase, clean cable routing and compliance on the day.",
+      "The Northern Gold Coast — especially Helensvale, Hope Island and acreage properties through Coomera and Upper Coomera — is our strongest growth area for EV charger installs. Three-phase, single-phase, precise cable routing and compliance on the day.",
     href: "/services/ev-chargers",
   },
   {
@@ -58,7 +58,7 @@ const faqItems = [
   {
     question: "Can you handle lighting design on new builds and renovations?",
     answer:
-      "Yes. For higher-spec homes, renovations and new builds across Helensvale, Hope Island and surrounds, we map lighting circuits, switching layouts and dimming zones before the build locks in — the earlier we are involved, the cleaner the result.",
+      "Yes. For higher-spec homes, renovations and new builds across Helensvale, Hope Island and surrounds, we map lighting circuits, switching layouts and dimming zones before the build locks in — the earlier we are involved, the sharper the result.",
   },
   {
     question: "Are you licensed for Queensland electrical work on the Gold Coast?",
@@ -194,7 +194,7 @@ export default function GoldCoastPage() {
               },
               {
                 heading: "Architectural lighting",
-                body: "Feature pendants, concealed strips, outdoor wash lighting and smart dimming — planned and installed cleanly without compromise.",
+                body: "Feature pendants, concealed strips, outdoor wash lighting and smart dimming — planned and installed precisely, without compromise.",
               },
               {
                 heading: "Pool and outdoor circuits",

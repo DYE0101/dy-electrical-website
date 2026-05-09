@@ -6,7 +6,7 @@ import { priorityServices, secondaryServices } from "@/lib/services";
 export const metadata: Metadata = {
   title: "Electrical Services Logan, Brisbane & Gold Coast",
   description:
-    "DY Electrical Services provides reliable residential, commercial, builder and property management electrical work across Logan, Brisbane and the Gold Coast. Clear communication, clean workmanship and dependable service.",
+    "DY Electrical Services provides reliable residential, commercial, builder and property management electrical work across Logan, Brisbane and the Gold Coast. Clear communication, work done properly and dependable service.",
   alternates: { canonical: "/services" },
 };
 
@@ -77,7 +77,7 @@ export default function ServicesPage() {
         </h1>
         <p className="mt-5 max-w-2xl text-base leading-7 text-brand-charcoal/70 md:text-lg">
           Reliable electrical services for homes, small businesses and managed
-          properties — delivered with clear communication, clean workmanship and
+          properties — delivered with clear communication, work done properly and
           attention to detail.
         </p>
 

@@ -2,6 +2,7 @@ export const business = {
   name: "DY Electrical Services",
   tagline: "Don't D.I.Y - Call DY Electrical Services",
   phoneDisplay: "0477 766 678",
+  phoneInternational: "+61 477 766 678",
   phoneHref: "tel:0477766678",
   email: "hello@dyelectricalservices.com.au",
   domain: "https://www.dyelectricalservices.com.au",

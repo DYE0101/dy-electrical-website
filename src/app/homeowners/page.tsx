@@ -16,7 +16,7 @@ const features = [
     body: "We explain what needs doing, what can wait and what matters for safety, compliance and future upgrades.",
   },
   {
-    heading: "Clean work inside your home",
+    heading: "Work that respects your home",
     body: "Neat cable runs, tidy finishes and careful work around finished walls, cabinetry, flooring and paint.",
   },
   {
@@ -54,7 +54,7 @@ const faqItems = [
   {
     question: "Do you work around renovations and other trades?",
     answer:
-      "Yes. We regularly support renovations, extensions and fit-offs where timing, clean finishes and clear communication matter.",
+      "Yes. We regularly support renovations, extensions and fit-offs where timing, sharp finishes and clear communication matter.",
   },
   {
     question: "Are you available for emergency electrical issues?",
@@ -87,7 +87,7 @@ export default function HomeownersPage() {
         </h1>
         <p className="mt-5 max-w-2xl text-base leading-7 text-brand-charcoal/70 md:text-lg">
           Licensed residential electrical work across Logan, Brisbane Southside
-          and the Northern Gold Coast. Clear advice, clean workmanship and no
+          and the Northern Gold Coast. Clear advice, work done properly and no
           guesswork inside your home.
         </p>
       </section>

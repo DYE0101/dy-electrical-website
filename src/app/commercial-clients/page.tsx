@@ -16,7 +16,7 @@ const features = [
     body: "We plan work around trading hours, access windows and site requirements so the job does not create unnecessary friction.",
   },
   {
-    heading: "Clean commercial finishes",
+    heading: "Sharp commercial finishes",
     body: "Lighting, power, data and switchboard work finished neatly for customer-facing and staff-facing spaces.",
   },
   {
@@ -83,7 +83,7 @@ export default function CommercialClientsPage() {
 
       <section className="mx-auto w-full max-w-[1180px] px-4 py-16 lg:py-24">
         <h1 className="max-w-4xl font-heading text-[clamp(2.5rem,6vw,4.5rem)] font-extrabold leading-tight text-brand-black">
-          Electrical support for commercial clients who need it handled cleanly.
+          Electrical support for commercial clients who need it handled properly.
         </h1>
         <p className="mt-5 max-w-2xl text-base leading-7 text-brand-charcoal/70 md:text-lg">
           Electrical work for shops, offices, clinics, workshops and small
