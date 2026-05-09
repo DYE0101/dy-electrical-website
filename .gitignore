@@ -21,12 +21,8 @@ yarn-error.log*
 # Vercel
 .vercel
 
-# Screenshots and inspection files
-*.png
-*.jpg
-*.jpeg
+# Screenshots and inspection files (root level only — public/ images are tracked)
 .chrome-*/
-.chrome_*/
 article-readable-*.png
 dark-rhythm-*.png
 inspect-*.png
