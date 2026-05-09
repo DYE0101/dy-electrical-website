@@ -6,17 +6,6 @@ const nextConfig = {
   async redirects() {
     return [
       {
-        source: "/:path*",
-        has: [
-          {
-            type: "host",
-            value: "www.dyelectricalservices.com.au",
-          },
-        ],
-        destination: "https://dyelectricalservices.com.au/:path*",
-        permanent: true,
-      },
-      {
         source: "/services/hot-water",
         destination: "/services",
         permanent: true,
