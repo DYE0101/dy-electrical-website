@@ -55,12 +55,43 @@ export type GoogleReviewSummary = {
   reviews: GoogleReview[];
 };
 
+function safeDecodeUriComponent(value: string) {
+  try {
+    return decodeURIComponent(value);
+  } catch {
+    return value;
+  }
+}
+
+function normalisePlaceId(rawPlaceId?: string) {
+  if (!rawPlaceId) {
+    return undefined;
+  }
+
+  const value = rawPlaceId.trim().replace(/^["']|["']$/g, "");
+
+  if (!value) {
+    return undefined;
+  }
+
+  const resourceNameMatch = value.match(/(?:^|\/)places\/([^/?#\s]+)/i);
+  const queryStringMatch = value.match(/[?&]place_id=([^&#\s]+)/i);
+  const mapsPlaceIdMatch = value.match(/place_id:([^&#\s]+)/i);
+  const match = resourceNameMatch ?? queryStringMatch ?? mapsPlaceIdMatch;
+
+  if (match?.[1]) {
+    return safeDecodeUriComponent(match[1]);
+  }
+
+  return value.replace(/^places\//i, "");
+}
+
 function getGooglePlacesConfig() {
   const rawPlaceId = process.env.GOOGLE_PLACE_ID;
 
   return {
     apiKey: process.env.GOOGLE_PLACES_API_KEY,
-    placeId: rawPlaceId?.replace(/^places\//, ""),
+    placeId: normalisePlaceId(rawPlaceId),
   };
 }
 
@@ -106,9 +137,11 @@ export async function getGoogleReviews(): Promise<GoogleReviewSummary | null> {
     });
 
     if (!response.ok) {
+      const errorBody = await response.text().catch(() => "");
       console.error("Google Places review fetch failed", {
         status: response.status,
         statusText: response.statusText,
+        errorBody: errorBody.slice(0, 500),
       });
       return null;
     }
