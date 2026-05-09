@@ -64,16 +64,17 @@ export async function POST(request: Request) {
   const resend = getResend();
 
   if (!resend) {
-    console.info("DY Electrical Services enquiry received without Resend configured", {
+    console.error("DY Electrical Services enquiry could not send because Resend is not configured", {
       leadPayload,
       serviceM8Result,
     });
 
     return NextResponse.json({
-      ok: true,
+      ok: false,
       emailSent: false,
       serviceM8Enabled: serviceM8Result.enabled,
-    });
+      error: "Email delivery is not configured.",
+    }, { status: 503 });
   }
 
   try {
@@ -98,10 +99,10 @@ export async function POST(request: Request) {
     });
 
     return NextResponse.json({
-      ok: true,
+      ok: false,
       emailSent: false,
       serviceM8Enabled: serviceM8Result.enabled,
       warning: "Lead logged but email delivery failed.",
-    });
+    }, { status: 502 });
   }
 }

@@ -66,19 +66,28 @@ export function InquiryForm({
   async function onSubmit(values: InquiryInput) {
     setStatus("submitting");
 
-    const response = await fetch("/api/inquiry", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ ...values, ...tracking, ctaClicked }),
-    });
+    try {
+      const response = await fetch("/api/inquiry", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ ...values, ...tracking, ctaClicked }),
+      });
 
-    if (!response.ok) {
+      const result = (await response.json().catch(() => null)) as {
+        ok?: boolean;
+        emailSent?: boolean;
+      } | null;
+
+      if (!response.ok || !result?.ok || result.emailSent === false) {
+        setStatus("error");
+        return;
+      }
+
+      setStatus("success");
+      reset();
+    } catch {
       setStatus("error");
-      return;
     }
-
-    setStatus("success");
-    reset();
   }
 
   return (
