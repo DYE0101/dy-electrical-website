@@ -25,7 +25,7 @@ export function Footer() {
             </CTAButton>
             <CTAButton href="/contact?type=homeowner_quote">Request a Quote</CTAButton>
           </div>
-          <div className="mt-8 space-y-1 text-xs text-white/40">
+          <div className="mt-8 space-y-1 text-xs text-white/60">
             <p>{business.electricalContractor}</p>
             <p>{business.arcLicence}</p>
             <p>ABN {business.abn}</p>
@@ -33,7 +33,7 @@ export function Footer() {
         </div>
 
         <div>
-          <h2 className="text-xs font-semibold uppercase tracking-[0.08em] text-white/40">
+          <h2 className="text-xs font-semibold uppercase tracking-[0.08em] text-white/60">
             Services
           </h2>
           <ul className="mt-4 space-y-2 text-sm text-white/68">
@@ -47,7 +47,7 @@ export function Footer() {
         </div>
 
         <div>
-          <h2 className="text-xs font-semibold uppercase tracking-[0.08em] text-white/40">
+          <h2 className="text-xs font-semibold uppercase tracking-[0.08em] text-white/60">
             Areas
           </h2>
           <ul className="mt-4 space-y-2 text-sm text-white/68">
@@ -68,7 +68,7 @@ export function Footer() {
         </div>
 
         <div>
-          <h2 className="text-xs font-semibold uppercase tracking-[0.08em] text-white/40">
+          <h2 className="text-xs font-semibold uppercase tracking-[0.08em] text-white/60">
             Work With Us
           </h2>
           <ul className="mt-4 space-y-2 text-sm text-white/68">

@@ -10,7 +10,7 @@ type GoogleReviewsProps = {
 
 function Stars({ rating }: { rating: number }) {
   return (
-    <div className="flex items-center gap-1 text-brand-gold" aria-label={`${rating} out of 5 stars`}>
+    <div className="flex items-center gap-1 text-brand-gold" role="img" aria-label={`${rating} out of 5 stars`}>
       {Array.from({ length: 5 }, (_, index) => (
         <Star
           key={index}
