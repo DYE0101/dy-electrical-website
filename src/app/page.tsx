@@ -1,9 +1,14 @@
 import Link from "next/link";
 import Image from "next/image";
+import dynamic from "next/dynamic";
 import { ArrowRight, MapPin, Phone, ShieldCheck } from "lucide-react";
 import { CTAButton } from "@/components/CTAButton";
-import { InquiryForm } from "@/components/InquiryForm";
 import { GoogleReviews } from "@/components/GoogleReviews";
+
+const InquiryForm = dynamic(
+  () => import("@/components/InquiryForm").then((m) => ({ default: m.InquiryForm })),
+  { loading: () => <div className="h-[500px] rounded-lg border border-white/14 bg-white/[0.03]" /> }
+);
 import { getGoogleReviews } from "@/lib/google-reviews";
 import { audiencePaths, priorityServices } from "@/lib/services";
 import { business } from "@/lib/constants";
@@ -22,6 +27,7 @@ export default async function HomePage() {
           alt="Residential kitchen lighting completed by DY Electrical Services"
           fill
           priority
+          fetchPriority="high"
           sizes="100vw"
           className="object-cover object-[center_58%] opacity-[0.72]"
         />
@@ -30,10 +36,15 @@ export default async function HomePage() {
 
         <div className="relative z-10 mx-auto grid min-h-[650px] w-full max-w-[1180px] px-4 gap-10 py-14 lg:grid-cols-[1fr_390px] lg:items-end lg:py-20">
           <div className="min-w-0">
-            <h1 className="max-w-full break-words font-heading text-[2.15rem] font-extrabold leading-[1.04] sm:max-w-3xl sm:text-[clamp(2.35rem,5.4vw,4.65rem)]">
-              Licensed Electrician for Logan, Brisbane Southside &amp;<br className="hidden sm:block" /> the Northern Gold Coast.
+            <h1 className="max-w-[21rem] break-words font-heading text-[clamp(1.7rem,7.2vw,2rem)] font-extrabold leading-[1.08] sm:max-w-3xl sm:text-[clamp(2.35rem,5.4vw,4.65rem)] sm:leading-[1.04]">
+              Licensed Electrician for
+              <br className="sm:hidden" />
+              Logan, Brisbane Southside &amp;
+              <br className="hidden sm:block" />
+              <br className="sm:hidden" />
+              the Northern Gold Coast.
             </h1>
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-white/72">
+            <p className="mt-6 max-w-[21rem] text-base leading-7 text-white/72 sm:max-w-2xl sm:text-lg sm:leading-8">
               Don&apos;t D.I.Y — call DY Electrical Services for reliable electrical work done properly the first time.
             </p>
 
@@ -47,7 +58,7 @@ export default async function HomePage() {
               </CTAButton>
             </div>
 
-            <p className="mt-8 text-xs text-white/40">
+            <p className="mt-8 max-w-[21rem] break-words text-xs leading-5 text-white/68 sm:max-w-full">
               Lic. No. 87141 · ARC L179309 · Publicly Insured · ABN 75 643 388 416
             </p>
           </div>
@@ -167,7 +178,7 @@ export default async function HomePage() {
             </h2>
             <p className="mt-5 text-lg leading-8 text-white/64">
               We don&apos;t believe &ldquo;good enough&rdquo; is good enough. Every job is
-              completed with care, tested where required, cleaned up properly
+              completed with care, tested where required, with the site left as we found it
               and communicated clearly before we leave — so there are no loose
               ends after handover.
             </p>

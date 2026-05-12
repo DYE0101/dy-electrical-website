@@ -1,10 +1,14 @@
 import type { Metadata } from "next";
 import { Inter, Montserrat } from "next/font/google";
+import dynamic from "next/dynamic";
 import "./globals.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { MobileCTA } from "@/components/MobileCTA";
 import { business } from "@/lib/constants";
+
+const MobileCTA = dynamic(() =>
+  import("@/components/MobileCTA").then((m) => ({ default: m.MobileCTA }))
+);
 
 const inter = Inter({
   subsets: ["latin"],
