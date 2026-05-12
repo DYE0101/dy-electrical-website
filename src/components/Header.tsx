@@ -73,18 +73,20 @@ export function Header() {
       <div className="mx-auto flex min-h-[72px] w-full max-w-[1180px] px-4 items-center justify-between gap-4 lg:min-h-[76px] lg:gap-6">
         <Link
           href="/"
+          aria-label={business.name}
           className="focus-ring flex min-w-0 items-center gap-3 rounded-md"
           onClick={closeMenu}
         >
           <Image
             src="/logos/logo-dark-background.jpg"
-            alt="DY Electrical Services"
+            alt=""
+            aria-hidden="true"
             width={320}
             height={150}
             priority
+            fetchPriority="high"
             className="h-auto w-[74px] mix-blend-screen [clip-path:inset(2px_8px_2px_2px)] sm:w-24"
           />
-          <span className="sr-only">{business.name}</span>
         </Link>
 
         <nav className="hidden items-center gap-6 text-sm font-semibold text-white/72 lg:flex">
@@ -139,7 +141,7 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="hidden items-center gap-3 md:flex">
+        <div className="hidden items-center gap-3 lg:flex">
           <CTAButton href={business.phoneHref} variant="dark">
             <Phone className="mr-2 h-4 w-4" aria-hidden="true" />
             {business.phoneDisplay}
@@ -147,7 +149,7 @@ export function Header() {
           <CTAButton href="/contact?type=homeowner_quote">Request a Quote</CTAButton>
         </div>
 
-        <div className="flex items-center gap-2 md:hidden">
+        <div className="fixed right-4 top-4 z-50 flex items-center gap-2 lg:hidden">
           <Link
             href={business.phoneHref}
             className="focus-ring inline-flex h-11 w-11 items-center justify-center rounded-md border border-white/16 bg-white/8 text-white"
@@ -174,7 +176,7 @@ export function Header() {
 
       <div
         id="mobile-navigation"
-        className={`md:hidden ${isMenuOpen ? "block" : "hidden"}`}
+        className={`lg:hidden ${isMenuOpen ? "block" : "hidden"}`}
       >
         <div className="border-t border-white/10 bg-brand-black px-4 pb-5 pt-3 shadow-[0_28px_60px_rgba(0,0,0,0.36)]">
           <nav className="grid gap-1" aria-label="Mobile navigation">
