@@ -1,14 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
-import dynamic from "next/dynamic";
 import { ArrowRight, MapPin, Phone, ShieldCheck } from "lucide-react";
 import { CTAButton } from "@/components/CTAButton";
+import { InquiryForm } from "@/components/InquiryForm";
 import { GoogleReviews } from "@/components/GoogleReviews";
-
-const InquiryForm = dynamic(
-  () => import("@/components/InquiryForm").then((m) => ({ default: m.InquiryForm })),
-  { loading: () => <div className="h-[500px] rounded-lg border border-white/14 bg-white/[0.03]" /> }
-);
 import { getGoogleReviews } from "@/lib/google-reviews";
 import { audiencePaths, priorityServices } from "@/lib/services";
 import { business } from "@/lib/constants";
