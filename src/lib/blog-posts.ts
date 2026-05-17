@@ -688,6 +688,170 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "qld-smoke-alarm-laws-2027-logan-brisbane",
+    title: "Queensland smoke alarm laws 2027 — what Logan and Brisbane south homeowners need to do",
+    description:
+      "The 2027 deadline for smoke alarm compliance applies to every owner-occupied home in Queensland. Here's exactly what the current law requires, where alarms must go, and what happens if your home isn't compliant.",
+    category: "Compliance",
+    publishedAt: "2026-05-17",
+    readingMinutes: 8,
+    relatedService: { slug: "smoke-alarms", label: "Smoke Alarm Installation & Compliance" },
+    body: [
+      {
+        type: "p",
+        text: "From 1 January 2027, every owner-occupied home in Queensland must have smoke alarms that meet the new legislative standard. That deadline is less than two years away, and most homeowners in Logan and Brisbane south have not yet made the change.",
+      },
+      {
+        type: "p",
+        text: "If you've had smoke alarms in your home for years and assumed you were covered — you may not be. The current Queensland smoke alarm law introduced in 2017 changed the type of alarm required, where they must be installed, and how they must be powered. Older alarms that were perfectly legal before 2017 are now non-compliant.",
+      },
+      {
+        type: "h2",
+        text: "What the current Queensland smoke alarm legislation requires",
+      },
+      {
+        type: "p",
+        text: "The Queensland Fire and Emergency Services Act 1990 (as amended) sets out four specific requirements for all residential smoke alarms:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Photoelectric type — ionisation alarms do not comply, regardless of age or condition",
+          "Interconnected — when one alarm activates, every alarm in the home sounds simultaneously",
+          "Hardwired to mains power, OR fitted with a non-removable 10-year lithium battery",
+          "Installed in the prescribed locations throughout the home",
+        ],
+      },
+      {
+        type: "p",
+        text: "All four requirements must be met. A photoelectric alarm that is not interconnected does not comply. An interconnected alarm that runs on a standard replaceable battery does not comply. The legislation is specific, and partial compliance still means non-compliance.",
+      },
+      {
+        type: "h2",
+        text: "Where do smoke alarms need to be installed?",
+      },
+      {
+        type: "p",
+        text: "The prescribed locations are set out in the Building Fire Safety Regulation 2008. The intent is to ensure an alarm is always between a sleeping person and any fire that starts elsewhere in the home.",
+      },
+      {
+        type: "ul",
+        items: [
+          "In every bedroom",
+          "In every hallway that connects bedrooms to the rest of the house — or, where there is no hallway, between the bedrooms and the nearest exit",
+          "On each level of the home, positioned in the most likely evacuation path",
+          "In any room (other than a bedroom or bathroom) that a person would need to pass through to exit the home",
+        ],
+      },
+      {
+        type: "callout",
+        text: "A typical three-bedroom home in Logan or Brisbane south will generally need a minimum of four to five compliant alarms. Many homes currently have one or two — and in the wrong locations.",
+      },
+      {
+        type: "h2",
+        text: "Rental properties — already required since 2022",
+      },
+      {
+        type: "p",
+        text: "If you own a rental property, the 2027 deadline does not apply to you — your compliance date has already passed. From 1 January 2022, all Queensland rental properties were required to have compliant photoelectric, interconnected smoke alarms installed at the start of any new tenancy or lease renewal.",
+      },
+      {
+        type: "p",
+        text: "If your rental property changed hands, started a new lease, or renewed a lease after January 2022 without being upgraded, it is currently non-compliant. As a landlord, you are exposed to fines and — more importantly — liability if a fire occurs and the alarms were not to standard.",
+      },
+      {
+        type: "h2",
+        text: "Owner-occupied homes — the 1 January 2027 deadline",
+      },
+      {
+        type: "p",
+        text: "For homes that are owner-occupied, Queensland law gives until 1 January 2027 to install compliant smoke alarms. After that date, all owner-occupied homes must meet the same standard that rental properties already do.",
+      },
+      {
+        type: "p",
+        text: "However, there is one situation where compliance is required before 2027: if you sell your home. Under Queensland legislation, a property must have compliant smoke alarms installed before a contract of sale is signed. Declaring a non-compliant home on a contract is an issue — but failing to disclose and selling anyway exposes you to greater legal risk.",
+      },
+      {
+        type: "callout",
+        text: "Planning to sell before 2027? Smoke alarm compliance is a legal requirement at the point of sale, not something the buyer can sort out later. Get it done before the listing goes live.",
+      },
+      {
+        type: "h2",
+        text: "Why photoelectric — and why ionisation alarms no longer comply",
+      },
+      {
+        type: "p",
+        text: "Ionisation smoke alarms were the standard for decades. They detect fast-flaming fires well, but are significantly slower to respond to slow, smouldering fires — which are the type most likely to occur at night when people are asleep. Research conducted before the legislative change showed that ionisation alarms can take up to 30 minutes longer than photoelectric alarms to detect a smouldering fire.",
+      },
+      {
+        type: "p",
+        text: "Photoelectric alarms use a light beam inside the chamber. When smoke enters, it scatters the beam and triggers the alarm. They respond faster to smouldering fires and generate fewer false alarms from cooking steam — which means people are less likely to disable them. Queensland made the switch to photoelectric mandatory because the evidence on performance was clear.",
+      },
+      {
+        type: "h2",
+        text: "Hardwired vs 10-year battery — what qualifies?",
+      },
+      {
+        type: "ul",
+        items: [
+          "Hardwired alarms connect directly to the home's 240V mains power with a battery backup — they require a licensed electrician to install",
+          "10-year lithium sealed battery alarms have a non-removable battery that lasts the life of the alarm — they do not require hardwiring but must still be interconnected",
+          "Standard 9V replaceable battery alarms do not comply, regardless of alarm type",
+          "Wireless RF interconnection (radio frequency) between alarms is acceptable — the alarms do not need to be wired to each other to interconnect",
+        ],
+      },
+      {
+        type: "p",
+        text: "Many homeowners choose hardwired alarms because they remove the question of battery life entirely. In homes that already have a wiring point for the old smoke alarm, the cost difference between replacing like-for-like and upgrading to hardwired is often minimal.",
+      },
+      {
+        type: "h2",
+        text: "Does a licensed electrician need to install smoke alarms in Queensland?",
+      },
+      {
+        type: "p",
+        text: "For hardwired smoke alarms — yes, always. Connecting any device to the mains power supply is electrical work under Queensland law and must be carried out by a licensed electrician. Attempting hardwired smoke alarm installation yourself is illegal and will void your home insurance.",
+      },
+      {
+        type: "p",
+        text: "For sealed 10-year battery alarms — the installation itself is not licensed electrical work, but the planning of locations and the interconnection configuration matters. Getting the prescribed locations wrong means the installation is non-compliant regardless of the alarm type. Most homeowners use a licensed electrician for the full job to ensure the compliance certificate is defensible.",
+      },
+      {
+        type: "callout",
+        text: "We install compliant photoelectric, interconnected smoke alarms across Logan, Brisbane Southside and the Northern Gold Coast. Electrical Contractor Licence No. 87141. Compliance certificate issued on completion.",
+      },
+      {
+        type: "h2",
+        text: "What happens if your home is not compliant after the deadline?",
+      },
+      {
+        type: "ul",
+        items: [
+          "Fines of up to $2,611 for non-compliant owner-occupied homes after 1 January 2027",
+          "Non-disclosure on a property sale contract can void the sale or expose you to legal action",
+          "Home insurance policies increasingly include compliance clauses — a non-compliant installation can affect a claim following a fire",
+          "Rental property non-compliance can attract fines per tenancy and per property",
+        ],
+      },
+      {
+        type: "h2",
+        text: "What Logan and Brisbane south homeowners should do now",
+      },
+      {
+        type: "p",
+        text: "Start by checking what you have. If your existing smoke alarms have a 'test' button and a 'hush' button but no visible brand-compliance marking referencing AS 3786:2014, they are almost certainly ionisation type and do not comply. If they are not interconnected — that is, if one alarming doesn't trigger the others — they do not comply.",
+      },
+      {
+        type: "p",
+        text: "The simplest approach for most homes is a single job: a licensed electrician assesses the existing alarms and locations, quotes a compliant installation, and issues the certificate on completion. In Logan and Brisbane south, most three to four bedroom homes are a half-day job.",
+      },
+      {
+        type: "p",
+        text: "If you are a property manager running a portfolio across Logan City or Brisbane Southside, we can schedule compliance audits across multiple properties and manage the installation programme efficiently — one point of contact, consistent documentation, and no chasing multiple trades.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPost | undefined {
