@@ -852,6 +852,144 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "why-does-my-safety-switch-keep-tripping",
+    title: "Why does my safety switch keep tripping?",
+    description:
+      "A safety switch that keeps tripping is telling you something is wrong — not with the switch, but somewhere in your home's electrical system. Here's how to find the cause, when to reset it yourself, and when to call an electrician.",
+    category: "Emergency electrical",
+    publishedAt: "2026-05-17",
+    readingMinutes: 7,
+    relatedService: { slug: "fault-finding", label: "Fault Finding & 24/7 Emergency Electrical" },
+    body: [
+      {
+        type: "p",
+        text: "A safety switch — or RCD — trips for one reason: it has detected that electrical current is leaking somewhere it shouldn't. When this happens once during a storm or after plugging in a faulty appliance, that's the switch doing exactly what it's supposed to do. When it happens repeatedly, or keeps tripping with nothing obvious plugged in, something in your home's electrical system needs attention.",
+      },
+      {
+        type: "p",
+        text: "The switch itself is rarely the problem. It's the messenger. Here's how to read what it's telling you.",
+      },
+      {
+        type: "h2",
+        text: "What a safety switch actually does",
+      },
+      {
+        type: "p",
+        text: "A safety switch monitors the flow of current through a circuit. The moment it detects an imbalance — meaning current is going somewhere unintended, such as through a person, a damaged cable, or moisture in a fitting — it cuts the power in milliseconds. This is fundamentally different from a circuit breaker, which only trips when a circuit is overloaded or short-circuits. A circuit breaker protects the wiring. A safety switch protects you.",
+      },
+      {
+        type: "h2",
+        text: "The most common reasons a safety switch keeps tripping",
+      },
+      {
+        type: "ul",
+        items: [
+          "A faulty appliance — the most common cause by far. An appliance with damaged internal wiring, a deteriorated element, or water ingress will cause the RCD to trip every time it's plugged in",
+          "Moisture in a light fitting or power point — water in the wrong place creates a leakage path that the RCD reads as a fault",
+          "Damaged cable insulation — older homes, cables run through roof spaces, or cables that have been pinched or abraded can develop insulation faults that worsen over time",
+          "A failing RCD — safety switches have a service life and can develop internal faults that cause nuisance tripping, particularly in older switchboards",
+          "A wiring fault introduced by recent work — renovations, new appliances, or any work in the roof space can disturb cabling",
+          "Multiple small leakage paths adding up — individually tolerable leakage from several older appliances can combine to exceed the RCD's 30mA trip threshold",
+        ],
+      },
+      {
+        type: "h2",
+        text: "How to find which appliance is causing it",
+      },
+      {
+        type: "p",
+        text: "If the trip coincides with a specific appliance being plugged in or switched on, the isolation method will confirm it:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Reset the safety switch — if it holds, proceed",
+          "Unplug every appliance on the circuit that tripped (look at which circuits are on that RCD)",
+          "Reset the switch again — if it now holds, the fault is in one of the unplugged appliances",
+          "Plug appliances back in one at a time, leaving a few minutes between each",
+          "The switch will trip again when the faulty appliance is reconnected — that appliance needs to be taken out of service until repaired or replaced",
+          "If the switch trips with nothing plugged in, the fault is in the fixed wiring or a hardwired fitting — stop resetting and call an electrician",
+        ],
+      },
+      {
+        type: "callout",
+        text: "If you cannot isolate the fault to a specific appliance, and the switch trips with everything unplugged, do not keep resetting it. A wiring fault that isn't found is a fire risk.",
+      },
+      {
+        type: "h2",
+        text: "When you can reset the safety switch yourself",
+      },
+      {
+        type: "p",
+        text: "Resetting the switch yourself is fine when you have a clear, single cause — a wet appliance, a known faulty item you've now unplugged, or a one-off trip during a storm (lightning and power surges can cause momentary trips). In these cases, remove the cause, wait a moment, and push the switch back up. If it holds and doesn't trip again, you're done.",
+      },
+      {
+        type: "h2",
+        text: "When you need an electrician",
+      },
+      {
+        type: "ul",
+        items: [
+          "The switch trips repeatedly with no obvious cause",
+          "The switch trips with everything unplugged from the affected circuit",
+          "The switch won't stay reset — it trips back off within seconds or minutes",
+          "You can smell burning or notice a warm smell near the switchboard, a power point, or a light fitting",
+          "The trip started after a renovation, roofing work, or any work in the roof space",
+          "Multiple safety switches are tripping at the same time",
+          "The trip started after water damage — a roof leak, flooding, or anything wet near wiring",
+        ],
+      },
+      {
+        type: "callout",
+        text: "A safety switch tripping after water damage to the home is a genuine emergency. Do not re-energise the affected circuit until a licensed electrician has inspected the wiring.",
+      },
+      {
+        type: "h2",
+        text: "Why a safety switch that trips repeatedly should never be ignored",
+      },
+      {
+        type: "p",
+        text: "The most dangerous response to a nuisance-tripping safety switch is to bypass it, tape it up, or replace it with a standard circuit breaker so the power stays on. This removes the only protection standing between a wiring fault and a person getting electrocuted or a wall cavity starting to smoulder.",
+      },
+      {
+        type: "p",
+        text: "A safety switch that keeps tripping is almost always protecting against something real. In older homes across Logan and Brisbane south — many built in the 1970s and 80s — degraded cable insulation and ageing appliances are the most common culprits. These faults don't resolve themselves. They get worse.",
+      },
+      {
+        type: "h2",
+        text: "What if the safety switch won't reset at all?",
+      },
+      {
+        type: "p",
+        text: "If the switch physically won't stay in the up position — it either trips immediately or won't click into place — there is an active fault on the circuit. This is not a switch problem; the switch is detecting a continuous leakage it won't allow to pass. Unplug everything on that circuit and try again. If it still won't hold with the circuit completely unloaded, the fault is in the fixed wiring or a hardwired fitting such as a hot water system, oven, or air conditioner. The circuit needs to stay off and the fault located before the power is restored.",
+      },
+      {
+        type: "h2",
+        text: "Safety switch vs circuit breaker — knowing the difference",
+      },
+      {
+        type: "p",
+        text: "The switches in your switchboard are not all the same. Safety switches (RCDs) have a small 'Test' button marked 'T' — pressing it should cause the switch to trip. Standard circuit breakers have no test button. Many older homes in the Logan area have circuit breakers on every circuit but only one or two safety switches — or none at all. If you can't find a test button on your switchboard, your home may not have adequate RCD protection.",
+      },
+      {
+        type: "p",
+        text: "A switchboard inspection will confirm exactly what protection is in place across each circuit. If you're adding a major appliance — an EV charger, a new air conditioning circuit, a hot water system — a dedicated RCD-protected circuit for that load is standard practice.",
+      },
+      {
+        type: "h2",
+        text: "Getting your safety switch tested",
+      },
+      {
+        type: "p",
+        text: "Queensland regulations require safety switches to be tested at the start of each new tenancy in rental properties, with results recorded on the entry condition report. For owner-occupied homes, annual testing is recommended — RCDs can develop faults that aren't apparent until they're needed. Testing takes about 30 seconds per switch and confirms the trip time is within the safe threshold.",
+      },
+      {
+        type: "p",
+        text: "If you're in Logan, Brisbane Southside, or the Northern Gold Coast and your safety switch is tripping repeatedly — or you're not sure your home has adequate RCD coverage — we can diagnose the fault, identify the source, and have the circuit back on safely. We run 24/7 callout for genuine electrical faults and same-day bookings for non-urgent diagnostics.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPost | undefined {
