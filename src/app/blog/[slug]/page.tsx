@@ -128,7 +128,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
       name: "Dayne Yetman",
       jobTitle: "Licensed Electrician",
       url: `${business.domain}/about`,
-      identifier: "QBCC Electrical Contractor No. 87141",
+      identifier: "Electrical Contractor No. 87141",
     },
     publisher: {
       "@type": "Organization",
@@ -180,6 +180,23 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         <div className="mt-3">
           {post.body.map((block, idx) => renderBlock(block, idx))}
         </div>
+
+        {post.relatedService && (
+          <div className="mt-14 border border-brand-gold/30 bg-white px-6 py-6">
+            <p className="font-heading text-xs font-extrabold uppercase tracking-[0.08em] text-brand-charcoal/50">
+              Related service
+            </p>
+            <Link
+              href={`/services/${post.relatedService.slug}`}
+              className="group mt-2 flex items-center justify-between gap-4 transition"
+            >
+              <span className="font-heading text-lg font-extrabold text-brand-black group-hover:text-brand-gold">
+                {post.relatedService.label}
+              </span>
+              <ArrowRight className="h-5 w-5 shrink-0 text-brand-gold" aria-hidden="true" />
+            </Link>
+          </div>
+        )}
       </article>
 
       {/* Related posts */}

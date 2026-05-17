@@ -56,6 +56,7 @@ export default function DarkConceptPage() {
           alt="Exterior architectural lighting by DY Electrical Services"
           fill
           priority
+          fetchPriority="high"
           sizes="100vw"
           className="object-cover opacity-58"
         />

@@ -65,12 +65,12 @@ const personSchema = {
   hasCredential: [
     {
       "@type": "EducationalOccupationalCredential",
-      name: "QBCC Electrical Contractor Licence",
+      name: "Electrical Contractor Licence No. 87141",
       credentialCategory: "Licence",
       recognizedBy: {
         "@type": "Organization",
-        name: "Queensland Building and Construction Commission",
-        alternateName: "QBCC",
+        name: "Electrical Safety Office",
+        alternateName: "ESO",
       },
       identifier: "87141",
     },
@@ -148,8 +148,8 @@ export default function AboutPage() {
                 ))}
               </ul>
               <p className="mt-4 text-xs text-brand-charcoal/50">
-                Licence details can be verified through the Queensland Building
-                and Construction Commission (QBCC).
+                Licence details can be verified through the Queensland
+                Electrical Safety Office.
               </p>
             </div>
           </div>

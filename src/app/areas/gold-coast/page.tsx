@@ -63,7 +63,7 @@ const faqItems = [
   {
     question: "Are you licensed for Queensland electrical work on the Gold Coast?",
     answer:
-      "Yes. QBCC Electrical Contractor Licence 87141, ARC Licence L179309 and public liability insurance. All work is completed under licence.",
+      "Yes. Electrical Contractor Licence No. 87141, ARC Licence L179309 and public liability insurance. All work is completed under licence.",
   },
 ];
 

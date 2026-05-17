@@ -27,7 +27,7 @@ export const serviceTypes = [
   "Switchboard upgrades",
   "Air conditioning",
   "EV chargers",
-"Data cabling",
+  "Data cabling",
   "Home automation",
   "Commercial fit-out",
   "Fault finding",

@@ -53,7 +53,7 @@ const faqItems = [
   {
     question: "Are you licensed for Brisbane electrical work?",
     answer:
-      "Yes. We hold QBCC Electrical Contractor Licence 87141, ARC Licence L179309 and public liability insurance. Every job is completed under licence.",
+      "Yes. We hold Electrical Contractor Licence No. 87141, ARC Licence L179309 and public liability insurance. Every job is completed under licence.",
   },
   {
     question: "How long does a Brisbane Southside job take to book?",

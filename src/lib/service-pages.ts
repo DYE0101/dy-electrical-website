@@ -35,7 +35,7 @@ export const servicePages = [
     slug: "ev-chargers",
     title: "EV Charger Installation",
     summary:
-      "Home and small commercial EV charger installation across Logan, Brisbane Southside and the Northern Gold Coast — clean cable runs, dedicated circuits and proper load assessment.",
+      "Home and small commercial EV charger installation across Logan, Brisbane Southside and the Northern Gold Coast — cable runs to spec, dedicated circuits and proper load assessment.",
     intro:
       "An EV charger is only as reliable as the circuit feeding it. We size the supply, check switchboard capacity, install the charger on its own dedicated RCBO-protected circuit, and commission it against the manufacturer's spec. No daisy-chained outlets. No undersized cabling.",
     serviceFocus: [
@@ -132,7 +132,7 @@ export const servicePages = [
     slug: "lighting-power",
     title: "Lighting & Power Upgrades",
     summary:
-      "Feature lighting, downlights, power point upgrades and full lighting design across Logan, Brisbane Southside and the Northern Gold Coast — clean installation, neat finishes, no patch jobs.",
+      "Feature lighting, downlights, power point upgrades and full lighting design across Logan, Brisbane Southside and the Northern Gold Coast — precise installation, sharp finishes, no patch jobs.",
     intro:
       "Lighting and power point work is where shortcuts show. We plan the layout properly, run cables through the right path, cut the smallest hole that does the job, and finish neatly. From a single feature pendant to a full home lighting redesign, the standard is the same — the result should look like it was always meant to be there.",
     serviceFocus: [
@@ -147,12 +147,12 @@ export const servicePages = [
       {
         question: "Can you replace old halogen downlights with LEDs?",
         answer:
-          "Yes — and in most homes the existing transformers should be removed at the same time. We check that the cabling and protection are suitable for the new fittings, swap the lights cleanly and dispose of the old hardware.",
+          "Yes — and in most homes the existing transformers should be removed at the same time. We check that the cabling and protection are suitable for the new fittings, swap the lights to spec and dispose of the old hardware.",
       },
       {
         question: "Do you handle lighting design as well as installation?",
         answer:
-          "Yes. For renovations and new builds we map out lighting circuits, switching layouts and dimming zones before the build is locked in. The earlier we are involved, the cleaner the result.",
+          "Yes. For renovations and new builds we map out lighting circuits, switching layouts and dimming zones before the build is locked in. The earlier we are involved, the sharper the result.",
       },
       {
         question: "Can you add power points without ripping up the walls?",
@@ -170,7 +170,7 @@ export const servicePages = [
       "A home network is only as reliable as its physical layer. We run Cat6 structured cabling through roof spaces and wall cavities, install proper patch panels and keystone outlets, and position access points for real coverage rather than best-guess placement. No surface-run cable tacked along skirting boards. No patch job that falls apart six months later.",
     serviceFocus: [
       "Cat6 structured cabling for home offices and multi-room networks",
-      "Patch panel and wall plate installation — flush-mounted, clean finish",
+      "Patch panel and wall plate installation — flush-mounted, finished to standard",
       "Wi-Fi access point mounting and low-voltage cabling",
       "TV antenna points and distribution amplifiers",
       "Data cabinet installation for equipment consolidation",

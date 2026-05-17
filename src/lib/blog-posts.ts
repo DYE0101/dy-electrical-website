@@ -6,6 +6,7 @@ export type BlogPost = {
   publishedAt: string;
   readingMinutes: number;
   body: BlogBlock[];
+  relatedService?: { slug: string; label: string };
 };
 
 export type BlogBlock =
@@ -23,6 +24,7 @@ export const blogPosts: BlogPost[] = [
     category: "Homeowner guides",
     publishedAt: "2026-04-12",
     readingMinutes: 5,
+    relatedService: { slug: "switchboard-upgrades", label: "Switchboard Upgrades" },
     body: [
       {
         type: "p",
@@ -57,7 +59,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "A modern switchboard upgrade typically includes a new enclosure, properly rated main switch, RCDs (safety switches) on every circuit, individual circuit breakers, and clean, labelled wiring inside the board. We test every circuit before and after, and you get clear documentation for your records.",
+        text: "A modern switchboard upgrade typically includes a new enclosure, properly rated main switch, RCDs (safety switches) on every circuit, individual circuit breakers, and neatly labelled wiring inside the board. We test every circuit before and after, and you get clear documentation for your records.",
       },
       {
         type: "p",
@@ -81,10 +83,11 @@ export const blogPosts: BlogPost[] = [
     category: "EV & energy",
     publishedAt: "2026-04-22",
     readingMinutes: 6,
+    relatedService: { slug: "ev-chargers", label: "EV Charger Installation" },
     body: [
       {
         type: "p",
-        text: "A home EV charger is one of the best upgrades you can make if you've gone electric — but a clean install takes more thought than just bolting a unit to the wall.",
+        text: "A home EV charger is one of the best upgrades you can make if you've gone electric — but an installation done to spec takes more thought than just bolting a unit to the wall.",
       },
       {
         type: "p",
@@ -96,7 +99,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "Most home EV chargers run on a dedicated 32A circuit. If your switchboard is older or already heavily loaded, it may need an upgrade or rewiring before the charger can be safely added. We always assess the board first — it's the difference between a clean install and a problem that surfaces six months later.",
+        text: "Most home EV chargers run on a dedicated 32A circuit. If your switchboard is older or already heavily loaded, it may need an upgrade or rewiring before the charger can be safely added. We always assess the board first — it's the difference between a properly planned install and a problem that surfaces six months later.",
       },
       {
         type: "h2",
@@ -212,6 +215,7 @@ export const blogPosts: BlogPost[] = [
     category: "Homeowner guides",
     publishedAt: "2026-05-06",
     readingMinutes: 5,
+    relatedService: { slug: "switchboard-upgrades", label: "Switchboard Upgrades" },
     body: [
       {
         type: "p",
@@ -271,6 +275,7 @@ export const blogPosts: BlogPost[] = [
     category: "EV & energy",
     publishedAt: "2026-05-05",
     readingMinutes: 5,
+    relatedService: { slug: "ev-chargers", label: "EV Charger Installation" },
     body: [
       {
         type: "p",
@@ -325,6 +330,7 @@ export const blogPosts: BlogPost[] = [
     category: "Compliance",
     publishedAt: "2026-04-28",
     readingMinutes: 4,
+    relatedService: { slug: "switchboard-upgrades", label: "Switchboard Upgrades" },
     body: [
       {
         type: "p",
@@ -380,6 +386,7 @@ export const blogPosts: BlogPost[] = [
     category: "Emergency electrical",
     publishedAt: "2026-04-25",
     readingMinutes: 4,
+    relatedService: { slug: "fault-finding", label: "Fault Finding & 24/7 Emergency Electrical" },
     body: [
       {
         type: "p",
@@ -450,7 +457,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "Every electrician in Queensland must hold a licence issued by the Queensland Building and Construction Commission (QBCC). You can verify any licence number at licence.qbcc.qld.gov.au. If an electrician won't give you their licence number, walk away.",
+        text: "Every electrician in Queensland must hold a licence issued by the Electrical Safety Office. You can verify any licence number at electricalsafety.qld.gov.au. If an electrician won't give you their licence number, walk away.",
       },
       {
         type: "h2",
@@ -497,7 +504,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "DY Electrical Services holds QBCC Electrical Contractor Licence 87141 and ARC Licence L179309. Public liability insurance is held. ABN 75 643 388 416. All of this is verifiable through the relevant authorities.",
+        text: "DY Electrical Services holds Electrical Contractor Licence No. 87141 and ARC Licence L179309. Public liability insurance is held. ABN 75 643 388 416. All of this is verifiable through the relevant authorities.",
       },
     ],
   },
@@ -509,6 +516,7 @@ export const blogPosts: BlogPost[] = [
     category: "Air conditioning",
     publishedAt: "2026-04-15",
     readingMinutes: 5,
+    relatedService: { slug: "air-conditioning", label: "Air Conditioning Installation" },
     body: [
       {
         type: "p",
@@ -569,14 +577,15 @@ export const blogPosts: BlogPost[] = [
     slug: "downlight-installation-brisbane-logan",
     title: "Installing downlights in Brisbane and Logan — what you need to know",
     description:
-      "Thinking about downlights for your home or renovation? Here's what a clean installation involves, the difference between LED and older halogen systems, and what to ask before you book.",
+      "Thinking about downlights for your home or renovation? Here's what a proper installation involves, the difference between LED and older halogen systems, and what to ask before you book.",
     category: "Lighting & power",
     publishedAt: "2026-04-10",
     readingMinutes: 4,
+    relatedService: { slug: "lighting-power", label: "Lighting & Power Upgrades" },
     body: [
       {
         type: "p",
-        text: "Downlights are one of the most popular residential electrical requests we get — and one of the most variable in terms of quality of installation. Here's what separates a clean result from a patchy one.",
+        text: "Downlights are one of the most popular residential electrical requests we get — and one of the most variable in terms of quality of installation. Here's what separates a sharp result from a patchy one.",
       },
       {
         type: "h2",
@@ -630,6 +639,7 @@ export const blogPosts: BlogPost[] = [
     category: "Property managers",
     publishedAt: "2026-04-05",
     readingMinutes: 6,
+    relatedService: { slug: "smoke-alarms", label: "Smoke Alarm Installation & Compliance" },
     body: [
       {
         type: "p",

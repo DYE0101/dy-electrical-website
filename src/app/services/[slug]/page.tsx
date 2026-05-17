@@ -14,6 +14,13 @@ export function generateStaticParams() {
   return servicePages.map((service) => ({ slug: service.slug }));
 }
 
+const SERVICE_META_TITLES: Record<string, string> = {
+  "switchboard-upgrades": "Switchboard Upgrades Brisbane & Logan",
+  "ev-chargers": "EV Charger Installation Brisbane & Logan",
+  "fault-finding": "24/7 Emergency Electrician Brisbane & Logan",
+  "air-conditioning": "Air Conditioning Installation Logan & Brisbane",
+};
+
 export async function generateMetadata({
   params,
 }: ServicePageProps): Promise<Metadata> {
@@ -25,7 +32,7 @@ export async function generateMetadata({
   }
 
   return {
-    title: service.title,
+    title: SERVICE_META_TITLES[service.slug] ?? service.title,
     description: service.summary,
     alternates: {
       canonical: `/services/${service.slug}`,

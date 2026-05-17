@@ -54,7 +54,7 @@ export default async function SuburbPage({ params }: SuburbPageProps) {
     },
     {
       question: `Are you licensed to do electrical work in ${area.suburb}?`,
-      answer: `Yes. We hold QBCC Electrical Contractor Licence 87141 and ARC Licence L179309, covering all electrical and refrigeration work across Queensland including ${area.suburb} and the wider ${area.region} area.`,
+      answer: `Yes. We hold Electrical Contractor Licence No. 87141 and ARC Licence L179309, covering all electrical and refrigeration work across Queensland including ${area.suburb} and the wider ${area.region} area.`,
     },
     {
       question: `Do you cover ${area.topSuburbs?.[0] ?? "nearby suburbs"} as well as ${area.suburb}?`,

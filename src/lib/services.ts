@@ -22,7 +22,7 @@ export const priorityServices = [
   {
     title: "EV charger installation",
     description:
-      "Home and three-phase EV charger installation, dedicated RCBO-protected circuits and clean cable runs.",
+      "Home and three-phase EV charger installation, dedicated RCBO-protected circuits and cable runs to spec.",
     icon: BatteryCharging,
     href: "/services/ev-chargers",
   },
@@ -46,7 +46,7 @@ export const secondaryServices = [
   {
     title: "Lighting & power upgrades",
     description:
-      "Downlights, feature lighting, additional power points and full lighting design — clean installation, neat finishes.",
+      "Downlights, feature lighting, additional power points and full lighting design — precise installation, sharp finishes.",
     icon: Lightbulb,
     href: "/services/lighting-power",
   },
@@ -77,7 +77,7 @@ export const audiencePaths = [
   {
     title: "For Homeowners",
     description:
-      "Electrical upgrades and repairs without the guesswork. Clear advice, clean workmanship, and reliable electrical work for homes across Logan, Brisbane Southside and the Northern Gold Coast.",
+      "Electrical upgrades and repairs without the guesswork. Clear advice, precise workmanship, and reliable electrical work for homes across Logan, Brisbane Southside and the Northern Gold Coast.",
     href: "/homeowners",
     cta: "For homeowners",
     icon: Home,

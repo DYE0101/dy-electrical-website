@@ -53,7 +53,7 @@ const faqItems = [
   {
     question: "Are you licensed for Logan electrical work?",
     answer:
-      "Yes. We hold Electrical Contractor Licence 87141 issued by the Queensland Building and Construction Commission (QBCC), ARC Licence L179309, and public liability insurance.",
+      "Yes. We hold Electrical Contractor No. 87141, ARC Licence L179309 and public liability insurance.",
   },
   {
     question: "Do you work on older Logan homes with ceramic fuse boards?",
@@ -193,7 +193,7 @@ export default function LoganPage() {
               },
               {
                 heading: "Licensed and insured",
-                body: "QBCC Electrical Contractor Licence 87141 and ARC Licence L179309. Publicly insured. Every job under licence — no unlicensed electrical work, ever.",
+                body: "Electrical Contractor Licence No. 87141 and ARC Licence L179309. Publicly insured. Every job under licence — no unlicensed electrical work, ever.",
               },
               {
                 heading: "One contractor for everything",

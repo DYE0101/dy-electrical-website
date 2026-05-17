@@ -171,6 +171,14 @@ export function InquiryForm({
       setStatus("success");
       setPhotos((prev) => { prev.forEach((p) => URL.revokeObjectURL(p.preview)); return []; });
       form.reset();
+      const w = window as unknown as { gtag?: (...args: unknown[]) => void };
+      if (typeof w.gtag === "function") {
+        w.gtag("event", "generate_lead", {
+          event_category: "enquiry_form",
+          event_label: ctaClicked,
+          service_type: values.serviceType,
+        });
+      }
     } catch {
       setStatus("error");
     }

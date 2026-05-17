@@ -10,7 +10,8 @@ export function Footer() {
         <div>
           <Image
             src="/logos/logo-dark-background.jpg"
-            alt="DY Electrical Services"
+            alt=""
+            aria-hidden="true"
             width={260}
             height={180}
             className="mb-6 h-auto w-36 mix-blend-screen [clip-path:inset(2px_8px_2px_2px)]"
@@ -56,7 +57,7 @@ export function Footer() {
             <li><Link href="/areas/gold-coast" className="hover:text-white transition-colors">Northern Gold Coast</Link></li>
             <li><Link href="/areas-serviced" className="hover:text-white transition-colors font-semibold">All Areas →</Link></li>
           </ul>
-          <h2 className="mt-6 text-xs font-semibold uppercase tracking-[0.08em] text-white/40">
+          <h2 className="mt-6 text-xs font-semibold uppercase tracking-[0.08em] text-white/60">
             Company
           </h2>
           <ul className="mt-4 space-y-2 text-sm text-white/68">
