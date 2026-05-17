@@ -32,15 +32,18 @@ export default async function HomePage() {
         <div className="relative z-10 mx-auto grid min-h-[650px] w-full max-w-[1180px] px-4 gap-10 py-14 lg:grid-cols-[1fr_390px] lg:items-end lg:py-20">
           <div className="min-w-0">
             <h1 className="max-w-[21rem] break-words font-heading text-[clamp(1.7rem,7.2vw,2rem)] font-extrabold leading-[1.08] sm:max-w-3xl sm:text-[clamp(2.35rem,5.4vw,4.65rem)] sm:leading-[1.04]">
-              Licensed Electrician for
+              Licensed Electrician for{" "}
               <br className="sm:hidden" />
               Logan, Brisbane Southside &amp;
               <br className="hidden sm:block" />
               <br className="sm:hidden" />
               the Northern Gold Coast.
             </h1>
-            <p className="mt-6 max-w-[21rem] text-base leading-7 text-white/72 sm:max-w-2xl sm:text-lg sm:leading-8">
-              Don&apos;t D.I.Y — call DY Electrical Services for reliable electrical work done properly the first time.
+            <p className="mt-5 text-sm font-extrabold uppercase tracking-widest text-brand-gold/80">
+              One team. One standard. Done Once Done Right.
+            </p>
+            <p className="mt-4 max-w-[21rem] text-base leading-7 text-white/72 sm:max-w-2xl sm:text-lg sm:leading-8">
+              DY Electrical was built on a simple idea — show up, do it right, stand behind it. Every electrician on our team works to the same standard. That&apos;s why we back every job with a lifetime guarantee.
             </p>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
