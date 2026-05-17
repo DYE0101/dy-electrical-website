@@ -21,6 +21,9 @@ const SERVICE_META_TITLES: Record<string, string> = {
   "air-conditioning": "Air Conditioning Installation Logan & Brisbane",
   "smoke-alarms": "Smoke Alarm Installation Brisbane & Logan",
   "oven-installation": "Oven & Cooktop Installation Brisbane & Logan",
+  "lighting-power": "Lighting & Power Upgrades Brisbane & Logan",
+  "data-cabling": "Data Cabling & Network Installation Logan & Brisbane",
+  "ceiling-fans": "Ceiling Fan Installation Brisbane & Logan",
 };
 
 const SERVICE_META_DESCRIPTIONS: Record<string, string> = {
