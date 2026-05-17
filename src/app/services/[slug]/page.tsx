@@ -19,6 +19,8 @@ const SERVICE_META_TITLES: Record<string, string> = {
   "ev-chargers": "EV Charger Installation Brisbane & Logan",
   "fault-finding": "24/7 Emergency Electrician Brisbane & Logan",
   "air-conditioning": "Air Conditioning Installation Logan & Brisbane",
+  "smoke-alarms": "Smoke Alarm Installation Brisbane & Logan",
+  "oven-installation": "Oven & Cooktop Installation Brisbane & Logan",
 };
 
 export async function generateMetadata({

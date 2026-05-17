@@ -2,6 +2,7 @@ import {
   BatteryCharging,
   Building2,
   Fan,
+  Flame,
   Home,
   Lightbulb,
   Network,
@@ -67,9 +68,16 @@ export const secondaryServices = [
   {
     title: "Smoke alarm compliance",
     description:
-      "Queensland-compliant photoelectric smoke alarm installation for rental properties and owner-occupied homes.",
+      "Queensland-compliant photoelectric smoke alarm installation for rental properties and owner-occupied homes — 2027 deadline approaching.",
     icon: ShieldCheck,
     href: "/services/smoke-alarms",
+  },
+  {
+    title: "Oven & cooktop installation",
+    description:
+      "Licensed oven and cooktop installation — dedicated circuits sized to spec, switchboard checks included, compliance certificate on completion.",
+    icon: Flame,
+    href: "/services/oven-installation",
   },
 ] as const;
 

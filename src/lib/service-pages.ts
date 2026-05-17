@@ -231,32 +231,99 @@ export const servicePages = [
     slug: "smoke-alarms",
     title: "Smoke Alarm Installation & Compliance",
     summary:
-      "Photoelectric, interconnected smoke alarm installation across Logan, Brisbane Southside and the Northern Gold Coast — fully compliant with Queensland regulations for rental properties and owner-occupied homes.",
+      "Licensed photoelectric smoke alarm installation and compliance for rental properties and owner-occupied homes across Logan, Brisbane Southside and the Northern Gold Coast — fully compliant with Queensland's 2027 regulations, hardwired to Australian standard.",
     intro:
-      "Queensland's smoke alarm regulations changed significantly in 2022, requiring all rental properties to have photoelectric, interconnected smoke alarms installed in specific locations before any new tenancy or lease renewal. We install to the current standard, issue documentation for your records, and can service portfolios of any size through a single point of contact.",
+      "Queensland law requires all residential properties — rental and owner-occupied — to have photoelectric, interconnected smoke alarms in every bedroom, in hallways connecting bedrooms to the rest of the home, and on every storey. The rental property deadline was 1 January 2022. All owner-occupied homes must comply by 1 January 2027, with an earlier trigger if the property is sold before that date. Hardwired mains-powered alarm installations must be carried out by a licensed electrician under Queensland's Electrical Safety Act — DIY connection of mains-powered alarms is not permitted. We install to the current standard, issue compliance documentation for your records, and carry out portfolio inspections for property managers across Logan and Brisbane Southside.",
     serviceFocus: [
-      "Photoelectric smoke alarm installation in all required locations",
-      "Interconnection of alarms — hardwired or wireless where hardwiring is impractical",
-      "Compliance certificates for rental property managers",
-      "Replacement of outdated ionisation or battery-only alarms",
-      "Portfolio servicing for property managers across Logan and Brisbane Southside",
-      "Pre-tenancy and lease-renewal compliance inspections",
+      "Photoelectric smoke alarm installation in all required locations — every bedroom, connecting hallways and every storey",
+      "Hardwired mains-powered alarm installation with 10-year backup battery — licensed electrician required under Queensland law",
+      "Wireless interconnected alarm installation where hardwiring through the ceiling is not practical",
+      "Replacement of non-compliant ionisation alarms and single-station battery units",
+      "Pre-sale compliance upgrades — properties being sold must comply before settlement",
+      "Rental property compliance inspections and installations with documentation issued per property",
+      "Portfolio servicing for property managers across Logan, Brisbane Southside and the Northern Gold Coast",
+      "2027 owner-occupier upgrades — assessment, installation and compliance certificate in a single visit",
     ],
     faq: [
       {
-        question: "What does Queensland law require for smoke alarms in rental properties?",
+        question: "What does Queensland law require for smoke alarms?",
         answer:
-          "From 1 January 2022, all Queensland rental properties must have photoelectric smoke alarms installed in all bedrooms, in hallways connecting bedrooms to the rest of the dwelling, and on each storey. They must be interconnected so that when one activates, all activate. Alarms must be hardwired or have a 10-year non-removable battery.",
+          "Queensland law requires all dwellings to have photoelectric smoke alarms installed in every bedroom, in hallways connecting bedrooms to the rest of the home, and on every storey. All alarms must be interconnected so that when one activates, every alarm in the property sounds. Alarms must be hardwired to mains power or powered by a non-removable 10-year lithium battery. The rental property deadline was 1 January 2022. All owner-occupied homes must comply by 1 January 2027.",
       },
       {
-        question: "Do owner-occupied homes need to comply with the new Queensland rules?",
+        question: "What is the difference between photoelectric and ionisation smoke alarms?",
         answer:
-          "All Queensland homes must meet the new photoelectric, interconnected standard by 1 January 2027. Rental properties and homes sold before this date also have earlier compliance triggers — contact us if you're unsure where your property sits.",
+          "Photoelectric alarms detect smoke particles using a light beam and respond significantly faster to slow, smouldering fires — the type most common in residential settings. Ionisation alarms use a small radioactive source and are faster on fast-flaming fires but slower on smouldering ones. Queensland law now requires photoelectric alarms only. Ionisation alarms are no longer compliant regardless of their age and must be replaced.",
       },
       {
-        question: "Can you handle compliance for a whole rental portfolio?",
+        question: "How many smoke alarms does a house need in Queensland?",
         answer:
-          "Yes. We work with property managers across Logan, Brisbane Southside and the Northern Gold Coast and can manage compliance inspections and installations across a portfolio with direct invoicing and clear documentation for each property.",
+          "The minimum requirement is one alarm in each bedroom, one in each hallway that connects bedrooms to the rest of the home, and one on every storey that does not already have a bedroom or connecting hallway covered. A standard three-bedroom single-storey home typically requires four to five alarms. A two-storey home with bedrooms on both levels often requires six to eight. We confirm the correct number and layout at assessment before any installation.",
+      },
+      {
+        question: "Do I need a licensed electrician to install smoke alarms in Queensland?",
+        answer:
+          "For hardwired mains-powered alarms, yes. Queensland's Electrical Safety Act requires installation by a licensed electrician. Connecting a mains-powered alarm yourself is not permitted under Queensland law and voids your insurance in the event of a fire. Battery-only alarms with a non-removable 10-year battery can be owner-installed, but mains-powered hardwired alarms — which are the standard installation — require a licensed contractor.",
+      },
+      {
+        question: "Do owner-occupied homes need to comply by 2027?",
+        answer:
+          "Yes. All Queensland owner-occupied homes must have compliant photoelectric, interconnected smoke alarms installed by 1 January 2027. There is also an earlier trigger — if you are selling your home, it must comply before settlement regardless of the 2027 date. If you are not sure whether your property already meets the current standard, we can assess and advise in a single visit across Logan, Brisbane Southside and the Northern Gold Coast.",
+      },
+      {
+        question: "What happens if a rental property is not smoke alarm compliant?",
+        answer:
+          "Queensland landlords are legally required to maintain compliant smoke alarms in all rental properties. Non-compliance can result in fines, difficulty making insurance claims following a fire, and personal liability if a tenant is harmed. Property managers are also exposed if a non-compliant tenancy proceeds. We work directly with property managers to keep their portfolios compliant and issue documentation for each property on completion.",
+      },
+      {
+        question: "Can you handle smoke alarm compliance across a whole rental portfolio?",
+        answer:
+          "Yes. We work with property managers across Logan, Brisbane Southside and the Northern Gold Coast and can schedule inspections and installations across a portfolio with direct invoicing and compliance documentation issued for each individual property. Contact us to discuss portfolio arrangements.",
+      },
+    ],
+  },
+  {
+    slug: "oven-installation",
+    title: "Oven & Cooktop Installation",
+    summary:
+      "Licensed oven and cooktop installation across Logan, Brisbane Southside and the Northern Gold Coast — dedicated circuits sized correctly, switchboard checks before every install, and compliance certification on completion.",
+    intro:
+      "Connecting an oven or cooktop to an undersized circuit is one of the most common causes of nuisance tripping and heat damage in residential kitchens. We size the circuit to the appliance, check switchboard capacity before installation begins, and wire to Australian standard. Whether it is a replacement in an existing location, a new oven in a kitchen renovation, or a modern induction cooktop drawing significantly more current than the old unit — the installation is done to spec.",
+    serviceFocus: [
+      "Freestanding, underbench and wall oven installation — new locations and direct replacements",
+      "Induction, ceramic and electric cooktop installation",
+      "Dedicated circuit installation sized correctly for the appliance — 20-amp or 32-amp as required",
+      "Existing wiring assessment and upgrade where the current circuit is undersized for the new appliance",
+      "Rangehood electrical connection",
+      "Old appliance removal and disposal",
+      "Combined oven and cooktop installation as part of a kitchen renovation or fit-out",
+      "Compliance certificate issued on completion",
+    ],
+    faq: [
+      {
+        question: "Do I need a licensed electrician to install an oven?",
+        answer:
+          "Yes. Oven and cooktop installation is prescribed electrical work and must be carried out by a licensed electrician in Queensland. Connecting an appliance to a fixed wiring circuit yourself is not permitted under the Electrical Safety Act and voids your home insurance. This applies to both hardwired ovens and those connected via a dedicated power point.",
+      },
+      {
+        question: "Can I plug a new oven into an existing power point?",
+        answer:
+          "Some ovens are designed to plug into a dedicated 20-amp outlet, but that outlet must be on its own correctly sized dedicated circuit — not shared with other appliances. Many kitchen circuits in older homes were sized for lighter loads and are undersized for modern ovens and induction cooktops. We assess the existing circuit before installation and advise if an upgrade is required.",
+      },
+      {
+        question: "Do induction cooktops need special wiring?",
+        answer:
+          "Yes. Induction cooktops draw significantly more sustained current than older ceramic electric models — most require a dedicated circuit sized to the manufacturer's specification, which is commonly 32 amps. Installing an induction cooktop on a circuit wired for an older appliance is a frequent cause of tripping and potential wiring damage. We check the specifications of the specific model and wire accordingly.",
+      },
+      {
+        question: "How long does oven installation take?",
+        answer:
+          "A direct replacement in an existing location with a correctly sized circuit is typically a one-to-two hour job. If a new dedicated circuit is required — which is common in older homes or where the kitchen layout is changing — allow half a day. We confirm the scope and timeframe when we assess the job.",
+      },
+      {
+        question: "Can you install an oven and cooktop at the same time?",
+        answer:
+          "Yes — and in most cases it is more efficient to do both in a single visit. Combined oven and cooktop installations are common in kitchen renovations and new fit-outs. We assess both appliances together, run the circuits in one job and issue a single compliance certificate covering the complete installation.",
       },
     ],
   },
