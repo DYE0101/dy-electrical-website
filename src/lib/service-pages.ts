@@ -3,31 +3,55 @@ export const servicePages = [
     slug: "switchboard-upgrades",
     title: "Switchboard Upgrades",
     summary:
-      "Safety-focused switchboard upgrades for older homes, renovations, new circuits and growing electrical demand across Logan, Brisbane Southside and the Northern Gold Coast.",
+      "Licensed switchboard upgrades across Logan, Brisbane Southside and the Northern Gold Coast — ceramic fuse and asbestos-backed board replacement, RCD protection on every circuit, load upgrades for EV chargers, ducted air conditioning and induction cooktops, and compliance certificates issued on completion.",
     intro:
-      "An old or undersized switchboard is the single most common cause of nuisance trips, hot spots and failed compliance certificates. We replace ceramic-fuse and asbestos-backed boards with modern, RCD-protected units that match the actual load of the home — and we test every circuit before we leave.",
+      "Most homes built before 1990 in Logan and Brisbane south are running on switchboards that were never designed for the electrical loads of a modern household. Ceramic fuse boards, rewireable fuse boxes and early circuit breaker panels with limited or no safety switch (RCD) protection are still common across the area — and they are the single most frequent cause of tripping, heat damage at the board, and failed compliance inspections. A switchboard upgrade replaces the enclosure, the main switch, all circuit protection, and the wiring inside the board with properly rated modern components. Every circuit gets an individual breaker. Every power and lighting circuit gets RCD protection. The board is labelled clearly, tested under load before we leave, and a compliance certificate is issued. In Logan, Beenleigh, Springwood, Browns Plains and the surrounding suburbs, many homes are also approaching the point where the existing main supply capacity is undersized for the loads being added — EV chargers, ducted air conditioning, induction cooktops and home offices. An upgrade addresses both the protection deficiency and the capacity limitation in one job, and it is typically completed in a single day with power restored before the end of the working day.",
     serviceFocus: [
-      "Full board replacement on older homes",
-      "Adding RCD/safety switch protection to existing boards",
-      "Sub-board installation for granny flats, sheds and pools",
-      "Load upgrades to support EV charging, ducted aircon and induction cooktops",
-      "Compliance certificates issued on completion",
+      "Full switchboard replacement on older homes — ceramic fuse boards, rewireable fuse boxes and outdated circuit breaker panels",
+      "RCD (safety switch) protection added to every power and lighting circuit as required by current Queensland electrical standards",
+      "Asbestos-backed board removal — handled under safe work procedures with correct disposal documentation",
+      "Main supply capacity upgrades where the existing service is undersized for modern household loads",
+      "Sub-board installation for granny flats, workshops, sheds, pools and secondary dwellings",
+      "Load upgrades to support new high-draw circuits — EV chargers, ducted air conditioning, induction cooktops and home batteries",
+      "Circuit additions and rewiring for renovations, additions and new appliance installations",
+      "Surge protection device installation where the board serves sensitive electronics or solar inverters",
+      "Compliance certificates issued on every completed job with full circuit documentation",
     ],
     faq: [
       {
-        question: "When should a switchboard be upgraded?",
+        question: "When does a switchboard need to be upgraded?",
         answer:
-          "A switchboard should be reviewed if it has old ceramic fuses, limited safety switch protection, frequent tripping, signs of heat damage, or new high-load appliances being added. Most pre-1990s boards in Logan, Brisbane and the Gold Coast are now well past their useful life.",
+          "A switchboard should be reviewed if it has ceramic or rewireable fuses, no safety switches (RCDs) on power and lighting circuits, signs of heat damage — scorching, discolouration or a hot smell at the board — frequent tripping under normal load, or if you are adding a major appliance like an EV charger, ducted air conditioner or induction cooktop. Most pre-1990 homes in Logan and Brisbane south have at least one of these issues. When significant electrical work is carried out, Queensland regulations require the existing board to be brought up to current standards as part of the job.",
       },
       {
-        question: "How long does a switchboard upgrade usually take?",
+        question: "How long does a switchboard upgrade take?",
         answer:
-          "Most residential upgrades are completed in a single day. Power is off for a few hours during the changeover. We schedule the job so the family is back on power before the end of the working day.",
+          "Most residential switchboard upgrades are completed in a single day. Power is off for part of the day during the changeover — typically three to five hours depending on the size and complexity of the board. We schedule the work to minimise disruption and confirm the power-off window with you before we start. Where the job involves a larger home, a sub-board, or concurrent circuit work, we confirm the timeframe upfront. You will have power restored and the board tested before we leave.",
       },
       {
         question: "Do I need a switchboard upgrade before installing an EV charger?",
         answer:
-          "Often yes. Many older boards do not have spare capacity or the correct protection for a 32-amp EV circuit. We assess the existing board first and only quote an upgrade if it is genuinely required for the install.",
+          "Often yes. A home EV charger typically requires a dedicated 32-amp circuit on its own RCD-protected breaker. Many older boards in Logan and Brisbane south do not have spare capacity, adequate supply rating, or the correct protection to support this circuit safely. We always assess the existing board before quoting an EV charger installation — if an upgrade is required we say so upfront with a clear fixed price. If the board is adequate as-is, we tell you that too.",
+      },
+      {
+        question: "What is involved in replacing an asbestos-backed switchboard?",
+        answer:
+          "Asbestos-backed switchboards were installed in many Queensland homes built between the 1950s and the mid-1980s. The asbestos is typically in the backing board behind the fuse carriers and must be handled and disposed of under safe work procedures. We have experience with asbestos-backed board removal — the work is scoped correctly, the material is disposed of with proper documentation, and the replacement board is installed to current standards. If you are not sure whether your board contains asbestos, the style and age of the board is usually a reliable indicator and we can confirm on inspection.",
+      },
+      {
+        question: "What does a switchboard upgrade include?",
+        answer:
+          "A complete switchboard upgrade includes a new correctly-rated enclosure, main switch, individual circuit breakers for every circuit, RCD (safety switch) protection on all power and lighting circuits, properly terminated and labelled wiring inside the board, a full load test before completion, and a compliance certificate. We document every circuit with a clear label — so the board is readable and accurate, not a guessing game the next time a circuit needs to be isolated. Old switchboard components are removed from site.",
+      },
+      {
+        question: "Can I do my own switchboard work in Queensland?",
+        answer:
+          "No. Switchboard work of any kind — including replacing fuses, adding breakers, or any modification inside the board — is prescribed electrical work under Queensland's Electrical Safety Act and must be carried out by a licensed electrician. Unlicensed electrical work in Queensland is illegal, voids home insurance, and can result in significant fines. It also means the work has never been tested or certified — which becomes a serious problem at the point of sale or after any incident.",
+      },
+      {
+        question: "How much does a switchboard upgrade cost in Brisbane and Logan?",
+        answer:
+          "Switchboard upgrade costs vary depending on the number of circuits, the existing board condition, whether asbestos removal is involved, the location and accessibility of the board, and whether concurrent work such as sub-boards or supply upgrades is being done at the same time. We do not publish fixed prices because a quote based on what we can see remotely is not reliable — a board that looks straightforward on the outside can have wiring issues that only become visible on inspection. We provide a fixed price after seeing the board, either in person or from a clear photo, before any work begins.",
       },
     ],
   },
