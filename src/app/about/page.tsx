@@ -5,7 +5,7 @@ import { business } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "About | Licensed Electrician Logan & Brisbane",
   description:
-    "DY Electrical Services is a licensed electrical contractor based in Logan, servicing Brisbane Southside and the Northern Gold Coast. Residential, commercial and property management electrical work — done properly.",
+    "Licensed electrical contractor based in Logan, servicing Brisbane Southside and the Northern Gold Coast for residential, commercial and rental work.",
   alternates: { canonical: "/about" },
 };
 

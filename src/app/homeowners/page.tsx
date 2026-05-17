@@ -4,9 +4,9 @@ import { InquiryForm } from "@/components/InquiryForm";
 import { business } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Residential Electrician in Logan, Brisbane Southside & the Northern Gold Coast",
+  title: "Residential Electrician Logan & Brisbane",
   description:
-    "Licensed residential electrical work for homeowners across Logan, Brisbane Southside and the Northern Gold Coast. Switchboards, EV chargers, lighting, fans, air conditioning and fault finding.",
+    "Licensed residential electrician for Logan, Brisbane Southside and the Northern Gold Coast: switchboards, EV chargers, lighting, fans and air conditioning.",
   alternates: { canonical: "/homeowners" },
 };
 

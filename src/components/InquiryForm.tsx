@@ -185,7 +185,7 @@ export function InquiryForm({
   }
 
   return (
-    <form onSubmit={onSubmit} className="rounded-lg border border-white/14 bg-brand-black p-5 text-white shadow-premium sm:p-6">
+    <form onSubmit={onSubmit} className="min-w-0 rounded-lg border border-white/14 bg-brand-black p-5 text-white shadow-premium sm:p-6">
       <div className="mb-5">
         <h2 className="font-heading text-2xl font-extrabold">Tell us what you need.</h2>
         <p className="mt-2 text-sm leading-6 text-white/68">
@@ -194,33 +194,33 @@ export function InquiryForm({
         </p>
       </div>
 
-      <div className="grid gap-3">
+      <div className="grid min-w-0 gap-3">
         <input className="hidden" tabIndex={-1} autoComplete="off" name="botField" />
 
-        <label className="grid gap-1 text-sm">
+        <label className="grid min-w-0 gap-1 text-sm">
           Name
-          <input name="name" autoComplete="name" required minLength={2} className="focus-ring min-h-12 rounded-md border border-white/16 bg-[#1a1a1a] px-3 text-white placeholder:text-white/55" placeholder="Your name" />
+          <input name="name" autoComplete="name" required minLength={2} className="focus-ring min-h-12 w-full min-w-0 rounded-md border border-white/16 bg-[#1a1a1a] px-3 text-white placeholder:text-white/55" placeholder="Your name" />
           {errors.name && <span className="text-xs text-red-200">{errors.name}</span>}
         </label>
 
-        <div className="grid gap-3 sm:grid-cols-2">
-          <label className="grid gap-1 text-sm">
+        <div className="grid min-w-0 gap-3 sm:grid-cols-2">
+          <label className="grid min-w-0 gap-1 text-sm">
             Phone
-            <input name="phone" type="tel" autoComplete="tel" required minLength={8} className="focus-ring min-h-12 rounded-md border border-white/16 bg-[#1a1a1a] px-3 text-white placeholder:text-white/55" placeholder="0477 000 000" />
+            <input name="phone" type="tel" autoComplete="tel" required minLength={8} className="focus-ring min-h-12 w-full min-w-0 rounded-md border border-white/16 bg-[#1a1a1a] px-3 text-white placeholder:text-white/55" placeholder="0477 000 000" />
             {errors.phone && <span className="text-xs text-red-200">{errors.phone}</span>}
           </label>
 
-          <label className="grid gap-1 text-sm">
+          <label className="grid min-w-0 gap-1 text-sm">
             Email
-            <input name="email" type="email" autoComplete="email" required className="focus-ring min-h-12 rounded-md border border-white/16 bg-[#1a1a1a] px-3 text-white placeholder:text-white/55" placeholder="you@example.com" />
+            <input name="email" type="email" autoComplete="email" required className="focus-ring min-h-12 w-full min-w-0 rounded-md border border-white/16 bg-[#1a1a1a] px-3 text-white placeholder:text-white/55" placeholder="you@example.com" />
             {errors.email && <span className="text-xs text-red-200">{errors.email}</span>}
           </label>
         </div>
 
-        <div className="grid gap-3 sm:grid-cols-2">
-          <label className="grid gap-1 text-sm">
+        <div className="grid min-w-0 gap-3 sm:grid-cols-2">
+          <label className="grid min-w-0 gap-1 text-sm">
             Enquiry type
-            <select name="leadType" defaultValue={defaultLeadType} className="focus-ring min-h-12 appearance-none rounded-md border border-white/16 bg-[#1a1a1a] px-3 text-white">
+            <select name="leadType" defaultValue={defaultLeadType} className="focus-ring min-h-12 w-full min-w-0 appearance-none rounded-md border border-white/16 bg-[#1a1a1a] px-3 text-white">
               {leadTypes.map((type) => (
                 <option key={type.value} value={type.value} className="text-brand-black">
                   {type.label}
@@ -229,9 +229,9 @@ export function InquiryForm({
             </select>
           </label>
 
-          <label className="grid gap-1 text-sm">
+          <label className="grid min-w-0 gap-1 text-sm">
             Service
-            <select name="serviceType" defaultValue="Lighting" className="focus-ring min-h-12 appearance-none rounded-md border border-white/16 bg-[#1a1a1a] px-3 text-white">
+            <select name="serviceType" defaultValue="Lighting" className="focus-ring min-h-12 w-full min-w-0 appearance-none rounded-md border border-white/16 bg-[#1a1a1a] px-3 text-white">
               {serviceTypes.map((service) => (
                 <option key={service} value={service} className="text-brand-black">
                   {service}
@@ -241,10 +241,10 @@ export function InquiryForm({
           </label>
         </div>
 
-        <div className="grid gap-3 sm:grid-cols-2">
-          <label className="grid gap-1 text-sm">
+        <div className="grid min-w-0 gap-3 sm:grid-cols-2">
+          <label className="grid min-w-0 gap-1 text-sm">
             Suburb
-            <select name="suburb" defaultValue="Bahrs Scrub" className="focus-ring min-h-12 appearance-none rounded-md border border-white/16 bg-[#1a1a1a] px-3 text-white">
+            <select name="suburb" defaultValue="Bahrs Scrub" className="focus-ring min-h-12 w-full min-w-0 appearance-none rounded-md border border-white/16 bg-[#1a1a1a] px-3 text-white">
               {suburbs.map((suburb) => (
                 <option key={suburb} value={suburb} className="text-brand-black">
                   {suburb}
@@ -253,9 +253,9 @@ export function InquiryForm({
             </select>
           </label>
 
-          <label className="grid gap-1 text-sm">
+          <label className="grid min-w-0 gap-1 text-sm">
             Preferred timing
-            <select name="preferredTiming" defaultValue="" className="focus-ring min-h-12 appearance-none rounded-md border border-white/16 bg-[#1a1a1a] px-3 text-white">
+            <select name="preferredTiming" defaultValue="" className="focus-ring min-h-12 w-full min-w-0 appearance-none rounded-md border border-white/16 bg-[#1a1a1a] px-3 text-white">
               <option value="" className="text-brand-black">
                 Select timing
               </option>
@@ -268,9 +268,9 @@ export function InquiryForm({
           </label>
         </div>
 
-        <label className="grid gap-1 text-sm">
+        <label className="grid min-w-0 gap-1 text-sm">
           Message
-          <textarea name="message" maxLength={1200} className="focus-ring min-h-28 rounded-md border border-white/16 bg-[#1a1a1a] px-3 py-3 text-white placeholder:text-white/55" placeholder="Briefly describe the job." />
+          <textarea name="message" maxLength={1200} className="focus-ring min-h-28 w-full min-w-0 rounded-md border border-white/16 bg-[#1a1a1a] px-3 py-3 text-white placeholder:text-white/55" placeholder="Briefly describe the job." />
         </label>
 
         <div className="grid gap-2 text-sm">

@@ -5,9 +5,9 @@ import { areaPages } from "@/lib/area-pages";
 import { business } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Areas Serviced | Electrician Logan, Brisbane Southside & Gold Coast",
+  title: "Areas Serviced | Logan, Brisbane & Gold Coast",
   description:
-    "DY Electrical Services covers Logan, Brisbane Southside and the Northern Gold Coast. Licensed residential, commercial and property management work. 24/7 emergency callout across the full service area.",
+    "Electrician covering Logan, Brisbane Southside and the Northern Gold Coast for homes, rentals, builders and small businesses. 24/7 emergency callout.",
   alternates: { canonical: "/areas-serviced" },
 };
 

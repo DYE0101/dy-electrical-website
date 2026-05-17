@@ -23,6 +23,27 @@ const SERVICE_META_TITLES: Record<string, string> = {
   "oven-installation": "Oven & Cooktop Installation Brisbane & Logan",
 };
 
+const SERVICE_META_DESCRIPTIONS: Record<string, string> = {
+  "switchboard-upgrades":
+    "Switchboard upgrades for older homes, renovations, EV chargers and new circuits across Logan, Brisbane Southside and the Northern Gold Coast.",
+  "ev-chargers":
+    "EV charger installation across Logan, Brisbane Southside and the Northern Gold Coast with dedicated circuits, load checks and tidy cable runs.",
+  "air-conditioning":
+    "ARC-licensed split system installation and electrical support for homes and small commercial spaces across Logan, Brisbane Southside and the Gold Coast.",
+  "fault-finding":
+    "24/7 emergency electrician for Logan, Brisbane Southside and the Northern Gold Coast. Fault finding for tripping boards, dead circuits and burning smells.",
+  "lighting-power":
+    "Lighting, downlight and power point upgrades across Logan, Brisbane Southside and the Northern Gold Coast with tidy cable runs and sharp finishes.",
+  "data-cabling":
+    "Structured data cabling for Logan, Brisbane Southside and Northern Gold Coast homes and small businesses: Cat6, patch panels and Wi-Fi access points.",
+  "ceiling-fans":
+    "Ceiling fan installation and replacement across Logan, Brisbane Southside and the Northern Gold Coast with new wiring, controls and balancing.",
+  "smoke-alarms":
+    "Smoke alarm installation and compliance across Logan, Brisbane Southside and the Northern Gold Coast for rentals and owner-occupied homes.",
+  "oven-installation":
+    "Oven and cooktop installation across Logan, Brisbane Southside and the Northern Gold Coast with dedicated circuits and compliance certification.",
+};
+
 export async function generateMetadata({
   params,
 }: ServicePageProps): Promise<Metadata> {
@@ -35,7 +56,7 @@ export async function generateMetadata({
 
   return {
     title: SERVICE_META_TITLES[service.slug] ?? service.title,
-    description: service.summary,
+    description: SERVICE_META_DESCRIPTIONS[service.slug] ?? service.summary,
     alternates: {
       canonical: `/services/${service.slug}`,
     },

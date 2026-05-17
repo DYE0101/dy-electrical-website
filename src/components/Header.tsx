@@ -17,8 +17,7 @@ export function Header() {
         >
           <Image
             src="/logos/logo-dark-background.jpg"
-            alt=""
-            aria-hidden="true"
+            alt="DY Electrical Services logo"
             width={320}
             height={150}
             priority

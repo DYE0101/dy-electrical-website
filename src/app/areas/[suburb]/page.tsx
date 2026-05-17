@@ -22,12 +22,12 @@ export async function generateMetadata({ params }: SuburbPageProps): Promise<Met
   if (!area) return {};
 
   return {
-    title: `Electrician ${area.suburb} | Licensed Electrical Services`,
-    description: `Licensed electrician servicing ${area.suburb}, ${area.region}. Switchboard upgrades, EV charger installation, air conditioning, fault finding and 24/7 emergency callout. Based ${area.driveTime} away.`,
+    title: `Electrician ${area.suburb} | DY Electrical`,
+    description: `Licensed electrician in ${area.suburb}, ${area.region}: switchboards, EV chargers, air conditioning, fault finding and 24/7 emergency callout.`,
     alternates: { canonical: `/areas/${area.slug}` },
     openGraph: {
-      title: `Electrician ${area.suburb} | DY Electrical Services`,
-      description: `Licensed electrician servicing ${area.suburb}. 24/7 emergency callout. ${area.driveTime} from our base.`,
+      title: `Electrician ${area.suburb} | DY Electrical`,
+      description: `Licensed electrician in ${area.suburb}. 24/7 emergency callout across ${area.region}.`,
       images: [{ url: "/images/og-default.jpg", width: 1200, height: 630 }],
     },
   };

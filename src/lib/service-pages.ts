@@ -125,30 +125,53 @@ export const servicePages = [
     summary:
       "24/7 emergency electrician across Logan, Brisbane Southside and the Northern Gold Coast. Tripping switchboards, dead circuits, burning smells, lost power — diagnosed and fixed the first visit wherever possible.",
     intro:
-      "Electrical faults rarely happen at a convenient time. We run a 24/7 emergency callout for genuine electrical emergencies — loss of power, tripping that won't reset, burning smells, smoke from a switchboard or power point, and water-damaged circuits. The job is diagnosed methodically, the cause is explained clearly, and the repair is made permanent — not a temporary patch.",
+      "Electrical faults rarely happen at a convenient time — and they rarely announce themselves with a clear cause. A safety switch that won't stay on, a circuit that dies without explanation, a burning smell from a wall you can't see into: these need a methodical approach, not a guess.\n\nWe run 24/7 emergency callout for genuine electrical emergencies across Logan, Brisbane Southside and the Northern Gold Coast. Every fault job follows the same process: isolate the risk, work through the circuit systematically, find the root cause, and fix it properly. Not a temporary patch. Not a reset and hope it holds.\n\nFault finding is one of the most technically demanding parts of electrical work — the kind where experience actually matters. We use test equipment on every job, not intuition. The cause gets explained clearly before any repair starts, and you know what was found, what was fixed, and what to watch for.",
     serviceFocus: [
-      "24/7 emergency callouts across Logan, Brisbane Southside and the Northern Gold Coast",
-      "Switchboards that trip and won't reset",
+      "24/7 emergency callout across Logan, Brisbane Southside and the Northern Gold Coast",
+      "Switchboards tripping repeatedly or won't stay reset",
       "Dead circuits, dead power points and dead lighting circuits",
-      "Burning smells, hot switches, scorched outlets",
-      "Storm damage, water ingress and roof leak electrical damage",
-      "Insurance reports for damaged wiring where required",
+      "Burning smells, hot switches and scorched outlets",
+      "Intermittent faults — circuits that fail sometimes but not always",
+      "Storm damage, lightning strikes and water ingress into active circuits",
+      "Partial power loss — some circuits working, others dead",
+      "Safety switch tripping when specific appliances run",
+      "Insurance reports and written fault assessments for damaged wiring",
     ],
     faq: [
       {
         question: "Are you really available 24/7?",
         answer:
-          "Yes. For genuine electrical emergencies — total power loss, smoke, burning smells, scorched outlets, switchboards tripping repeatedly — we take calls outside business hours. After-hours and emergency callout rates apply.",
+          "Yes. For genuine electrical emergencies — total power loss, smoke, burning smells, scorched outlets, switchboards tripping repeatedly — we take calls outside business hours. After-hours and emergency callout rates apply and are confirmed before we attend so there are no surprises on the invoice.",
       },
       {
         question: "What counts as an electrical emergency?",
         answer:
-          "Anything where leaving it overnight is unsafe: smoke or burning smells from a switchboard, power point or light fitting; sparks or arcing; water damage to an active circuit; or repeated tripping of a main switch that won't reset. If you are unsure, call and we will help you triage it on the phone.",
+          "Anything where leaving it until business hours is unsafe: smoke or burning smells from a switchboard, power point or light fitting; sparks or arcing; water damage to an active circuit; repeated tripping of a main switch that won't reset; or partial power loss across multiple circuits. If you are unsure, call — we will help you triage it on the phone at no cost.",
       },
       {
         question: "Should I switch the power off myself before you arrive?",
         answer:
-          "If it is safe to reach the main switch, yes — turning the main switch off is usually the safest action while waiting. If reaching the board means walking through water, smoke or a damaged area, stay clear and wait for us on site.",
+          "If it is safe to reach the main switch, yes — turning the main switch off at the switchboard is usually the safest action while waiting. If reaching the board means walking through water, smelling smoke on the way, or entering a damaged area, stay clear and wait for us on site. Do not reset a tripping safety switch repeatedly — if it trips again immediately, something is wrong and repeated resets can cause further damage.",
+      },
+      {
+        question: "My safety switch keeps tripping — what is causing it?",
+        answer:
+          "Safety switches trip when they detect current leaking to earth — this is them doing their job. Common causes include a faulty appliance on the circuit (unplug appliances one at a time and reset to isolate), deteriorating wiring insulation, water ingress into a light fitting or power point, or a fault in a fixed appliance like a hot water system or oven. If isolating appliances doesn't stop the tripping, or if it trips immediately on reset, there is a wiring fault that needs to be found and fixed. We diagnose this with test equipment — not guesswork.",
+      },
+      {
+        question: "How do you find the fault — and how long does it take?",
+        answer:
+          "We test the circuit systematically: measuring insulation resistance, checking earth continuity, isolating sections, and working from the switchboard out to each outlet and fitting. Simple faults — a failed appliance, a water-damaged fitting — are usually found in under an hour. Intermittent faults or wiring degradation in older homes can take longer, particularly if the cable runs are concealed. We explain what we find as we go and confirm the scope if the repair is going to take longer than expected.",
+      },
+      {
+        question: "Can I reset the main switch myself if it trips?",
+        answer:
+          "Yes — you can reset a tripped circuit breaker or safety switch yourself. Push it firmly to the off position first, then back to on. If it holds, the trip may have been a one-off caused by an appliance or a brief overload. If it trips again immediately or trips repeatedly over a short period, stop resetting it and call us — repeated tripping with no clear cause means there is a fault that needs to be found, not reset through.",
+      },
+      {
+        question: "Do you provide documentation for insurance claims?",
+        answer:
+          "Yes. For storm damage, lightning strike events, or significant wiring faults that require an insurance claim, we can provide a written fault assessment describing what was found, what was damaged, and what work was completed. Ask us when you book and we will make sure the report covers what your insurer needs.",
       },
     ],
   },
