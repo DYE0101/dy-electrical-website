@@ -6,9 +6,9 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { business } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Electrician Brisbane Southside | Licensed Electrical Services",
+  title: "Electrician Brisbane Southside | DY Electrical",
   description:
-    "Licensed electrician servicing Brisbane Southside — Mount Gravatt, Sunnybank, Woolloongabba, Rochedale and surrounds. Switchboard upgrades, EV chargers, renovations and 24/7 emergency callout.",
+    "Licensed electrician for Brisbane Southside: switchboards, EV chargers, renovations and 24/7 emergency callout from Mount Gravatt to Sunnybank.",
   alternates: { canonical: "/areas/brisbane-southside" },
 };
 

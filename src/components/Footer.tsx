@@ -10,8 +10,7 @@ export function Footer() {
         <div>
           <Image
             src="/logos/logo-dark-background.jpg"
-            alt=""
-            aria-hidden="true"
+            alt="DY Electrical Services logo"
             width={260}
             height={180}
             className="mb-6 h-auto w-36 mix-blend-screen [clip-path:inset(2px_8px_2px_2px)]"
@@ -43,6 +42,10 @@ export function Footer() {
             <li><Link href="/services/air-conditioning" className="hover:text-white transition-colors">Air Conditioning</Link></li>
             <li><Link href="/services/fault-finding" className="hover:text-white transition-colors">Fault Finding &amp; Emergency</Link></li>
             <li><Link href="/services/lighting-power" className="hover:text-white transition-colors">Lighting &amp; Power</Link></li>
+            <li><Link href="/services/data-cabling" className="hover:text-white transition-colors">Data Cabling</Link></li>
+            <li><Link href="/services/ceiling-fans" className="hover:text-white transition-colors">Ceiling Fans</Link></li>
+            <li><Link href="/services/smoke-alarms" className="hover:text-white transition-colors">Smoke Alarms</Link></li>
+            <li><Link href="/services/oven-installation" className="hover:text-white transition-colors">Oven &amp; Cooktop</Link></li>
             <li><Link href="/services" className="hover:text-white transition-colors font-semibold">All Services →</Link></li>
           </ul>
         </div>
@@ -55,6 +58,16 @@ export function Footer() {
             <li><Link href="/areas/logan" className="hover:text-white transition-colors">Logan</Link></li>
             <li><Link href="/areas/brisbane-southside" className="hover:text-white transition-colors">Brisbane Southside</Link></li>
             <li><Link href="/areas/gold-coast" className="hover:text-white transition-colors">Northern Gold Coast</Link></li>
+            <li><Link href="/areas/beenleigh" className="hover:text-white transition-colors">Beenleigh</Link></li>
+            <li><Link href="/areas/springwood" className="hover:text-white transition-colors">Springwood</Link></li>
+            <li><Link href="/areas/loganholme" className="hover:text-white transition-colors">Loganholme</Link></li>
+            <li><Link href="/areas/browns-plains" className="hover:text-white transition-colors">Browns Plains</Link></li>
+            <li><Link href="/areas/yarrabilba" className="hover:text-white transition-colors">Yarrabilba</Link></li>
+            <li><Link href="/areas/park-ridge" className="hover:text-white transition-colors">Park Ridge</Link></li>
+            <li><Link href="/areas/sunnybank" className="hover:text-white transition-colors">Sunnybank</Link></li>
+            <li><Link href="/areas/mount-gravatt" className="hover:text-white transition-colors">Mount Gravatt</Link></li>
+            <li><Link href="/areas/coomera" className="hover:text-white transition-colors">Coomera</Link></li>
+            <li><Link href="/areas/ormeau" className="hover:text-white transition-colors">Ormeau</Link></li>
             <li><Link href="/areas-serviced" className="hover:text-white transition-colors font-semibold">All Areas →</Link></li>
           </ul>
           <h2 className="mt-6 text-xs font-semibold uppercase tracking-[0.08em] text-white/60">
@@ -77,6 +90,24 @@ export function Footer() {
             <li><Link href="/real-estate-agents" className="hover:text-white transition-colors">Real Estate & Property Managers</Link></li>
             <li><Link href="/builders" className="hover:text-white transition-colors">Builders</Link></li>
             <li><Link href="/commercial-clients" className="hover:text-white transition-colors">Commercial Clients</Link></li>
+          </ul>
+          <h2 className="mt-6 text-xs font-semibold uppercase tracking-[0.08em] text-white/60">
+            Guides
+          </h2>
+          <ul className="mt-4 space-y-2 text-sm text-white/68">
+            <li><Link href="/blog/when-to-upgrade-your-switchboard" className="hover:text-white transition-colors">Switchboard Upgrade Signs</Link></li>
+            <li><Link href="/blog/switchboard-upgrade-cost-brisbane-logan" className="hover:text-white transition-colors">Switchboard Upgrade Cost</Link></li>
+            <li><Link href="/blog/ev-charger-installation-at-home" className="hover:text-white transition-colors">Home EV Charger Guide</Link></li>
+            <li><Link href="/blog/ev-charger-installation-cost-queensland" className="hover:text-white transition-colors">EV Charger Cost</Link></li>
+            <li><Link href="/blog/what-needs-a-licensed-electrician-in-queensland" className="hover:text-white transition-colors">Licensed Electrical Work</Link></li>
+            <li><Link href="/blog/what-is-an-rcd-safety-switch" className="hover:text-white transition-colors">RCD Safety Switches</Link></li>
+            <li><Link href="/blog/signs-you-need-an-emergency-electrician" className="hover:text-white transition-colors">Emergency Electrician Signs</Link></li>
+            <li><Link href="/blog/how-to-choose-an-electrician-brisbane-logan" className="hover:text-white transition-colors">Choosing an Electrician</Link></li>
+            <li><Link href="/blog/air-conditioning-installation-what-to-expect" className="hover:text-white transition-colors">Air Conditioning Install</Link></li>
+            <li><Link href="/blog/downlight-installation-brisbane-logan" className="hover:text-white transition-colors">Downlight Installation</Link></li>
+            <li><Link href="/blog/property-manager-electrical-maintenance-guide" className="hover:text-white transition-colors">Property Manager Maintenance</Link></li>
+            <li><Link href="/blog/qld-smoke-alarm-laws-2027-logan-brisbane" className="hover:text-white transition-colors">Queensland Smoke Alarm Laws</Link></li>
+            <li><Link href="/blog/why-does-my-safety-switch-keep-tripping" className="hover:text-white transition-colors">Safety Switch Keeps Tripping</Link></li>
           </ul>
         </div>
       </div>

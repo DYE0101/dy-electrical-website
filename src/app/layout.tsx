@@ -23,18 +23,18 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   metadataBase: new URL(business.domain),
   title: {
-    default: "Licensed Electrician Logan, Brisbane Southside & Northern Gold Coast | DY Electrical Services",
-    template: "%s | DY Electrical Services",
+    default: "Electrician Logan, Brisbane & Gold Coast | DY Electrical",
+    template: "%s",
   },
   description:
-    "DY Electrical Services provides licensed electrical work across Logan, Brisbane Southside and the Northern Gold Coast. 24/7 emergency callout, work done properly and communication without the runaround for homeowners, property managers, builders and local businesses.",
+    "Licensed electrician for Logan, Brisbane Southside and the Northern Gold Coast. 24/7 emergency callout for homes, rentals, builders and local businesses.",
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Licensed Electrician Logan, Brisbane & Gold Coast | DY Electrical Services",
+    title: "Electrician Logan, Brisbane & Gold Coast | DY Electrical",
     description:
-      "Licensed electrician across Logan, Brisbane Southside and the Northern Gold Coast. 24/7 emergency callout. Work done properly, communication without the runaround.",
+      "Licensed electrician across Logan, Brisbane Southside and the Northern Gold Coast. 24/7 emergency callout, tidy work and clear communication.",
     url: business.domain,
     siteName: business.name,
     locale: "en_AU",
@@ -50,10 +50,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Licensed Electrician Logan, Brisbane & Gold Coast | DY Electrical Services",
+    title: "Electrician Logan, Brisbane & Gold Coast | DY Electrical",
     description:
-      "24/7 emergency callout. Work done properly, communication without the runaround, across Logan, Brisbane Southside and the Northern Gold Coast.",
-    images: ["/images/og-default.jpg"],
+      "24/7 emergency callout across Logan, Brisbane Southside and the Northern Gold Coast. Licensed, tidy electrical work.",
+    images: [{ url: "/images/og-default.jpg", alt: "DY Electrical Services — Licensed Electrician Logan, Brisbane & Gold Coast" }],
   },
 };
 

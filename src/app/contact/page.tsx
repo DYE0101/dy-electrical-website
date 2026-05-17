@@ -3,18 +3,27 @@ import { InquiryForm } from "@/components/InquiryForm";
 import { CTAButton } from "@/components/CTAButton";
 import { business } from "@/lib/constants";
 
-export const metadata: Metadata = {
-  title: "Contact | Request a Quote",
-  description:
-    "Request a quote or call DY Electrical Services directly. Licensed electrical work across Logan, Brisbane Southside and the Northern Gold Coast.",
-  alternates: { canonical: "/contact" },
+type ContactPageProps = {
+  searchParams: Promise<Record<string, string | string[] | undefined>>;
 };
+
+export async function generateMetadata({ searchParams }: ContactPageProps): Promise<Metadata> {
+  const resolved = await searchParams;
+  const hasQueryParams = Object.keys(resolved).length > 0;
+  return {
+    title: "Contact | Request a Quote",
+    description:
+      "Request a quote or call DY Electrical Services directly. Licensed electrical work across Logan, Brisbane Southside and the Northern Gold Coast.",
+    alternates: { canonical: "/contact" },
+    ...(hasQueryParams && { robots: { index: false, follow: true } }),
+  };
+}
 
 export default function ContactPage() {
   return (
     <main className="bg-brand-background">
       <section className="mx-auto grid w-full max-w-[1180px] px-4 gap-10 py-16 lg:grid-cols-[.75fr_.8fr] lg:py-24">
-        <div>
+        <div className="min-w-0">
           <h1 className="font-heading text-[clamp(2.5rem,6vw,4.5rem)] font-extrabold leading-tight text-brand-black">
             Tell us what needs sorting.
           </h1>

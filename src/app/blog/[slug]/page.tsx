@@ -19,6 +19,51 @@ export function generateStaticParams() {
   return blogPosts.map((post) => ({ slug: post.slug }));
 }
 
+const BLOG_META_TITLES: Record<string, string> = {
+  "when-to-upgrade-your-switchboard": "When to Upgrade Your Switchboard",
+  "ev-charger-installation-at-home": "Home EV Charger Installation Guide",
+  "what-needs-a-licensed-electrician-in-queensland": "Licensed Electrician Work in Queensland",
+  "switchboard-upgrade-cost-brisbane-logan": "Switchboard Upgrade Cost Brisbane & Logan",
+  "ev-charger-installation-cost-queensland": "EV Charger Installation Cost Queensland",
+  "what-is-an-rcd-safety-switch": "What Is an RCD Safety Switch?",
+  "signs-you-need-an-emergency-electrician": "Signs You Need an Emergency Electrician",
+  "how-to-choose-an-electrician-brisbane-logan": "How to Choose an Electrician Brisbane & Logan",
+  "air-conditioning-installation-what-to-expect": "Split System Air Conditioning Installation",
+  "downlight-installation-brisbane-logan": "Downlight Installation Brisbane & Logan",
+  "property-manager-electrical-maintenance-guide": "Property Manager Electrical Maintenance Guide",
+  "qld-smoke-alarm-laws-2027-logan-brisbane": "Queensland Smoke Alarm Laws 2027",
+  "why-does-my-safety-switch-keep-tripping": "Why Does My Safety Switch Keep Tripping?",
+};
+
+const BLOG_META_DESCRIPTIONS: Record<string, string> = {
+  "when-to-upgrade-your-switchboard":
+    "Know when a switchboard upgrade is overdue in Logan, Brisbane or the Gold Coast: safety switches, ceramic fuses, warning signs and install steps.",
+  "ev-charger-installation-at-home":
+    "What to check before installing a home EV charger in Logan, Brisbane or the Gold Coast: circuit capacity, charger location and cost factors.",
+  "what-needs-a-licensed-electrician-in-queensland":
+    "Plain-English guide to what Queensland electrical work needs a licensed electrician and what homeowners can safely do themselves.",
+  "switchboard-upgrade-cost-brisbane-logan":
+    "Switchboard upgrade costs in Brisbane and Logan: what affects price, what is included and what to check before booking an electrician.",
+  "ev-charger-installation-cost-queensland":
+    "Home EV charger installation costs in Queensland: what changes the price, what is included and how to avoid common installation traps.",
+  "what-is-an-rcd-safety-switch":
+    "RCD safety switches explained: how they differ from circuit breakers and why Queensland homes need proper protection on modern circuits.",
+  "signs-you-need-an-emergency-electrician":
+    "How to tell when an electrical problem needs a 24/7 emergency electrician and what to do safely while waiting for help.",
+  "how-to-choose-an-electrician-brisbane-logan":
+    "What to check before booking an electrician in Brisbane or Logan: licensing, quotes, communication and red flags.",
+  "air-conditioning-installation-what-to-expect":
+    "What a proper split system air conditioning installation includes, how long it takes and what to ask before booking.",
+  "downlight-installation-brisbane-logan":
+    "Downlight installation in Brisbane and Logan: LED retrofits, ceiling checks, dimming, layout and what to ask before booking.",
+  "property-manager-electrical-maintenance-guide":
+    "Electrical maintenance guide for Queensland property managers: smoke alarms, safety switches, tenant faults and portfolio maintenance.",
+  "qld-smoke-alarm-laws-2027-logan-brisbane":
+    "Queensland smoke alarm laws for 2027: what Logan and Brisbane south homeowners need, where alarms go and when compliance is required.",
+  "why-does-my-safety-switch-keep-tripping":
+    "A safety switch that keeps tripping points to a fault somewhere in your circuits. How to isolate the cause, when to reset, and when to call an electrician.",
+};
+
 export async function generateMetadata({
   params,
 }: BlogPostPageProps): Promise<Metadata> {
@@ -29,23 +74,26 @@ export async function generateMetadata({
     return {};
   }
 
+  const metaTitle = BLOG_META_TITLES[post.slug] ?? post.title;
+  const metaDescription = BLOG_META_DESCRIPTIONS[post.slug] ?? post.description;
+
   return {
-    title: post.title,
-    description: post.description,
+    title: metaTitle,
+    description: metaDescription,
     alternates: { canonical: `/blog/${post.slug}` },
     openGraph: {
-      title: post.title,
-      description: post.description,
+      title: metaTitle,
+      description: metaDescription,
       type: "article",
       publishedTime: post.publishedAt,
       authors: ["Dayne Yetman"],
-      images: [{ url: "/images/og-default.jpg", width: 1200, height: 630 }],
+      images: [{ url: "/images/og-default.jpg", width: 1200, height: 630, alt: metaTitle }],
     },
     twitter: {
       card: "summary_large_image",
-      title: post.title,
-      description: post.description,
-      images: ["/images/og-default.jpg"],
+      title: metaTitle,
+      description: metaDescription,
+      images: [{ url: "/images/og-default.jpg", alt: metaTitle }],
     },
   };
 }
