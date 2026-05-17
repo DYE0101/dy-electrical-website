@@ -33,7 +33,12 @@ export const inquirySchema = z.object({
   utmCampaign: z.string().trim().max(120).optional().or(z.literal("")),
   utmTerm: z.string().trim().max(120).optional().or(z.literal("")),
   utmContent: z.string().trim().max(120).optional().or(z.literal("")),
+  botField: z.string().optional(),
   company: z.string().optional(),
+  photos: z.array(z.object({
+    filename: z.string().max(255),
+    content: z.string(),
+  })).max(3).optional(),
 });
 
 export type InquiryInput = z.infer<typeof inquirySchema>;

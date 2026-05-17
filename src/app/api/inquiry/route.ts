@@ -25,7 +25,7 @@ export async function POST(request: Request) {
 
   const input = parsed.data;
 
-  if (input.company) {
+  if (input.botField || input.company) {
     return NextResponse.json({ ok: true, spam: true });
   }
 
@@ -84,6 +84,14 @@ export async function POST(request: Request) {
       replyTo: input.email,
       subject: `[${leadLabel}] ${input.name} - ${input.suburb}`,
       text: message,
+      ...(input.photos && input.photos.length > 0
+        ? {
+            attachments: input.photos.map((p) => ({
+              filename: p.filename,
+              content: p.content,
+            })),
+          }
+        : {}),
     });
 
     return NextResponse.json({
