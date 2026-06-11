@@ -8,6 +8,44 @@ import { business } from "@/lib/constants";
 
 const GA_ID = "G-099KC2CL58";
 
+const analyticsLoaderScript = `
+window.dataLayer = window.dataLayer || [];
+window.gtag = window.gtag || function(){ window.dataLayer.push(arguments); };
+window.gtag('js', new Date());
+window.gtag('config', '${GA_ID}');
+(function(){
+  var loaded = false;
+  function loadAnalytics(){
+    if (loaded || document.querySelector('script[data-dy-analytics="gtag"]')) return;
+    loaded = true;
+    var script = document.createElement('script');
+    script.async = true;
+    script.dataset.dyAnalytics = 'gtag';
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=${GA_ID}';
+    document.head.appendChild(script);
+  }
+  function loadWhenIdle(){
+    if ('requestIdleCallback' in window) {
+      window.requestIdleCallback(loadAnalytics, { timeout: 2500 });
+    } else {
+      window.setTimeout(loadAnalytics, 1);
+    }
+  }
+  window.addEventListener('load', function(){
+    window.setTimeout(loadWhenIdle, 4500);
+  }, { once: true });
+  document.addEventListener('click', function(e){
+    var el = e.target instanceof Element ? e.target.closest('a[href^="tel:"]') : null;
+    if (!el) return;
+    loadAnalytics();
+    window.gtag('event', 'phone_click', {
+      link_url: el.getAttribute('href'),
+      link_text: (el.textContent || '').trim().slice(0, 80)
+    });
+  }, true);
+})();
+`;
+
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
@@ -62,7 +100,7 @@ const localBusinessSchema = {
   "@type": "Electrician",
   "@id": `${business.domain}/#business`,
   name: business.name,
-  legalName: business.name,
+  legalName: business.legalName,
   description:
     "Licensed electrician serving Logan, Brisbane Southside and the Northern Gold Coast. 24/7 emergency callout, residential, commercial, property management and builder electrical work.",
   url: business.domain,
@@ -176,14 +214,6 @@ const webSiteSchema = {
   url: business.domain,
   description: "Licensed electrician serving Logan, Brisbane Southside and the Northern Gold Coast.",
   publisher: { "@id": `${business.domain}/#business` },
-  potentialAction: {
-    "@type": "SearchAction",
-    target: {
-      "@type": "EntryPoint",
-      urlTemplate: `${business.domain}/blog?q={search_term_string}`,
-    },
-    "query-input": "required name=search_term_string",
-  },
 };
 
 export default function RootLayout({
@@ -194,11 +224,9 @@ export default function RootLayout({
   return (
     <html lang="en-AU">
       <head>
-        {/* eslint-disable-next-line @next/next/no-sync-scripts */}
-        <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} />
         <script
           dangerouslySetInnerHTML={{
-            __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${GA_ID}');`,
+            __html: analyticsLoaderScript,
           }}
         />
       </head>
