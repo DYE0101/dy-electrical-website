@@ -113,7 +113,13 @@ export function Footer() {
       </div>
       <div className="border-t border-white/12 pt-5 pb-20 md:py-5">
         <div className="mx-auto flex w-full max-w-[1180px] px-4 flex-col gap-2 text-xs text-white/52 sm:flex-row sm:justify-between">
-          <span>© {new Date().getFullYear()} {business.name}. All rights reserved.</span>
+          <span>
+            © {new Date().getFullYear()} {business.name}. All rights reserved.
+            {" · "}
+            <Link href="/privacy-policy" className="hover:text-white transition-colors">
+              Privacy Policy
+            </Link>
+          </span>
           <span>{business.tagline}</span>
         </div>
       </div>
