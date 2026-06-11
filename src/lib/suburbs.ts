@@ -40,3 +40,11 @@ export const suburbs = [
   "Woolloongabba",
   "Yarrabilba",
 ] as const;
+
+export type Suburb = (typeof suburbs)[number];
+
+// Form-only list: keeps "Other / not listed" out of page-generation code
+// while letting unlisted suburbs submit accurately (review finding #6).
+export const suburbOptions = [...suburbs, "Other / not listed"] as const;
+
+export type SuburbOption = (typeof suburbOptions)[number];

@@ -1,6 +1,8 @@
+import type { Suburb } from "@/lib/suburbs";
+
 export type AreaPage = {
   slug: string;
-  suburb: string;
+  suburb: Suburb;
   region: string;
   postcode: string;
   driveTime: string;

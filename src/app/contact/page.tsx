@@ -2,10 +2,32 @@ import type { Metadata } from "next";
 import { InquiryForm } from "@/components/InquiryForm";
 import { CTAButton } from "@/components/CTAButton";
 import { business } from "@/lib/constants";
+import type { InquiryInput } from "@/lib/lead-schema";
 
 type ContactPageProps = {
   searchParams: Promise<Record<string, string | string[] | undefined>>;
 };
+
+const LEAD_TYPE_DEFAULTS: Record<string, InquiryInput["leadType"]> = {
+  homeowner_quote: "homeowner_quote",
+  small_commercial: "small_commercial",
+  property_manager: "property_manager",
+  builder_partner: "builder_partner",
+  general: "general",
+};
+
+function getSearchParamValue(
+  params: Record<string, string | string[] | undefined>,
+  key: string
+) {
+  const value = params[key];
+  return Array.isArray(value) ? value[0] : value;
+}
+
+function getDefaultLeadType(params: Record<string, string | string[] | undefined>) {
+  const type = getSearchParamValue(params, "type");
+  return type ? LEAD_TYPE_DEFAULTS[type] : undefined;
+}
 
 export async function generateMetadata({ searchParams }: ContactPageProps): Promise<Metadata> {
   const resolved = await searchParams;
@@ -19,7 +41,10 @@ export async function generateMetadata({ searchParams }: ContactPageProps): Prom
   };
 }
 
-export default function ContactPage() {
+export default async function ContactPage({ searchParams }: ContactPageProps) {
+  const resolved = await searchParams;
+  const defaultLeadType = getDefaultLeadType(resolved);
+
   return (
     <main className="bg-brand-background">
       <section className="mx-auto grid w-full max-w-[1180px] px-4 gap-10 py-16 lg:grid-cols-[.75fr_.8fr] lg:py-24">
@@ -36,7 +61,7 @@ export default function ContactPage() {
             <CTAButton href="/services" variant="secondary">View Services</CTAButton>
           </div>
         </div>
-        <InquiryForm ctaClicked="contact_page_form" />
+        <InquiryForm defaultLeadType={defaultLeadType} ctaClicked="contact_page_form" />
       </section>
     </main>
   );

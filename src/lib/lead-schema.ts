@@ -1,6 +1,6 @@
 import { z } from "zod";
 import { leadTypes, serviceTypes } from "@/lib/constants";
-import { suburbs } from "@/lib/suburbs";
+import { suburbOptions } from "@/lib/suburbs";
 
 const leadTypeValues = leadTypes.map((type) => type.value) as [
   (typeof leadTypes)[number]["value"],
@@ -12,9 +12,9 @@ const serviceTypeValues = serviceTypes as unknown as [
   ...(typeof serviceTypes)[number][],
 ];
 
-const suburbValues = suburbs as unknown as [
-  (typeof suburbs)[number],
-  ...(typeof suburbs)[number][],
+const suburbValues = suburbOptions as unknown as [
+  (typeof suburbOptions)[number],
+  ...(typeof suburbOptions)[number][],
 ];
 
 export const inquirySchema = z.object({

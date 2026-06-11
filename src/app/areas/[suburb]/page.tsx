@@ -259,7 +259,7 @@ export default async function SuburbPage({ params }: SuburbPageProps) {
               </p>
             </div>
           </div>
-          <InquiryForm ctaClicked={`${area.slug}_area_page_form`} />
+          <InquiryForm defaultSuburb={area.suburb} ctaClicked={`${area.slug}_area_page_form`} />
         </div>
       </section>
     </main>

@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { notFound } from "next/navigation";
-import { CheckCircle2 } from "lucide-react";
+import { CheckCircle2, Phone } from "lucide-react";
 import { InquiryForm } from "@/components/InquiryForm";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { servicePages } from "@/lib/service-pages";
 import { business } from "@/lib/constants";
+import type { InquiryInput } from "@/lib/lead-schema";
 
 type ServicePageProps = {
   params: Promise<{ slug: string }>;
@@ -45,6 +47,18 @@ const SERVICE_META_DESCRIPTIONS: Record<string, string> = {
     "Smoke alarm installation and compliance across Logan, Brisbane Southside and the Northern Gold Coast for rentals and owner-occupied homes.",
   "oven-installation":
     "Oven and cooktop installation across Logan, Brisbane Southside and the Northern Gold Coast with dedicated circuits and compliance certification.",
+};
+
+const SERVICE_FORM_DEFAULTS: Record<string, InquiryInput["serviceType"]> = {
+  "switchboard-upgrades": "Switchboard upgrades",
+  "ev-chargers": "EV chargers",
+  "fault-finding": "Fault finding",
+  "air-conditioning": "Air conditioning",
+  "smoke-alarms": "Smoke alarms",
+  "oven-installation": "Oven & cooktop",
+  "lighting-power": "Lighting",
+  "data-cabling": "Data cabling",
+  "ceiling-fans": "Ceiling fans",
 };
 
 export async function generateMetadata({
@@ -92,7 +106,7 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
     "@type": "Service",
     name: `${service.title} by ${business.name}`,
     provider: {
-      "@type": "ElectricalContractor",
+      "@type": "Electrician",
       name: business.name,
       telephone: business.phoneDisplay,
       url: business.domain,
@@ -118,6 +132,34 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
           <p className="mt-5 max-w-2xl text-lg leading-8 text-brand-charcoal/70">
             {service.summary}
           </p>
+
+          <div className="mt-7 max-w-2xl rounded-lg border border-brand-border bg-white p-5 shadow-sm">
+            <p className="font-heading text-xl font-extrabold text-brand-black">
+              Need this sorted?
+            </p>
+            <p className="mt-2 text-sm leading-6 text-brand-charcoal/70">
+              Send the job details or call now if it is urgent. We&apos;ll give
+              clear advice before anything is booked.
+            </p>
+            <div className="mt-4 grid gap-3 sm:grid-cols-2">
+              <Link
+                href="#service-enquiry"
+                className="inline-flex min-h-12 items-center justify-center rounded-md bg-brand-gold px-5 text-sm font-extrabold text-white transition hover:bg-brand-gold/80"
+              >
+                Request a quote
+              </Link>
+              <a
+                href={business.phoneHref}
+                className="inline-flex min-h-12 items-center justify-center rounded-md border border-brand-border px-5 text-sm font-extrabold text-brand-black transition hover:border-brand-black"
+              >
+                <Phone className="mr-2 h-4 w-4" aria-hidden="true" />
+                {business.phoneDisplay}
+              </a>
+            </div>
+            <p className="mt-3 text-xs font-semibold text-brand-charcoal/50">
+              {business.electricalContractor} · {business.arcLicence} · Public Liability Insurance held
+            </p>
+          </div>
 
           {service.intro ? (
             <p className="mt-5 max-w-2xl text-base leading-7 text-brand-charcoal/70">
@@ -163,7 +205,12 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
           </div>
         </div>
 
-        <InquiryForm ctaClicked={`${service.slug}_service_page_form`} />
+        <div id="service-enquiry" className="scroll-mt-24">
+          <InquiryForm
+            defaultServiceType={SERVICE_FORM_DEFAULTS[service.slug]}
+            ctaClicked={`${service.slug}_service_page_form`}
+          />
+        </div>
       </section>
     </main>
   );

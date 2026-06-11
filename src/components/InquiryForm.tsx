@@ -3,8 +3,8 @@
 import { useState, useRef, type FormEvent } from "react";
 import { Send, Camera, X } from "lucide-react";
 import type { InquiryInput } from "@/lib/lead-schema";
-import { leadTypes, serviceTypes } from "@/lib/constants";
-import { suburbs } from "@/lib/suburbs";
+import { leadTypes, serviceTypes, type ServiceType } from "@/lib/constants";
+import { suburbOptions, type SuburbOption } from "@/lib/suburbs";
 
 const timingOptions = [
   "Flexible",
@@ -16,10 +16,14 @@ const timingOptions = [
 
 type InquiryFormProps = {
   defaultLeadType?: InquiryInput["leadType"];
+  defaultServiceType?: ServiceType;
+  defaultSuburb?: SuburbOption;
   ctaClicked?: string;
 };
 
-type InquiryErrors = Partial<Record<"name" | "phone" | "email", string>>;
+type InquiryErrors = Partial<
+  Record<"name" | "phone" | "email" | "serviceType" | "suburb", string>
+>;
 type PhotoEntry = { file: File; preview: string };
 
 async function compressImage(file: File): Promise<string> {
@@ -77,11 +81,21 @@ function validateInquiry(values: InquiryInput) {
     errors.email = "Please enter a valid email address.";
   }
 
+  if (!values.serviceType) {
+    errors.serviceType = "Please select a service.";
+  }
+
+  if (!values.suburb) {
+    errors.suburb = "Please select your suburb.";
+  }
+
   return errors;
 }
 
 export function InquiryForm({
   defaultLeadType = "homeowner_quote",
+  defaultServiceType,
+  defaultSuburb,
   ctaClicked = "homepage_form",
 }: InquiryFormProps) {
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
@@ -231,26 +245,34 @@ export function InquiryForm({
 
           <label className="grid min-w-0 gap-1 text-sm">
             Service
-            <select name="serviceType" defaultValue="Lighting" className="focus-ring min-h-12 w-full min-w-0 appearance-none rounded-md border border-white/16 bg-[#1a1a1a] px-3 text-white">
+            <select name="serviceType" required defaultValue={defaultServiceType ?? ""} className="focus-ring min-h-12 w-full min-w-0 appearance-none rounded-md border border-white/16 bg-[#1a1a1a] px-3 text-white">
+              <option value="" disabled className="text-brand-black">
+                Select a service
+              </option>
               {serviceTypes.map((service) => (
                 <option key={service} value={service} className="text-brand-black">
                   {service}
                 </option>
               ))}
             </select>
+            {errors.serviceType && <span className="text-xs text-red-200">{errors.serviceType}</span>}
           </label>
         </div>
 
         <div className="grid min-w-0 gap-3 sm:grid-cols-2">
           <label className="grid min-w-0 gap-1 text-sm">
             Suburb
-            <select name="suburb" defaultValue="Bahrs Scrub" className="focus-ring min-h-12 w-full min-w-0 appearance-none rounded-md border border-white/16 bg-[#1a1a1a] px-3 text-white">
-              {suburbs.map((suburb) => (
+            <select name="suburb" required defaultValue={defaultSuburb ?? ""} className="focus-ring min-h-12 w-full min-w-0 appearance-none rounded-md border border-white/16 bg-[#1a1a1a] px-3 text-white">
+              <option value="" disabled className="text-brand-black">
+                Select your suburb
+              </option>
+              {suburbOptions.map((suburb) => (
                 <option key={suburb} value={suburb} className="text-brand-black">
                   {suburb}
                 </option>
               ))}
             </select>
+            {errors.suburb && <span className="text-xs text-red-200">{errors.suburb}</span>}
           </label>
 
           <label className="grid min-w-0 gap-1 text-sm">
