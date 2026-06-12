@@ -5,7 +5,7 @@ export const business = {
   phoneDisplay: "0477 766 678",
   phoneInternational: "+61 477 766 678",
   phoneHref: "tel:0477766678",
-  email: "hello@dyelectricalservices.com.au",
+  email: "admin@dyelectricalservices.com",
   domain: "https://www.dyelectricalservices.com.au",
   address: "12 Orchard Avenue, Bahrs Scrub QLD 4207",
   abn: "75 643 388 416",
