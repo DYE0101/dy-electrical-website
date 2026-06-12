@@ -61,26 +61,13 @@ export default async function HomePage() {
             </p>
           </div>
 
-          <aside className="hidden lg:block rounded-lg border border-white/16 bg-brand-black/78 p-5 shadow-[0_28px_80px_rgba(0,0,0,0.45)] backdrop-blur-xl sm:p-6">
-            <h2 className="font-heading text-2xl font-extrabold leading-tight">
-              What&apos;s the job?
-            </h2>
-            <p className="mt-3 text-sm leading-6 text-white/60">
-              For urgent work, call directly. For quotes and planned jobs, use
-              the form — the job gets properly scoped before anything is booked.
-            </p>
-            <div className="mt-6 grid gap-4">
-              {[
-                "Home electrical repairs, upgrades and installations.",
-                "Rental maintenance and property manager requests.",
-                "Small commercial fit-outs and builder enquiries.",
-              ].map((item) => (
-                <div key={item} className="flex gap-3 border-t border-white/12 pt-4 text-sm text-white/64">
-                  <span className="mt-[7px] h-1.5 w-1.5 shrink-0 rounded-full bg-white/36" />
-                  <span className="min-w-0 break-words">{item}</span>
-                </div>
-              ))}
-            </div>
+          <aside className="hidden lg:block">
+            <InquiryForm
+              compact
+              ctaClicked="hero_form"
+              heading="What's the job?"
+              subheading="Urgent work? Call directly. For quotes and planned jobs, send the basics — we reply the same business day."
+            />
           </aside>
         </div>
       </section>

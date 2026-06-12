@@ -4,7 +4,6 @@ import type { GoogleReviewSummary } from "@/lib/google-reviews";
 
 type GoogleReviewsProps = {
   summary: GoogleReviewSummary | null;
-  fallback?: "trust" | "quiet";
   transitionFromDark?: boolean;
 };
 
@@ -22,24 +21,7 @@ function Stars({ rating }: { rating: number }) {
   );
 }
 
-function TrustFallback({ quiet = false }: { quiet?: boolean }) {
-  if (quiet) {
-    return (
-      <div className="grid gap-3 sm:grid-cols-2">
-        {[
-          "Licensed electrical contractor — Licence No. 87141",
-          "ARC licensed for split system air conditioning",
-          "Based in Bahrs Scrub, servicing Logan, Brisbane Southside and the Northern Gold Coast",
-          "Clear scope, tidy finishes and practical advice before work starts",
-        ].map((item) => (
-          <div key={item} className="min-w-0 break-words border-l-2 border-brand-black/20 bg-brand-surface p-4 text-sm font-semibold text-brand-charcoal/72">
-            {item}
-          </div>
-        ))}
-      </div>
-    );
-  }
-
+function TrustFallback() {
   return (
     <div className="grid gap-3 sm:grid-cols-2">
       {[
@@ -58,7 +40,6 @@ function TrustFallback({ quiet = false }: { quiet?: boolean }) {
 
 export function GoogleReviews({
   summary,
-  fallback = "trust",
   transitionFromDark = false,
 }: GoogleReviewsProps) {
   const reviews = summary?.reviews ?? [];
@@ -138,7 +119,7 @@ export function GoogleReviews({
             </p>
           </>
         ) : (
-          <TrustFallback quiet={fallback === "quiet"} />
+          <TrustFallback />
         )}
       </div>
     </section>

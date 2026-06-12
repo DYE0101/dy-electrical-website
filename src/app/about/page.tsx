@@ -3,7 +3,7 @@ import Link from "next/link";
 import { business } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "About | Licensed Electrician Logan & Brisbane",
+  title: "About — Licensed Electrician Logan & Brisbane",
   description:
     "Licensed electrical contractor based in Logan, servicing Brisbane Southside and the Northern Gold Coast for residential, commercial and rental work.",
   alternates: { canonical: "/about" },

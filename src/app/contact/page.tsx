@@ -33,7 +33,7 @@ export async function generateMetadata({ searchParams }: ContactPageProps): Prom
   const resolved = await searchParams;
   const hasQueryParams = Object.keys(resolved).length > 0;
   return {
-    title: "Contact | Request a Quote",
+    title: "Contact — Request a Quote",
     description:
       "Request a quote or call DY Electrical Services directly. Licensed electrical work across Logan, Brisbane Southside and the Northern Gold Coast.",
     alternates: { canonical: "/contact" },

@@ -62,7 +62,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(business.domain),
   title: {
     default: "Electrician Logan, Brisbane & Gold Coast | DY Electrical",
-    template: "%s",
+    template: "%s | DY Electrical",
   },
   description:
     "Licensed electrician for Logan, Brisbane Southside and the Northern Gold Coast. 24/7 emergency callout for homes, rentals, builders and local businesses.",
@@ -231,7 +231,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${inter.variable} ${montserrat.variable} font-body antialiased pb-[calc(76px+env(safe-area-inset-bottom))] md:pb-0`}
+        className={`${inter.variable} ${montserrat.variable} font-body antialiased`}
       >
         <script
           type="application/ld+json"

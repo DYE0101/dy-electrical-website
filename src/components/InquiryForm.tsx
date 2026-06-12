@@ -19,6 +19,10 @@ type InquiryFormProps = {
   defaultServiceType?: ServiceType;
   defaultSuburb?: SuburbOption;
   ctaClicked?: string;
+  /** Short variant for tight slots (hero rail): name, phone, email, service, suburb only. */
+  compact?: boolean;
+  heading?: string;
+  subheading?: string;
 };
 
 type InquiryErrors = Partial<
@@ -97,6 +101,9 @@ export function InquiryForm({
   defaultServiceType,
   defaultSuburb,
   ctaClicked = "homepage_form",
+  compact = false,
+  heading = "Tell us what you need.",
+  subheading = "Homeowner jobs are prioritised, with clear routing for commercial, property manager and builder enquiries.",
 }: InquiryFormProps) {
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
   const [errors, setErrors] = useState<InquiryErrors>({});
@@ -201,11 +208,8 @@ export function InquiryForm({
   return (
     <form onSubmit={onSubmit} className="min-w-0 rounded-lg border border-white/14 bg-brand-black p-5 text-white shadow-premium sm:p-6">
       <div className="mb-5">
-        <h2 className="font-heading text-2xl font-extrabold">Tell us what you need.</h2>
-        <p className="mt-2 text-sm leading-6 text-white/68">
-          Homeowner jobs are prioritised, with clear routing for commercial,
-          property manager and builder enquiries.
-        </p>
+        <h2 className="font-heading text-2xl font-extrabold">{heading}</h2>
+        <p className="mt-2 text-sm leading-6 text-white/68">{subheading}</p>
       </div>
 
       <div className="grid min-w-0 gap-3">
@@ -231,17 +235,21 @@ export function InquiryForm({
           </label>
         </div>
 
-        <div className="grid min-w-0 gap-3 sm:grid-cols-2">
-          <label className="grid min-w-0 gap-1 text-sm">
-            Enquiry type
-            <select name="leadType" defaultValue={defaultLeadType} className="focus-ring min-h-12 w-full min-w-0 appearance-none rounded-md border border-white/16 bg-[#1a1a1a] px-3 text-white">
-              {leadTypes.map((type) => (
-                <option key={type.value} value={type.value} className="text-brand-black">
-                  {type.label}
-                </option>
-              ))}
-            </select>
-          </label>
+        <div className={`grid min-w-0 gap-3 ${compact ? "" : "sm:grid-cols-2"}`}>
+          {compact ? (
+            <input type="hidden" name="leadType" value={defaultLeadType} />
+          ) : (
+            <label className="grid min-w-0 gap-1 text-sm">
+              Enquiry type
+              <select name="leadType" defaultValue={defaultLeadType} className="focus-ring min-h-12 w-full min-w-0 appearance-none rounded-md border border-white/16 bg-[#1a1a1a] px-3 text-white">
+                {leadTypes.map((type) => (
+                  <option key={type.value} value={type.value} className="text-brand-black">
+                    {type.label}
+                  </option>
+                ))}
+              </select>
+            </label>
+          )}
 
           <label className="grid min-w-0 gap-1 text-sm">
             Service
@@ -259,7 +267,7 @@ export function InquiryForm({
           </label>
         </div>
 
-        <div className="grid min-w-0 gap-3 sm:grid-cols-2">
+        <div className={`grid min-w-0 gap-3 ${compact ? "" : "sm:grid-cols-2"}`}>
           <label className="grid min-w-0 gap-1 text-sm">
             Suburb
             <select name="suburb" required defaultValue={defaultSuburb ?? ""} className="focus-ring min-h-12 w-full min-w-0 appearance-none rounded-md border border-white/16 bg-[#1a1a1a] px-3 text-white">
@@ -275,26 +283,31 @@ export function InquiryForm({
             {errors.suburb && <span className="text-xs text-red-200">{errors.suburb}</span>}
           </label>
 
-          <label className="grid min-w-0 gap-1 text-sm">
-            Preferred timing
-            <select name="preferredTiming" defaultValue="" className="focus-ring min-h-12 w-full min-w-0 appearance-none rounded-md border border-white/16 bg-[#1a1a1a] px-3 text-white">
-              <option value="" className="text-brand-black">
-                Select timing
-              </option>
-              {timingOptions.map((timing) => (
-                <option key={timing} value={timing} className="text-brand-black">
-                  {timing}
+          {!compact && (
+            <label className="grid min-w-0 gap-1 text-sm">
+              Preferred timing
+              <select name="preferredTiming" defaultValue="" className="focus-ring min-h-12 w-full min-w-0 appearance-none rounded-md border border-white/16 bg-[#1a1a1a] px-3 text-white">
+                <option value="" className="text-brand-black">
+                  Select timing
                 </option>
-              ))}
-            </select>
-          </label>
+                {timingOptions.map((timing) => (
+                  <option key={timing} value={timing} className="text-brand-black">
+                    {timing}
+                  </option>
+                ))}
+              </select>
+            </label>
+          )}
         </div>
 
+        {!compact && (
         <label className="grid min-w-0 gap-1 text-sm">
           Message
           <textarea name="message" maxLength={1200} className="focus-ring min-h-28 w-full min-w-0 rounded-md border border-white/16 bg-[#1a1a1a] px-3 py-3 text-white placeholder:text-white/55" placeholder="Briefly describe the job." />
         </label>
+        )}
 
+        {!compact && (
         <div className="grid gap-2 text-sm">
           <div>
             <span className="text-white">Photos</span>
@@ -337,6 +350,7 @@ export function InquiryForm({
             </label>
           )}
         </div>
+        )}
       </div>
 
       <button

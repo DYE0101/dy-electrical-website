@@ -3,7 +3,7 @@ import { GoogleReviews } from "@/components/GoogleReviews";
 import { getGoogleReviews } from "@/lib/google-reviews";
 
 export const metadata: Metadata = {
-  title: "Customer Reviews | DY Electrical Services",
+  title: "Customer Reviews",
   description:
     "Real Google reviews from DY Electrical Services customers across Logan, Brisbane and the Gold Coast. Verified feedback from the live Google Business Profile.",
   alternates: { canonical: "/testimonials" },
@@ -25,7 +25,7 @@ export default async function TestimonialsPage() {
           unedited, in the words of the people who hired us.
         </p>
       </section>
-      <GoogleReviews summary={googleReviews} fallback="quiet" />
+      <GoogleReviews summary={googleReviews} />
     </main>
   );
 }

@@ -5,7 +5,7 @@ import { areaPages } from "@/lib/area-pages";
 import { business } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Areas Serviced | Logan, Brisbane & Gold Coast",
+  title: "Areas Serviced — Logan, Brisbane & Gold Coast",
   description:
     "Electrician covering Logan, Brisbane Southside and the Northern Gold Coast for homes, rentals, builders and small businesses. 24/7 emergency callout.",
   alternates: { canonical: "/areas-serviced" },

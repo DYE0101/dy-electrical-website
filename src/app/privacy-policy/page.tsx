@@ -3,7 +3,7 @@ import Link from "next/link";
 import { business } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | DY Electrical Services",
+  title: "Privacy Policy",
   description:
     "How DY Electrical Services collects, uses and protects your personal information — enquiry details, photos and website analytics — and how to contact us.",
   alternates: { canonical: "/privacy-policy" },

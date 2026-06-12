@@ -6,7 +6,7 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { business } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Electrician Logan | DY Electrical",
+  title: "Electrician Logan",
   description:
     "Electrician based in Logan for switchboard upgrades, EV chargers, air conditioning, fault finding and 24/7 emergency callout from Bahrs Scrub.",
   alternates: { canonical: "/areas/logan" },

@@ -6,7 +6,7 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { business } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Electrician Gold Coast North | DY Electrical",
+  title: "Electrician Gold Coast North",
   description:
     "Licensed electrician for the Northern Gold Coast: EV chargers, switchboard upgrades, air conditioning and 24/7 emergency callout across Coomera and Ormeau.",
   alternates: { canonical: "/areas/gold-coast" },
