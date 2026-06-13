@@ -34,10 +34,10 @@ export default async function HomePage() {
             <h1 className="max-w-[21rem] break-words font-heading text-[clamp(1.7rem,7.2vw,2rem)] font-extrabold leading-[1.08] sm:max-w-3xl sm:text-[clamp(2.35rem,5.4vw,4.65rem)] sm:leading-[1.04]">
               Licensed Electrician for{" "}
               <br className="sm:hidden" />
-              Logan, Brisbane Southside &amp;
+              Logan, Brisbane Southside{" "}
               <br className="hidden sm:block" />
               <br className="sm:hidden" />
-              the Northern Gold Coast.
+              &amp; the Northern Gold Coast.
             </h1>
             <p className="mt-5 text-sm font-extrabold uppercase tracking-widest text-brand-gold/80">
               Don&apos;t D.I.Y — Call DY Electrical Services
