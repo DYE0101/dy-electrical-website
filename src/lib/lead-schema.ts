@@ -25,7 +25,7 @@ export const inquirySchema = z.object({
   serviceType: z.enum(serviceTypeValues),
   suburb: z.enum(suburbValues),
   preferredTiming: z.string().trim().max(80).optional().or(z.literal("")),
-  message: z.string().trim().max(1200).optional().or(z.literal("")),
+  message: z.string().trim().min(10, "Please add a few details about the job.").max(1200),
   sourcePage: z.string().trim().max(240).optional().or(z.literal("")),
   ctaClicked: z.string().trim().max(120).optional().or(z.literal("")),
   utmSource: z.string().trim().max(120).optional().or(z.literal("")),

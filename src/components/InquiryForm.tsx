@@ -26,7 +26,7 @@ type InquiryFormProps = {
 };
 
 type InquiryErrors = Partial<
-  Record<"name" | "phone" | "email" | "serviceType" | "suburb", string>
+  Record<"name" | "phone" | "email" | "serviceType" | "suburb" | "message", string>
 >;
 type PhotoEntry = { file: File; preview: string };
 
@@ -91,6 +91,10 @@ function validateInquiry(values: InquiryInput) {
 
   if (!values.suburb) {
     errors.suburb = "Please select your suburb.";
+  }
+
+  if (values.message.trim().length < 10) {
+    errors.message = "Please add a few details about the job.";
   }
 
   return errors;
@@ -241,9 +245,9 @@ export function InquiryForm({
           ) : (
             <label className="grid min-w-0 gap-1 text-sm">
               Enquiry type
-              <select name="leadType" defaultValue={defaultLeadType} className="focus-ring min-h-12 w-full min-w-0 appearance-none rounded-md border border-white/16 bg-[#1a1a1a] px-3 text-white">
+              <select name="leadType" defaultValue={defaultLeadType} className="focus-ring min-h-12 w-full min-w-0 appearance-none rounded-md border border-white/16 bg-[#1a1a1a] px-3 text-white [color-scheme:dark]">
                 {leadTypes.map((type) => (
-                  <option key={type.value} value={type.value} className="text-brand-black">
+                  <option key={type.value} value={type.value} className="bg-[#1a1a1a] text-white">
                     {type.label}
                   </option>
                 ))}
@@ -253,12 +257,12 @@ export function InquiryForm({
 
           <label className="grid min-w-0 gap-1 text-sm">
             Service
-            <select name="serviceType" required defaultValue={defaultServiceType ?? ""} className="focus-ring min-h-12 w-full min-w-0 appearance-none rounded-md border border-white/16 bg-[#1a1a1a] px-3 text-white">
-              <option value="" disabled className="text-brand-black">
+            <select name="serviceType" required defaultValue={defaultServiceType ?? ""} className="focus-ring min-h-12 w-full min-w-0 appearance-none rounded-md border border-white/16 bg-[#1a1a1a] px-3 text-white [color-scheme:dark]">
+              <option value="" disabled className="bg-[#1a1a1a] text-white">
                 Select a service
               </option>
               {serviceTypes.map((service) => (
-                <option key={service} value={service} className="text-brand-black">
+                <option key={service} value={service} className="bg-[#1a1a1a] text-white">
                   {service}
                 </option>
               ))}
@@ -270,12 +274,12 @@ export function InquiryForm({
         <div className={`grid min-w-0 gap-3 ${compact ? "" : "sm:grid-cols-2"}`}>
           <label className="grid min-w-0 gap-1 text-sm">
             Suburb
-            <select name="suburb" required defaultValue={defaultSuburb ?? ""} className="focus-ring min-h-12 w-full min-w-0 appearance-none rounded-md border border-white/16 bg-[#1a1a1a] px-3 text-white">
-              <option value="" disabled className="text-brand-black">
+            <select name="suburb" required defaultValue={defaultSuburb ?? ""} className="focus-ring min-h-12 w-full min-w-0 appearance-none rounded-md border border-white/16 bg-[#1a1a1a] px-3 text-white [color-scheme:dark]">
+              <option value="" disabled className="bg-[#1a1a1a] text-white">
                 Select your suburb
               </option>
               {suburbOptions.map((suburb) => (
-                <option key={suburb} value={suburb} className="text-brand-black">
+                <option key={suburb} value={suburb} className="bg-[#1a1a1a] text-white">
                   {suburb}
                 </option>
               ))}
@@ -286,12 +290,12 @@ export function InquiryForm({
           {!compact && (
             <label className="grid min-w-0 gap-1 text-sm">
               Preferred timing
-              <select name="preferredTiming" defaultValue="" className="focus-ring min-h-12 w-full min-w-0 appearance-none rounded-md border border-white/16 bg-[#1a1a1a] px-3 text-white">
-                <option value="" className="text-brand-black">
+              <select name="preferredTiming" defaultValue="" className="focus-ring min-h-12 w-full min-w-0 appearance-none rounded-md border border-white/16 bg-[#1a1a1a] px-3 text-white [color-scheme:dark]">
+                <option value="" className="bg-[#1a1a1a] text-white">
                   Select timing
                 </option>
                 {timingOptions.map((timing) => (
-                  <option key={timing} value={timing} className="text-brand-black">
+                  <option key={timing} value={timing} className="bg-[#1a1a1a] text-white">
                     {timing}
                   </option>
                 ))}
@@ -300,12 +304,11 @@ export function InquiryForm({
           )}
         </div>
 
-        {!compact && (
         <label className="grid min-w-0 gap-1 text-sm">
           Message
-          <textarea name="message" maxLength={1200} className="focus-ring min-h-28 w-full min-w-0 rounded-md border border-white/16 bg-[#1a1a1a] px-3 py-3 text-white placeholder:text-white/55" placeholder="Briefly describe the job." />
+          <textarea name="message" required minLength={10} maxLength={1200} className="focus-ring min-h-28 w-full min-w-0 rounded-md border border-white/16 bg-[#1a1a1a] px-3 py-3 text-white placeholder:text-white/55" placeholder="Briefly describe the job — what needs doing and where in the property." />
+          {errors.message && <span className="text-xs text-red-200">{errors.message}</span>}
         </label>
-        )}
 
         {!compact && (
         <div className="grid gap-2 text-sm">
