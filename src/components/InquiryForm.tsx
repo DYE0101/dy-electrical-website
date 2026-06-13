@@ -93,7 +93,7 @@ function validateInquiry(values: InquiryInput) {
     errors.suburb = "Please select your suburb.";
   }
 
-  if (values.message.trim().length < 10) {
+  if (values.message.trim().length === 0) {
     errors.message = "Please add a few details about the job.";
   }
 
@@ -306,7 +306,7 @@ export function InquiryForm({
 
         <label className="grid min-w-0 gap-1 text-sm">
           Message
-          <textarea name="message" required minLength={10} maxLength={1200} className="focus-ring min-h-28 w-full min-w-0 rounded-md border border-white/16 bg-[#1a1a1a] px-3 py-3 text-white placeholder:text-white/55" placeholder="Briefly describe the job — what needs doing and where in the property." />
+          <textarea name="message" required maxLength={1200} className="focus-ring min-h-28 w-full min-w-0 rounded-md border border-white/16 bg-[#1a1a1a] px-3 py-3 text-white placeholder:text-white/55" placeholder="Briefly describe the job — what needs doing and where in the property." />
           {errors.message && <span className="text-xs text-red-200">{errors.message}</span>}
         </label>
 
