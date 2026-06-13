@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 import { priorityServices, secondaryServices } from "@/lib/services";
 
 export const metadata: Metadata = {
-  title: "Electrical Services Logan, Brisbane & Gold Coast",
+  title: "Electrical Services Logan & Brisbane",
   description:
     "Licensed electrical services across Logan, Brisbane Southside and the Northern Gold Coast for homes, rentals, builders and small businesses.",
   alternates: { canonical: "/services" },
@@ -76,9 +76,9 @@ export default function ServicesPage() {
           Electrical Services in Logan, Brisbane &amp; the Gold Coast
         </h1>
         <p className="mt-5 max-w-2xl text-base leading-7 text-brand-charcoal/70 md:text-lg">
-          Reliable electrical services for homes, small businesses and managed
-          properties — delivered with clear communication, work done properly and
-          attention to detail.
+          Licensed electrical work for homes, small businesses and managed
+          properties — delivered with clear communication, precise workmanship
+          and attention to detail.
         </p>
 
         {/* Priority service cards */}
@@ -164,8 +164,8 @@ export default function ServicesPage() {
               Not sure what you need?
             </p>
             <p className="mt-2 text-sm text-white/60">
-              Describe the job and we&apos;ll come back with clear advice and a
-              fixed price.
+              Describe the job and we&apos;ll point you to the right fix, with a
+              fixed price before any work starts.
             </p>
           </div>
           <div className="flex flex-col gap-3 sm:flex-row">

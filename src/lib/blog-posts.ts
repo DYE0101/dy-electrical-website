@@ -191,7 +191,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "callout",
-        text: "Doing unlicensed electrical work in Queensland can void your home insurance, attract fines, and — most importantly — kill people. It's not worth it.",
+        text: "Doing unlicensed electrical work in Queensland can void your home insurance, attract serious fines, and — most importantly — put lives at risk. It's not worth it.",
       },
       {
         type: "h2",
@@ -840,7 +840,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "Start by checking what you have. If your existing smoke alarms have a 'test' button and a 'hush' button but no visible brand-compliance marking referencing AS 3786:2014, they are almost certainly ionisation type and do not comply. If they are not interconnected — that is, if one alarming doesn't trigger the others — they do not comply.",
+        text: "Start by checking what you have. If your existing smoke alarms have a 'test' button and a 'hush' button but no visible brand-compliance marking referencing AS 3786:2014, they are almost certainly ionisation type and do not comply. If they are not interconnected — that is, if one alarm doesn't trigger the others — they do not comply.",
       },
       {
         type: "p",

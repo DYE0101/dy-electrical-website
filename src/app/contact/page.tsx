@@ -50,7 +50,7 @@ export default async function ContactPage({ searchParams }: ContactPageProps) {
       <section className="mx-auto grid w-full max-w-[1180px] px-4 gap-10 py-16 lg:grid-cols-[.75fr_.8fr] lg:py-24">
         <div className="min-w-0">
           <h1 className="font-heading text-[clamp(2.5rem,6vw,4.5rem)] font-extrabold leading-tight text-brand-black">
-            Tell us what needs sorting.
+            Get a licensed electrician on the job.
           </h1>
           <p className="mt-5 max-w-xl text-lg leading-8 text-brand-charcoal/70">
             Send the job details or call directly. Urgent electrical issues are

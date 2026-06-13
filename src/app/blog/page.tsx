@@ -69,8 +69,8 @@ export default function BlogPage() {
               Need an electrician, not an article?
             </p>
             <p className="mt-2 text-sm text-white/60">
-              Tell us about the job and we&apos;ll come back with clear advice
-              and a fixed price.
+              Tell us what&apos;s going on and we&apos;ll come back with a
+              straight answer and a fixed price.
             </p>
           </div>
           <div className="flex flex-col gap-3 sm:flex-row">

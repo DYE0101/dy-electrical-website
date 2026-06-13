@@ -47,7 +47,7 @@ const faqSchema = {
 };
 
 export const metadata: Metadata = {
-  title: "Property Manager Electrician Logan & Brisbane",
+  title: "Property Manager Electrician Logan",
   description:
     "Electrical maintenance for property managers across Logan, Brisbane Southside and the Northern Gold Coast. Tenant access, clear notes and fast attendance.",
   alternates: { canonical: "/real-estate-agents" },
@@ -64,7 +64,7 @@ const features = [
   },
   {
     heading: "We show up when booked",
-    body: "No chasing, no missed appointments without notice. If something changes, we call ahead — not after the fact.",
+    body: "No missed appointments, no silent reschedules. If something changes, we call ahead — not after the fact.",
   },
   {
     heading: "Clear job notes, every time",

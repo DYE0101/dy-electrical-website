@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 const features = [
   {
     heading: "Minimal disruption",
-    body: "We plan work around trading hours, access windows and site requirements so the job does not create unnecessary friction.",
+    body: "We plan work around trading hours, access windows and site requirements so the work stays out of your customers' way.",
   },
   {
     heading: "Sharp commercial finishes",

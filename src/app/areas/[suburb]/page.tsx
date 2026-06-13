@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: SuburbPageProps): Promise<Met
     description: `Licensed electrician in ${area.suburb}, ${area.region}: switchboards, EV chargers, air conditioning, fault finding and 24/7 emergency callout.`,
     alternates: { canonical: `/areas/${area.slug}` },
     openGraph: {
-      title: `Electrician ${area.suburb} | DY Electrical`,
+      title: `Electrician ${area.suburb} | DY Electrical Services`,
       description: `Licensed electrician in ${area.suburb}. 24/7 emergency callout across ${area.region}.`,
       images: [{ url: "/images/og-default.jpg", width: 1200, height: 630 }],
     },

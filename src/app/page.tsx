@@ -40,10 +40,14 @@ export default async function HomePage() {
               the Northern Gold Coast.
             </h1>
             <p className="mt-5 text-sm font-extrabold uppercase tracking-widest text-brand-gold/80">
-              One team. One standard. Done Once Done Right.
+              Don&apos;t D.I.Y — Call DY Electrical Services
             </p>
             <p className="mt-4 max-w-[21rem] text-base leading-7 text-white/72 sm:max-w-2xl sm:text-lg sm:leading-8">
-              DY Electrical was built on a simple idea — show up, do it right, stand behind it. Every electrician on our team works to the same standard. That&apos;s why we back every job with a lifetime guarantee.
+              DY Electrical Services was built on a simple idea — show up, do it right, stand behind it. The licensed electrician who quotes your job is the one who does it, and every job is backed by our{" "}
+              <Link href="/about#guarantee" className="font-semibold text-white underline decoration-brand-gold/60 underline-offset-4 hover:decoration-white">
+                lifetime workmanship guarantee
+              </Link>
+              .
             </p>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -114,7 +118,7 @@ export default async function HomePage() {
               From everyday electrical work to quality upgrades, we take care of the details that matter.
             </h2>
             <p className="text-white/60">
-              From switchboards and lighting to air conditioning and EV charging — clear advice, tidy work and no guesswork.
+              From switchboards and lighting to air conditioning and EV charging — clear advice, precise work and no loose ends.
             </p>
           </div>
 

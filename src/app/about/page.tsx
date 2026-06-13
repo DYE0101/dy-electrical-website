@@ -3,7 +3,7 @@ import Link from "next/link";
 import { business } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "About — Licensed Electrician Logan & Brisbane",
+  title: "About — Logan & Brisbane Electrician",
   description:
     "Licensed electrical contractor based in Logan, servicing Brisbane Southside and the Northern Gold Coast for residential, commercial and rental work.",
   alternates: { canonical: "/about" },
@@ -126,8 +126,8 @@ export default function AboutPage() {
                 <p>
                   Operating out of Logan with coverage across Brisbane Southside
                   and the Northern Gold Coast, we work with homeowners,
-                  property managers, builders and small businesses who need
-                  electrical work handled without the back-and-forth.
+                  property managers, builders and small businesses who want
+                  electrical work handled without having to manage it.
                 </p>
               </div>
             </div>
@@ -181,12 +181,45 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Guarantee */}
+      <section id="guarantee" className="scroll-mt-24 border-t border-gray-100 bg-brand-background">
+        <div className="mx-auto w-full max-w-[1180px] px-4 py-16 lg:py-24">
+          <div className="max-w-3xl">
+            <h2 className="font-heading text-[clamp(1.75rem,4vw,2.5rem)] font-extrabold leading-tight text-brand-black">
+              Our guarantee
+            </h2>
+            <p className="mt-6 text-base leading-7 text-brand-charcoal/80">
+              We stand behind our workmanship. Every installation we complete is
+              backed by a lifetime workmanship guarantee — for as long as you own
+              the property, if any part of the work we carried out fails because
+              of our workmanship, we put it right at no cost to you.
+            </p>
+            <p className="mt-4 text-base leading-7 text-brand-charcoal/80">
+              The guarantee covers the quality of our installation and labour. It
+              does not cover the manufacturer&apos;s warranty on supplied
+              equipment (which is passed to you directly), fair wear and tear,
+              damage caused by others, or faults in parts of the electrical
+              system we did not work on. Every job is tested on completion and
+              issued with a compliance certificate.
+            </p>
+            <p className="mt-4 text-base leading-7 text-brand-charcoal/80">
+              If something isn&apos;t right, call us — that is the point of
+              dealing with a licensed electrician who stands behind the work.
+            </p>
+            <p className="mt-6 text-sm text-brand-charcoal/55">
+              This guarantee sits alongside your rights under the Australian
+              Consumer Law, which are not affected by anything stated here.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* CTA strip */}
       <section className="bg-brand-black">
         <div className="mx-auto w-full max-w-[1180px] px-4 py-14 lg:py-20 flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
           <div>
             <p className="font-heading text-2xl font-extrabold text-white md:text-3xl">
-              Ready to get started?
+              Work with an electrician who stands behind the job.
             </p>
             <p className="mt-2 text-sm text-white/60">
               Tell us about the job and we&apos;ll come back with clear advice

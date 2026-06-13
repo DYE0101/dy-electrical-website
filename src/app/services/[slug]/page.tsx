@@ -19,13 +19,13 @@ export function generateStaticParams() {
 const SERVICE_META_TITLES: Record<string, string> = {
   "switchboard-upgrades": "Switchboard Upgrades Brisbane & Logan",
   "ev-chargers": "EV Charger Installation Brisbane & Logan",
-  "fault-finding": "24/7 Emergency Electrician Brisbane & Logan",
-  "air-conditioning": "Air Conditioning Installation Logan & Brisbane",
-  "smoke-alarms": "Smoke Alarm Installation Brisbane & Logan",
-  "oven-installation": "Oven & Cooktop Installation Brisbane & Logan",
-  "lighting-power": "Lighting & Power Upgrades Brisbane & Logan",
-  "data-cabling": "Data Cabling & Networking Logan & Brisbane",
-  "ceiling-fans": "Ceiling Fan Installation Brisbane & Logan",
+  "fault-finding": "Emergency Electrician Brisbane & Logan",
+  "air-conditioning": "Air Conditioning Logan & Brisbane",
+  "smoke-alarms": "Smoke Alarm Compliance Brisbane & Logan",
+  "oven-installation": "Oven & Cooktop Install Brisbane & Logan",
+  "lighting-power": "Lighting & Power Upgrades Logan",
+  "data-cabling": "Data Cabling & Networking Logan",
+  "ceiling-fans": "Ceiling Fan Installation Logan",
 };
 
 const SERVICE_META_DESCRIPTIONS: Record<string, string> = {
