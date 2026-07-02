@@ -30,3 +30,8 @@ mobile-*.png
 
 # Claude Code
 .claude/
+
+# Session verification artifacts
+screenshots/
+*.tsbuildinfo
+dev-server*.log
