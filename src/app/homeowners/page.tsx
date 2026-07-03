@@ -17,7 +17,7 @@ const features = [
   },
   {
     heading: "Work that respects your home",
-    body: "Neat cable runs, tidy finishes and careful work around finished walls, cabinetry, flooring and paint.",
+    body: "Neat cable runs, sharp finishes and careful work around finished walls, cabinetry, flooring and paint.",
   },
   {
     heading: "Licensed, tested and documented",
@@ -87,8 +87,8 @@ export default function HomeownersPage() {
         </h1>
         <p className="mt-5 max-w-2xl text-base leading-7 text-brand-charcoal/70 md:text-lg">
           Licensed residential electrical work across Logan, Brisbane Southside
-          and the Northern Gold Coast. Clear advice, work done properly and no
-          guesswork inside your home.
+          and the Northern Gold Coast. Clear advice, work done properly and
+          care taken inside your home.
         </p>
       </section>
 
@@ -167,13 +167,13 @@ export default function HomeownersPage() {
           <div className="flex flex-col gap-3 sm:flex-row">
             <Link
               href="/contact?type=homeowner_quote"
-              className="inline-block bg-brand-gold px-7 py-3.5 text-sm font-semibold text-white transition hover:bg-brand-gold/80"
+              className="focus-ring inline-flex min-h-12 items-center justify-center whitespace-nowrap rounded-md bg-gradient-to-br from-[#C4A45A] via-brand-goldHighlight to-brand-gold px-7 text-sm font-extrabold text-brand-black shadow-[inset_0_-2px_0_rgba(10,10,10,0.18),0_10px_26px_rgba(176,145,76,0.24)] transition hover:brightness-110"
             >
               Request a quote
             </Link>
             <a
               href={business.phoneHref}
-              className="inline-block border border-white/20 px-7 py-3.5 text-sm font-semibold text-white transition hover:border-white/50"
+              className="focus-ring inline-flex min-h-12 items-center justify-center whitespace-nowrap rounded-md border border-white/20 px-7 text-sm font-semibold text-white transition hover:border-brand-goldHighlight"
             >
               Call {business.phoneDisplay}
             </a>

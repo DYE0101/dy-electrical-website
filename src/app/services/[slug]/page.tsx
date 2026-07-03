@@ -32,13 +32,13 @@ const SERVICE_META_DESCRIPTIONS: Record<string, string> = {
   "switchboard-upgrades":
     "Switchboard upgrades for older homes, renovations, EV chargers and new circuits across Logan, Brisbane Southside and the Northern Gold Coast.",
   "ev-chargers":
-    "EV charger installation across Logan, Brisbane Southside and the Northern Gold Coast with dedicated circuits, load checks and tidy cable runs.",
+    "EV charger installation across Logan, Brisbane Southside and the Northern Gold Coast with dedicated circuits, load checks and precise cable runs.",
   "air-conditioning":
     "ARC-licensed split system installation and electrical support for homes and small commercial spaces across Logan, Brisbane Southside and the Gold Coast.",
   "fault-finding":
     "24/7 emergency electrician for Logan, Brisbane Southside and the Northern Gold Coast. Fault finding for tripping boards, dead circuits and burning smells.",
   "lighting-power":
-    "Lighting, downlight and power point upgrades across Logan, Brisbane Southside and the Northern Gold Coast with tidy cable runs and sharp finishes.",
+    "Lighting, downlight and power point upgrades across Logan, Brisbane Southside and the Northern Gold Coast with precise cable runs and sharp finishes.",
   "data-cabling":
     "Structured data cabling for Logan, Brisbane Southside and Northern Gold Coast homes and small businesses: Cat6, patch panels and Wi-Fi access points.",
   "ceiling-fans":
@@ -144,7 +144,7 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
             <div className="mt-4 grid gap-3 sm:grid-cols-2">
               <Link
                 href="#service-enquiry"
-                className="inline-flex min-h-12 items-center justify-center rounded-md bg-brand-gold px-5 text-sm font-extrabold text-white transition hover:bg-brand-gold/80"
+                className="focus-ring inline-flex min-h-12 items-center justify-center whitespace-nowrap rounded-md bg-gradient-to-br from-[#C4A45A] via-brand-goldHighlight to-brand-gold px-5 text-sm font-extrabold text-brand-black shadow-[inset_0_-2px_0_rgba(10,10,10,0.18),0_10px_26px_rgba(176,145,76,0.24)] transition hover:brightness-110"
               >
                 Request a quote
               </Link>
@@ -205,7 +205,7 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
           </div>
         </div>
 
-        <div id="service-enquiry" className="scroll-mt-24">
+        <div id="service-enquiry" className="scroll-mt-24 lg:sticky lg:top-24 lg:self-start">
           <InquiryForm
             defaultServiceType={SERVICE_FORM_DEFAULTS[service.slug]}
             ctaClicked={`${service.slug}_service_page_form`}

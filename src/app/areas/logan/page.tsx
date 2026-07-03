@@ -113,7 +113,7 @@ export default function LoganPage() {
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Link
               href="/contact?type=homeowner_quote"
-              className="inline-block bg-brand-gold px-7 py-3.5 text-sm font-semibold text-white transition hover:bg-brand-gold/80"
+              className="focus-ring inline-flex min-h-12 items-center justify-center whitespace-nowrap rounded-md bg-gradient-to-br from-[#C4A45A] via-brand-goldHighlight to-brand-gold px-7 text-sm font-extrabold text-brand-black shadow-[inset_0_-2px_0_rgba(10,10,10,0.18),0_10px_26px_rgba(176,145,76,0.24)] transition hover:brightness-110"
             >
               Request a quote
             </Link>
@@ -193,7 +193,7 @@ export default function LoganPage() {
               },
               {
                 heading: "Licensed and insured",
-                body: "Electrical Contractor Licence No. 87141 and ARC Licence L179309. Publicly insured. Every job under licence — no unlicensed electrical work, ever.",
+                body: "Electrical Contractor Licence No. 87141 and ARC Licence L179309. Public liability insurance held. Every job under licence — no unlicensed electrical work, ever.",
               },
               {
                 heading: "One contractor for everything",
@@ -268,7 +268,7 @@ export default function LoganPage() {
               </p>
               <p className="flex items-center gap-2">
                 <ShieldCheck className="h-4 w-4 text-white/40 shrink-0" aria-hidden="true" />
-                Lic. No. 87141 · ARC L179309 · Publicly insured
+                Lic. No. 87141 · ARC L179309 · Public Liability Insurance held
               </p>
             </div>
           </div>

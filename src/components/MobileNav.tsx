@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { ArrowRight, ChevronDown, Menu, Phone, X } from "lucide-react";
 import { business } from "@/lib/constants";
@@ -52,6 +52,16 @@ export function MobileNav() {
     setMobileOpenGroup(null);
   };
 
+  // Lock background scroll while the menu is open
+  useEffect(() => {
+    if (!isMenuOpen) return;
+    const previous = document.documentElement.style.overflow;
+    document.documentElement.style.overflow = "hidden";
+    return () => {
+      document.documentElement.style.overflow = previous;
+    };
+  }, [isMenuOpen]);
+
   const toggleMobileGroup = (label: string) => {
     setMobileOpenGroup((prev) => (prev === label ? null : label));
   };
@@ -86,7 +96,7 @@ export function MobileNav() {
         id="mobile-navigation"
         className={`lg:hidden ${isMenuOpen ? "block" : "hidden"}`}
       >
-        <div className="border-t border-white/10 bg-brand-black px-4 pb-5 pt-3 shadow-[0_28px_60px_rgba(0,0,0,0.36)]">
+        <div className="fixed inset-x-0 top-[72px] bottom-0 z-[60] overflow-y-auto border-t border-white/10 bg-brand-black px-4 pb-8 pt-3">
           <nav className="grid gap-1" aria-label="Mobile navigation">
             <Link
               href="/"

@@ -217,13 +217,13 @@ export default function BuildersPage() {
           <div className="flex flex-col gap-3 sm:flex-row">
             <a
               href={business.phoneHref}
-              className="inline-block bg-brand-gold px-7 py-3.5 text-sm font-semibold text-white transition hover:bg-brand-gold/80"
+              className="focus-ring inline-flex min-h-12 items-center justify-center whitespace-nowrap rounded-md bg-gradient-to-br from-[#C4A45A] via-brand-goldHighlight to-brand-gold px-7 text-sm font-extrabold text-brand-black shadow-[inset_0_-2px_0_rgba(10,10,10,0.18),0_10px_26px_rgba(176,145,76,0.24)] transition hover:brightness-110"
             >
               Call {business.phoneDisplay}
             </a>
             <Link
               href="/contact"
-              className="inline-block border border-white/20 px-7 py-3.5 text-sm font-semibold text-white transition hover:border-white/50"
+              className="focus-ring inline-flex min-h-12 items-center justify-center whitespace-nowrap rounded-md border border-white/20 px-7 text-sm font-semibold text-white transition hover:border-brand-goldHighlight"
             >
               Send project details
             </Link>

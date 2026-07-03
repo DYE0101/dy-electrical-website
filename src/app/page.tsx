@@ -61,7 +61,7 @@ export default async function HomePage() {
             </div>
 
             <p className="mt-8 max-w-[21rem] break-words text-xs leading-5 text-white/68 sm:max-w-full">
-              Lic. No. 87141 · ARC L179309 · Publicly Insured · ABN 75 643 388 416
+              Lic. No. 87141 · ARC L179309 · Public Liability Insurance held · ABN 75 643 388 416
             </p>
           </div>
 
@@ -77,7 +77,7 @@ export default async function HomePage() {
       </section>
 
       {/* Audience paths */}
-      <section className="relative -mt-px bg-brand-background pb-20 pt-16 before:pointer-events-none before:absolute before:inset-x-0 before:-top-px before:h-20 before:bg-gradient-to-b before:from-brand-black before:to-brand-background after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-20 after:bg-gradient-to-b after:from-brand-background after:to-brand-black">
+      <section className="relative border-y border-brand-gold/25 bg-brand-background pb-20 pt-16">
         <div className="relative z-10 mx-auto grid w-full max-w-[1180px] px-4 gap-4 md:grid-cols-2 xl:grid-cols-[1.18fr_1fr_1fr_1fr]">
           {audiencePaths.map((path) => {
             const Icon = path.icon;
@@ -115,7 +115,7 @@ export default async function HomePage() {
         <div className="mx-auto w-full max-w-[1180px] px-4">
           <div className="mb-10 grid gap-6 lg:grid-cols-[1fr_.62fr] lg:items-end">
             <h2 className="max-w-3xl font-heading text-[clamp(2rem,4vw,3.25rem)] font-extrabold leading-tight">
-              From everyday electrical work to quality upgrades, we take care of the details that matter.
+              From everyday electrical work to full upgrades — we take care of the details that matter.
             </h2>
             <p className="text-white/60">
               From switchboards and lighting to air conditioning and EV charging — clear advice, precise work and no loose ends.
@@ -189,7 +189,7 @@ export default async function HomePage() {
         <div className="mx-auto grid w-full max-w-[1180px] px-4 gap-10 lg:grid-cols-[.8fr_.72fr] lg:items-start">
           <div>
             <h2 className="font-heading text-[clamp(2rem,4vw,3.25rem)] font-extrabold leading-tight">
-              Get the right next step without a long back-and-forth.
+              Tell us the job. We&apos;ll come back with a straight answer.
             </h2>
             <p className="mt-5 text-lg leading-8 text-white/64">
               Fill in the form with what you need and where the job is. Most
@@ -197,11 +197,11 @@ export default async function HomePage() {
             </p>
             <div className="mt-8 flex items-center gap-3 text-sm text-white/52">
               <MapPin className="h-5 w-5 text-white/40 shrink-0" aria-hidden="true" />
-              <span>Based near Logan and servicing Brisbane Southside, Logan, the Northern Gold Coast and surrounding suburbs.</span>
+              <span>Based in Bahrs Scrub, Logan — servicing Brisbane Southside, Logan, the Northern Gold Coast and surrounding suburbs.</span>
             </div>
             <div className="mt-4 flex items-center gap-3 text-sm text-white/52">
               <ShieldCheck className="h-5 w-5 text-white/40 shrink-0" aria-hidden="true" />
-              <span>Licensed, ARC registered and publicly insured.</span>
+              <span>Licensed, ARC registered and covered by public liability insurance.</span>
             </div>
           </div>
 

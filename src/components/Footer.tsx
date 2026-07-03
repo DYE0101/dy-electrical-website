@@ -95,19 +95,12 @@ export function Footer() {
             Guides
           </h2>
           <ul className="mt-4 space-y-2 text-sm text-white/68">
-            <li><Link href="/blog/when-to-upgrade-your-switchboard" className="hover:text-white transition-colors">Switchboard Upgrade Signs</Link></li>
             <li><Link href="/blog/switchboard-upgrade-cost-brisbane-logan" className="hover:text-white transition-colors">Switchboard Upgrade Cost</Link></li>
             <li><Link href="/blog/ev-charger-installation-at-home" className="hover:text-white transition-colors">Home EV Charger Guide</Link></li>
-            <li><Link href="/blog/ev-charger-installation-cost-queensland" className="hover:text-white transition-colors">EV Charger Cost</Link></li>
-            <li><Link href="/blog/what-needs-a-licensed-electrician-in-queensland" className="hover:text-white transition-colors">Licensed Electrical Work</Link></li>
-            <li><Link href="/blog/what-is-an-rcd-safety-switch" className="hover:text-white transition-colors">RCD Safety Switches</Link></li>
-            <li><Link href="/blog/signs-you-need-an-emergency-electrician" className="hover:text-white transition-colors">Emergency Electrician Signs</Link></li>
-            <li><Link href="/blog/how-to-choose-an-electrician-brisbane-logan" className="hover:text-white transition-colors">Choosing an Electrician</Link></li>
-            <li><Link href="/blog/air-conditioning-installation-what-to-expect" className="hover:text-white transition-colors">Air Conditioning Install</Link></li>
-            <li><Link href="/blog/downlight-installation-brisbane-logan" className="hover:text-white transition-colors">Downlight Installation</Link></li>
-            <li><Link href="/blog/property-manager-electrical-maintenance-guide" className="hover:text-white transition-colors">Property Manager Maintenance</Link></li>
             <li><Link href="/blog/qld-smoke-alarm-laws-2027-logan-brisbane" className="hover:text-white transition-colors">Queensland Smoke Alarm Laws</Link></li>
             <li><Link href="/blog/why-does-my-safety-switch-keep-tripping" className="hover:text-white transition-colors">Safety Switch Keeps Tripping</Link></li>
+            <li><Link href="/blog/how-to-choose-an-electrician-brisbane-logan" className="hover:text-white transition-colors">Choosing an Electrician</Link></li>
+            <li><Link href="/blog" className="hover:text-white transition-colors font-semibold">All Guides →</Link></li>
           </ul>
         </div>
       </div>

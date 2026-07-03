@@ -60,6 +60,36 @@ export default async function ContactPage({ searchParams }: ContactPageProps) {
             <CTAButton href={business.phoneHref}>Call {business.phoneDisplay}</CTAButton>
             <CTAButton href="/services" variant="secondary">View Services</CTAButton>
           </div>
+
+          <dl className="mt-10 max-w-xl space-y-4 border-t border-brand-border pt-8 text-sm">
+            <div className="flex flex-col gap-1 sm:flex-row sm:gap-4">
+              <dt className="w-28 shrink-0 font-semibold text-brand-black">Phone</dt>
+              <dd className="text-brand-charcoal/75">
+                <a href={business.phoneHref} className="hover:text-brand-black">{business.phoneDisplay}</a>
+                {" "}— 24/7 for genuine electrical emergencies
+              </dd>
+            </div>
+            <div className="flex flex-col gap-1 sm:flex-row sm:gap-4">
+              <dt className="w-28 shrink-0 font-semibold text-brand-black">Email</dt>
+              <dd className="text-brand-charcoal/75">
+                <a href={`mailto:${business.email}`} className="hover:text-brand-black">{business.email}</a>
+                {" "}— replied to the same business day
+              </dd>
+            </div>
+            <div className="flex flex-col gap-1 sm:flex-row sm:gap-4">
+              <dt className="w-28 shrink-0 font-semibold text-brand-black">Based in</dt>
+              <dd className="text-brand-charcoal/75">
+                Bahrs Scrub QLD 4207 — servicing Logan, Brisbane Southside and
+                the Northern Gold Coast
+              </dd>
+            </div>
+            <div className="flex flex-col gap-1 sm:flex-row sm:gap-4">
+              <dt className="w-28 shrink-0 font-semibold text-brand-black">Credentials</dt>
+              <dd className="text-brand-charcoal/75">
+                {business.electricalContractor} · {business.arcLicence} · {business.insurance} · ABN {business.abn}
+              </dd>
+            </div>
+          </dl>
         </div>
         <InquiryForm defaultLeadType={defaultLeadType} ctaClicked="contact_page_form" />
       </section>

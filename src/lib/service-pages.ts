@@ -66,7 +66,7 @@ export const servicePages = [
       "7kW single-phase home wall chargers",
       "22kW three-phase chargers for premium homes and small commercial",
       "Switchboard load checks and upgrades where required",
-      "Tidy cable routing through roof spaces and external conduit",
+      "Precise cable routing through roof spaces and external conduit",
       "Compliance certificate and commissioning report on completion",
     ],
     faq: [

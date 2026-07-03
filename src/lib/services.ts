@@ -87,14 +87,14 @@ export const audiencePaths = [
     description:
       "Electrical upgrades and repairs without the guesswork. Clear advice, precise workmanship, and reliable electrical work for homes across Logan, Brisbane Southside and the Northern Gold Coast.",
     href: "/homeowners",
-    cta: "For homeowners",
+    cta: "Get a homeowner quote",
     icon: Home,
     featured: true,
   },
   {
-    title: "Commercial Clients",
+    title: "For Commercial Clients",
     description:
-      "Tidy electrical work for shops, offices, clinics and small commercial spaces that need minimal disruption.",
+      "Precise electrical work for shops, offices, clinics and small commercial spaces that need minimal disruption.",
     href: "/commercial-clients",
     cta: "Discuss commercial work",
     icon: Building2,

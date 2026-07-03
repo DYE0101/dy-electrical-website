@@ -28,7 +28,7 @@ function TrustFallback() {
         "Licensed electrical contractor — Licence No. 87141",
         "ARC licensed for split system air conditioning",
         "Based in Bahrs Scrub, servicing Logan, Brisbane Southside and the Northern Gold Coast",
-        "Clear scope, tidy finishes and practical advice before work starts",
+        "Clear scope, sharp finishes and practical advice before work starts",
       ].map((item) => (
         <div key={item} className="min-w-0 break-words border-l-2 border-brand-black/20 bg-brand-surface p-4 text-sm font-semibold text-brand-charcoal/72">
           {item}
@@ -44,7 +44,7 @@ export function GoogleReviews({
 }: GoogleReviewsProps) {
   const reviews = summary?.reviews ?? [];
   const transitionClass = transitionFromDark
-    ? "before:pointer-events-none before:absolute before:inset-x-0 before:top-0 before:h-20 before:bg-gradient-to-b before:from-brand-black before:to-brand-background"
+    ? "border-t border-brand-gold/25"
     : "";
 
   return (
