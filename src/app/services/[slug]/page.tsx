@@ -19,7 +19,7 @@ export function generateStaticParams() {
 const SERVICE_META_TITLES: Record<string, string> = {
   "switchboard-upgrades": "Switchboard Upgrades Brisbane & Logan",
   "ev-chargers": "EV Charger Installation Brisbane & Logan",
-  "fault-finding": "Emergency Electrician Brisbane & Logan",
+  "fault-finding": "Fault Finding Electrician Brisbane",
   "air-conditioning": "Air Conditioning Logan & Brisbane",
   "smoke-alarms": "Smoke Alarm Compliance Brisbane & Logan",
   "oven-installation": "Oven & Cooktop Install Brisbane & Logan",
@@ -36,7 +36,7 @@ const SERVICE_META_DESCRIPTIONS: Record<string, string> = {
   "air-conditioning":
     "ARC-licensed split system installation and electrical support for homes and small commercial spaces across Logan, Brisbane Southside and the Gold Coast.",
   "fault-finding":
-    "24/7 emergency electrician for Logan, Brisbane Southside and the Northern Gold Coast. Fault finding for tripping boards, dead circuits and burning smells.",
+    "Electrical fault finding across Logan, Brisbane Southside and the Northern Gold Coast. Tripping safety switches, dead circuits and intermittent faults.",
   "lighting-power":
     "Lighting, downlight and power point upgrades across Logan, Brisbane Southside and the Northern Gold Coast with precise cable runs and sharp finishes.",
   "data-cabling":

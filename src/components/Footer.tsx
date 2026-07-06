@@ -40,7 +40,8 @@ export function Footer() {
             <li><Link href="/services/switchboard-upgrades" className="hover:text-white transition-colors">Switchboard Upgrades</Link></li>
             <li><Link href="/services/ev-chargers" className="hover:text-white transition-colors">EV Charger Installation</Link></li>
             <li><Link href="/services/air-conditioning" className="hover:text-white transition-colors">Air Conditioning</Link></li>
-            <li><Link href="/services/fault-finding" className="hover:text-white transition-colors">Fault Finding &amp; Emergency</Link></li>
+            <li><Link href="/emergency-electrician" className="hover:text-white transition-colors">24/7 Emergency Electrician</Link></li>
+            <li><Link href="/services/fault-finding" className="hover:text-white transition-colors">Fault Finding</Link></li>
             <li><Link href="/services/lighting-power" className="hover:text-white transition-colors">Lighting &amp; Power</Link></li>
             <li><Link href="/services/data-cabling" className="hover:text-white transition-colors">Data Cabling</Link></li>
             <li><Link href="/services/ceiling-fans" className="hover:text-white transition-colors">Ceiling Fans</Link></li>

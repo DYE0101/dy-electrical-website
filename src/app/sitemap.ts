@@ -7,6 +7,7 @@ import { areaPages } from "@/lib/area-pages";
 const staticRoutes = [
   { path: "", priority: 1.0, changeFrequency: "weekly" as const },
   { path: "/services", priority: 0.9, changeFrequency: "monthly" as const },
+  { path: "/emergency-electrician", priority: 0.9, changeFrequency: "monthly" as const },
   { path: "/areas-serviced", priority: 0.9, changeFrequency: "monthly" as const },
   { path: "/areas/logan", priority: 0.9, changeFrequency: "monthly" as const },
   { path: "/areas/brisbane-southside", priority: 0.9, changeFrequency: "monthly" as const },
