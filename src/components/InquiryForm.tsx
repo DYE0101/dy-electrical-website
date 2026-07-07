@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, type FormEvent } from "react";
+import { useState, type FormEvent } from "react";
 import { Send, Camera, X } from "lucide-react";
 import type { InquiryInput } from "@/lib/lead-schema";
 import { leadTypes, serviceTypes, type ServiceType } from "@/lib/constants";
@@ -112,7 +112,6 @@ export function InquiryForm({
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
   const [errors, setErrors] = useState<InquiryErrors>({});
   const [photos, setPhotos] = useState<PhotoEntry[]>([]);
-  const fileInputRef = useRef<HTMLInputElement>(null);
 
   function handlePhotoChange(e: React.ChangeEvent<HTMLInputElement>) {
     const files = Array.from(e.target.files ?? []);
@@ -339,7 +338,6 @@ export function InquiryForm({
           {photos.length < 3 && (
             <label className="cursor-pointer">
               <input
-                ref={fileInputRef}
                 type="file"
                 accept="image/*"
                 multiple

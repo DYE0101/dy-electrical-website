@@ -37,7 +37,8 @@ export const inquirySchema = z.object({
   company: z.string().optional(),
   photos: z.array(z.object({
     filename: z.string().max(255),
-    content: z.string(),
+    // Base64 chars; ~1.5MB decoded. Client compresses to <=1200px JPEG, this is the server-side guarantee.
+    content: z.string().max(2_000_000),
   })).max(3).optional(),
 });
 

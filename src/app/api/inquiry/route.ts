@@ -30,7 +30,13 @@ export async function POST(request: Request) {
   }
 
   const leadPayload = toServiceM8Lead(input);
-  const serviceM8Result = await createServiceM8Lead(input);
+  // ServiceM8 must never block the email: the lead is lost if this route 500s.
+  let serviceM8Result: { enabled: boolean } = { enabled: false };
+  try {
+    serviceM8Result = await createServiceM8Lead(input);
+  } catch (error) {
+    console.error("ServiceM8 lead creation failed — continuing with email delivery", { error });
+  }
   const leadLabel =
     subjectLabels[input.leadType] ??
     leadTypes.find((type) => type.value === input.leadType)?.label ??
