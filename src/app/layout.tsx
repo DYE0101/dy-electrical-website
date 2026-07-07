@@ -157,6 +157,14 @@ const localBusinessSchema = {
         "@type": "Offer",
         itemOffered: {
           "@type": "Service",
+          name: "24/7 emergency electrician",
+          url: `${business.domain}/emergency-electrician`,
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
           name: "Switchboard upgrades",
           url: `${business.domain}/services/switchboard-upgrades`,
         },
@@ -199,6 +207,19 @@ const localBusinessSchema = {
     { "@type": "PropertyValue", name: "ABN", value: business.abn },
     { "@type": "PropertyValue", name: "Electrical Contractor", value: "87141" },
     { "@type": "PropertyValue", name: "ARC Licence", value: "L179309" },
+  ],
+  slogan: "Don't D.I.Y - Call DY Electrical Services",
+  knowsAbout: [
+    "Switchboard upgrades",
+    "EV charger installation",
+    "Air conditioning installation",
+    "Emergency electrical repairs",
+    "Fault finding",
+    "Smoke alarm installation and compliance",
+    "Lighting and power upgrades",
+    "Data cabling",
+    "Ceiling fan installation",
+    "Oven and cooktop installation",
   ],
   sameAs: [
     "https://www.facebook.com/dyelectricalservices",

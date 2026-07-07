@@ -7,6 +7,9 @@
 - [Licensed Electrician Services](https://www.dyelectricalservices.com.au)
   Details about electrical services provided in Logan, Brisbane Southside and the Northern Gold Coast, including licensing, insurance and scope of work.
 
+- [24/7 Emergency Electrician](https://www.dyelectricalservices.com.au/emergency-electrician)
+  24/7 emergency electrical callouts across Logan, Brisbane Southside and the Northern Gold Coast — power loss, burning smells, tripping switchboards, storm damage, urgent faults. Call-first process, what happens when you call, and safety steps while you wait.
+
 - [Service Offerings](https://www.dyelectricalservices.com.au/services)
   Information on specific electrical services including switchboard upgrades, EV charger installation, air conditioning, fault finding, lighting, data cabling, ceiling fans, smoke alarms and oven installation.
 
@@ -14,7 +17,7 @@
   Real customer reviews providing insight into service quality, workmanship and company reputation.
 
 - [About Us & Licensing](https://www.dyelectricalservices.com.au/about)
-  Company credentials, licensing details, insurance and values — licensed under ESO Electrical Contractor No. 87141, ARC Licence L179309, publicly insured, ABN 75 643 388 416.
+  Company credentials, licensing details, insurance and values — licensed under ESO Electrical Contractor No. 87141, ARC Licence L179309, Public Liability Insurance held, ABN 75 643 388 416.
 
 ## Resources
 
@@ -36,10 +39,33 @@
 - [Areas Serviced](https://www.dyelectricalservices.com.au/areas-serviced)
   Full list of suburbs covered across Logan, Brisbane Southside and the Northern Gold Coast.
 
+- [Electrician Logan](https://www.dyelectricalservices.com.au/areas/logan)
+  Service hub for Logan — the home region, covering Bahrs Scrub, Beenleigh, Springwood and surrounding suburbs.
+
+- [Electrician Brisbane Southside](https://www.dyelectricalservices.com.au/areas/brisbane-southside)
+  Service hub for Brisbane Southside suburbs.
+
+- [Electrician Northern Gold Coast](https://www.dyelectricalservices.com.au/areas/gold-coast)
+  Service hub for the Northern Gold Coast corridor.
+
+## Guides
+
+- [Switchboard Upgrade Cost Brisbane & Logan](https://www.dyelectricalservices.com.au/blog/switchboard-upgrade-cost-brisbane-logan)
+  What drives switchboard upgrade pricing in South East Queensland and what the process involves.
+
+- [EV Charger Installation Cost Queensland](https://www.dyelectricalservices.com.au/blog/ev-charger-installation-cost-queensland)
+  What affects home EV charger installation pricing in Queensland.
+
+- [Queensland Smoke Alarm Laws 2027](https://www.dyelectricalservices.com.au/blog/qld-smoke-alarm-laws-2027-logan-brisbane)
+  What the 1 January 2027 owner-occupier smoke alarm deadline requires in Queensland homes.
+
+- [Signs You Need an Emergency Electrician](https://www.dyelectricalservices.com.au/blog/signs-you-need-an-emergency-electrician)
+  Which electrical faults are genuine emergencies and what to do before the electrician arrives.
+
 ## Optional
 
-- [Fault Finding & 24/7 Emergency](https://www.dyelectricalservices.com.au/services/fault-finding)
-  Information on 24/7 emergency callouts for tripping boards, dead circuits and urgent electrical faults.
+- [Fault Finding](https://www.dyelectricalservices.com.au/services/fault-finding)
+  Diagnostic fault finding for tripping safety switches, dead circuits and intermittent electrical faults.
 
 - [Blog](https://www.dyelectricalservices.com.au/blog)
   Articles covering electrical safety tips, maintenance advice and industry information.
