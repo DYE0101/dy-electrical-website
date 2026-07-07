@@ -43,9 +43,9 @@ const BLOG_META_DESCRIPTIONS: Record<string, string> = {
   "what-needs-a-licensed-electrician-in-queensland":
     "Plain-English guide to what Queensland electrical work needs a licensed electrician and what homeowners can safely do themselves.",
   "switchboard-upgrade-cost-brisbane-logan":
-    "Switchboard upgrade costs in Brisbane and Logan: what affects price, what is included and what to check before booking an electrician.",
+    "Switchboard upgrade costs in Brisbane and Logan: typical 2026 market ranges, what moves the price, what is included and what to check before booking.",
   "ev-charger-installation-cost-queensland":
-    "Home EV charger installation costs in Queensland: what changes the price, what is included and how to avoid common installation traps.",
+    "Home EV charger installation costs in Queensland: typical 2026 market ranges, what changes the price and how to avoid common installation traps.",
   "what-is-an-rcd-safety-switch":
     "RCD safety switches explained: how they differ from circuit breakers and why Queensland homes need proper protection on modern circuits.",
   "signs-you-need-an-emergency-electrician":

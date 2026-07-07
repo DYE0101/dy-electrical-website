@@ -250,12 +250,33 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
+        type: "h2",
+        text: "What the Brisbane and Logan market typically charges",
+      },
+      {
+        type: "p",
+        text: "These are broad industry figures for South East Queensland — market ranges, not our quotes. Published 2026 guides from electricians across Brisbane put a residential switchboard upgrade anywhere between roughly $1,200 and $3,500, with the spread driven by the factors above.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Standard single-phase upgrade on a board in reasonable condition — commonly quoted around $1,200–$2,500",
+          "Older boards needing wiring remediation or extra circuits — commonly $1,800–$3,500",
+          "Asbestos-backed panel removal — typically adds $300–$800",
+          "Three-phase or larger boards — often $2,500–$5,000+",
+        ],
+      },
+      {
+        type: "p",
+        text: "Treat every figure above as a starting point, not a promise. The only real number is an itemised quote on your actual board.",
+      },
+      {
         type: "callout",
         text: "Get a quote that itemises the work, not just a single number. If a quote arrives without seeing the board first, that's a warning sign.",
       },
       {
         type: "h2",
-        text: "Why we don't list prices on the website",
+        text: "Why we don't publish our own price list",
       },
       {
         type: "p",
@@ -294,6 +315,27 @@ export const blogPosts: BlogPost[] = [
           "Charger model — supplied by the customer, supplied by us, or already on-site",
           "Single vs three-phase — three-phase installs for 11kW or 22kW chargers are more involved",
         ],
+      },
+      {
+        type: "h2",
+        text: "What the market typically charges",
+      },
+      {
+        type: "p",
+        text: "As broad industry figures — market ranges, not our quotes — published 2026 Australian guides put a single-phase 7kW home charger, supplied and installed, at roughly $1,500–$3,000 all up.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Charger hardware alone — commonly $700–$1,500 depending on brand and features",
+          "Installation onto a switchboard with capacity to spare — commonly $800–$1,500",
+          "Switchboard upgrade first, if the board needs it — adds roughly $800–$2,500",
+          "Three-phase 11kW or 22kW installs — higher again, quoted case by case",
+        ],
+      },
+      {
+        type: "p",
+        text: "Ranges that wide are exactly why the only real number is an itemised quote for your home.",
       },
       {
         type: "h2",
