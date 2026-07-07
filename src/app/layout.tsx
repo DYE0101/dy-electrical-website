@@ -223,6 +223,7 @@ const localBusinessSchema = {
   ],
   sameAs: [
     "https://www.facebook.com/dyelectricalservices",
+    "https://www.instagram.com/dyelectricalservices/",
     "https://maps.app.goo.gl/xhxaBNKAbTGF5P9P7"
   ],
 };
