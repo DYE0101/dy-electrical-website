@@ -13,7 +13,7 @@ export function Footer() {
             alt="DY Electrical Services logo"
             width={260}
             height={180}
-            className="mb-6 h-auto w-36 mix-blend-screen [clip-path:inset(2px_8px_2px_2px)]"
+            className="mb-6 h-auto w-36 mix-blend-screen [clip-path:inset(2px)]"
           />
           <p className="max-w-md text-sm leading-6 text-white/68">
             Precision work, clear communication and no surprises — across

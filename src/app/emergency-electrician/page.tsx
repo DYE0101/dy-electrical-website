@@ -148,7 +148,7 @@ const serviceSchema = {
   provider: {
     "@type": "Electrician",
     name: business.name,
-    telephone: business.phoneDisplay,
+    telephone: business.phoneInternational,
     url: business.domain,
   },
   areaServed: ["Logan", "Brisbane Southside", "Northern Gold Coast"],

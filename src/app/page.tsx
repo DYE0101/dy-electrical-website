@@ -31,13 +31,9 @@ export default async function HomePage() {
 
         <div className="relative z-10 mx-auto grid min-h-[650px] w-full max-w-[1180px] px-4 gap-10 py-14 lg:grid-cols-[1fr_390px] lg:items-end lg:py-20">
           <div className="min-w-0">
-            <h1 className="max-w-[21rem] break-words font-heading text-[clamp(1.7rem,7.2vw,2rem)] font-extrabold leading-[1.08] sm:max-w-3xl sm:text-[clamp(2.35rem,5.4vw,4.65rem)] sm:leading-[1.04]">
-              Licensed Electrician for{" "}
-              <br className="sm:hidden" />
-              Logan, Brisbane Southside{" "}
-              <br className="hidden sm:block" />
-              <br className="sm:hidden" />
-              &amp; the Northern Gold Coast.
+            <h1 className="max-w-[21rem] break-words [text-wrap:balance] font-heading text-[clamp(1.7rem,7.2vw,2rem)] font-extrabold leading-[1.08] sm:max-w-3xl sm:text-[clamp(2.35rem,5.4vw,4.65rem)] sm:leading-[1.04]">
+              Licensed Electrician for Logan, Brisbane Southside &amp; the
+              Northern Gold Coast.
             </h1>
             <p className="mt-5 text-sm font-extrabold uppercase tracking-widest text-brand-gold/80">
               Don&apos;t D.I.Y — Call DY Electrical Services
@@ -61,7 +57,7 @@ export default async function HomePage() {
             </div>
 
             <p className="mt-8 max-w-[21rem] break-words text-xs leading-5 text-white/68 sm:max-w-full">
-              Lic. No. 87141 · ARC L179309 · Public Liability Insurance held · ABN 75 643 388 416
+              EC No. 87141 · ARC L179309 · Public Liability Insurance held · ABN 75 643 388 416
             </p>
           </div>
 

@@ -86,6 +86,7 @@ export async function generateMetadata({
       description: metaDescription,
       type: "article",
       publishedTime: post.publishedAt,
+      ...(post.updatedAt ? { modifiedTime: post.updatedAt } : {}),
       authors: ["Dayne Yetman"],
       images: [{ url: "/images/og-default.jpg", width: 1200, height: 630, alt: metaTitle }],
     },
@@ -169,14 +170,14 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     headline: post.title,
     description: post.description,
     datePublished: post.publishedAt,
-    dateModified: post.publishedAt,
+    dateModified: post.updatedAt ?? post.publishedAt,
     image: `${business.domain}/images/og-default.jpg`,
     author: {
       "@type": "Person",
       name: "Dayne Yetman",
       jobTitle: "Licensed Electrician",
       url: `${business.domain}/about`,
-      identifier: "Electrical Contractor No. 87141",
+      identifier: business.electricalContractor,
     },
     publisher: {
       "@type": "Organization",
@@ -217,6 +218,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         </h1>
         <p className="mt-4 text-sm text-brand-charcoal/60">
           Published {formatDate(post.publishedAt)}
+          {post.updatedAt ? ` · Updated ${formatDate(post.updatedAt)}` : null}
         </p>
       </section>
 

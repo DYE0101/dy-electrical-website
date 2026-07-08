@@ -4,6 +4,8 @@ export type BlogPost = {
   description: string;
   category: string;
   publishedAt: string;
+  /** Set on significant content updates — drives Article dateModified + sitemap lastmod. */
+  updatedAt?: string;
   readingMinutes: number;
   body: BlogBlock[];
   relatedService?: { slug: string; label: string };
@@ -214,6 +216,7 @@ export const blogPosts: BlogPost[] = [
       "A plain-English cost guide for homeowners considering a switchboard upgrade in Brisbane, Logan and the Gold Coast — what affects the price, what's included, and what to watch for.",
     category: "Homeowner guides",
     publishedAt: "2026-05-06",
+    updatedAt: "2026-07-07",
     readingMinutes: 5,
     relatedService: { slug: "switchboard-upgrades", label: "Switchboard Upgrades" },
     body: [
@@ -295,6 +298,7 @@ export const blogPosts: BlogPost[] = [
       "What drives the cost of a home EV charger installation in Queensland? A clear breakdown of what's involved, what varies, and how to avoid the common traps.",
     category: "EV & energy",
     publishedAt: "2026-05-05",
+    updatedAt: "2026-07-07",
     readingMinutes: 5,
     relatedService: { slug: "ev-chargers", label: "EV Charger Installation" },
     body: [

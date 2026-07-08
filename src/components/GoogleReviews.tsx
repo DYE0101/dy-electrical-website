@@ -25,7 +25,7 @@ function TrustFallback() {
   return (
     <div className="grid gap-3 sm:grid-cols-2">
       {[
-        "Licensed electrical contractor — Licence No. 87141",
+        "Licensed electrical contractor — EC No. 87141",
         "ARC licensed for split system air conditioning",
         "Based in Bahrs Scrub, servicing Logan, Brisbane Southside and the Northern Gold Coast",
         "Clear scope, sharp finishes and practical advice before work starts",

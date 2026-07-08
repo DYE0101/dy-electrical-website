@@ -105,10 +105,11 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
     "@context": "https://schema.org",
     "@type": "Service",
     name: `${service.title} by ${business.name}`,
+    url: `${business.domain}/services/${service.slug}`,
     provider: {
       "@type": "Electrician",
       name: business.name,
-      telephone: business.phoneDisplay,
+      telephone: business.phoneInternational,
       url: business.domain,
     },
     areaServed: ["Logan", "Brisbane Southside", "Northern Gold Coast"],

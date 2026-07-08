@@ -80,7 +80,15 @@ export default async function ContactPage({ searchParams }: ContactPageProps) {
               <dt className="w-28 shrink-0 font-semibold text-brand-black">Based in</dt>
               <dd className="text-brand-charcoal/75">
                 Bahrs Scrub QLD 4207 — servicing Logan, Brisbane Southside and
-                the Northern Gold Coast
+                the Northern Gold Coast ·{" "}
+                <a
+                  href="https://maps.app.goo.gl/xhxaBNKAbTGF5P9P7"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="font-semibold text-brand-black underline decoration-brand-gold/60 underline-offset-4 hover:decoration-brand-black"
+                >
+                  Find us on Google Maps
+                </a>
               </dd>
             </div>
             <div className="flex flex-col gap-1 sm:flex-row sm:gap-4">

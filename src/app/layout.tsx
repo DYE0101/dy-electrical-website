@@ -69,6 +69,14 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
+  icons: {
+    icon: [
+      { url: "/icons/icon-192.png", type: "image/png", sizes: "192x192" },
+      { url: "/icons/icon-512.png", type: "image/png", sizes: "512x512" },
+    ],
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
   openGraph: {
     title: "Electrician Logan, Brisbane & Gold Coast | DY Electrical Services",
     description:
@@ -205,7 +213,7 @@ const localBusinessSchema = {
   },
   identifier: [
     { "@type": "PropertyValue", name: "ABN", value: business.abn },
-    { "@type": "PropertyValue", name: "Electrical Contractor", value: "87141" },
+    { "@type": "PropertyValue", name: "Electrical Contractor Licence", value: "87141" },
     { "@type": "PropertyValue", name: "ARC Licence", value: "L179309" },
   ],
   slogan: "Don't D.I.Y - Call DY Electrical Services",

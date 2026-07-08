@@ -24,32 +24,30 @@ const staticRoutes = [
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date();
-
+  // lastModified is set ONLY where we can state it accurately (blog posts).
+  // Google uses lastmod only when it is "consistently and verifiably accurate";
+  // stamping build time on every URL each deploy teaches it to ignore ours.
   const serviceRoutes = servicePages.map((service) => ({
     url: `${business.domain}/services/${service.slug}`,
-    lastModified: now,
     priority: 0.8,
     changeFrequency: "monthly" as const,
   }));
 
   const blogRoutes = blogPosts.map((post) => ({
     url: `${business.domain}/blog/${post.slug}`,
-    lastModified: new Date(post.publishedAt),
+    lastModified: new Date(post.updatedAt ?? post.publishedAt),
     priority: 0.6,
     changeFrequency: "monthly" as const,
   }));
 
   const staticEntries = staticRoutes.map(({ path, priority, changeFrequency }) => ({
     url: `${business.domain}${path}`,
-    lastModified: now,
     priority,
     changeFrequency,
   }));
 
   const suburbRoutes = areaPages.map((area) => ({
     url: `${business.domain}/areas/${area.slug}`,
-    lastModified: now,
     priority: 0.85,
     changeFrequency: "monthly" as const,
   }));

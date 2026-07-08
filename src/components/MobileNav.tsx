@@ -52,13 +52,17 @@ export function MobileNav() {
     setMobileOpenGroup(null);
   };
 
-  // Lock background scroll while the menu is open
+  // Lock background scroll while the menu is open. The data attribute lets
+  // MobileCTA (outside the header's stacking context, so z-index can't help)
+  // hide itself while the menu is open.
   useEffect(() => {
     if (!isMenuOpen) return;
     const previous = document.documentElement.style.overflow;
     document.documentElement.style.overflow = "hidden";
+    document.documentElement.dataset.menuOpen = "true";
     return () => {
       document.documentElement.style.overflow = previous;
+      delete document.documentElement.dataset.menuOpen;
     };
   }, [isMenuOpen]);
 

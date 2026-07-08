@@ -22,7 +22,7 @@ export function Header() {
             height={150}
             priority
             fetchPriority="high"
-            className="h-auto w-[74px] mix-blend-screen [clip-path:inset(2px_8px_2px_2px)] sm:w-24"
+            className="h-auto w-[74px] mix-blend-screen [clip-path:inset(2px)] sm:w-24"
           />
         </Link>
 

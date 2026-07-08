@@ -130,7 +130,7 @@ export default function GoldCoastPage() {
           <div className="mt-10 flex flex-wrap gap-5 text-xs text-white/52">
             <span className="flex items-center gap-2">
               <ShieldCheck className="h-4 w-4" aria-hidden="true" />
-              Lic. No. 87141 · ARC L179309
+              EC No. 87141 · ARC L179309
             </span>
             <span className="flex items-center gap-2">
               <Clock className="h-4 w-4" aria-hidden="true" />
@@ -298,7 +298,7 @@ export default function GoldCoastPage() {
               </p>
               <p className="flex items-center gap-2">
                 <ShieldCheck className="h-4 w-4 text-white/40 shrink-0" aria-hidden="true" />
-                Lic. No. 87141 · ARC L179309 · Public Liability Insurance held
+                EC No. 87141 · ARC L179309 · Public Liability Insurance held
               </p>
             </div>
           </div>

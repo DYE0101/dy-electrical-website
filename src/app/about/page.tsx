@@ -76,7 +76,7 @@ const personSchema = {
     },
     {
       "@type": "EducationalOccupationalCredential",
-      name: "ARC Refrigeration Handling Licence",
+      name: "ARC Refrigerant Handling Licence",
       credentialCategory: "Licence",
       identifier: "L179309",
     },

@@ -9,7 +9,7 @@ export const business = {
   domain: "https://www.dyelectricalservices.com.au",
   address: "12 Orchard Avenue, Bahrs Scrub QLD 4207",
   abn: "75 643 388 416",
-  electricalContractor: "Electrical Contractor No. 87141",
+  electricalContractor: "Electrical Contractor Licence No. 87141",
   arcLicence: "ARC Licence L179309",
   insurance: "Public Liability Insurance held",
   serviceArea: "Brisbane, Logan and the Gold Coast",
